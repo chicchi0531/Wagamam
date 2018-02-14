@@ -1,0 +1,25 @@
+﻿;script 842
+;directer:yuichi
+;script:nikai
+;timing:s0841後
+
+[field_area_hilight id=77]
+[filter name="fade" time=500]
+[bgm ref="029_raisania2"]
+[drawbg ref="Event/707"]
+[filter name="clear" time=500]
+[show_message]
+世界樹。[p]
+開通は突然だった……。[p]
+おそらくあと半分くらいだろうとアリスが踏んでいた地点で、向こう側とつながったのだ。[p]
+そして、向こう側から10体のホムンクルスが飛び出してきた……。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[filter name="clear" time=500]
+[stopbgm]
+
+[change_area_owner area=77 owner=8]
+
+[sys_memset index=842 value="1"]

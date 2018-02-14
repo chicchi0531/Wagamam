@@ -1,0 +1,6 @@
+;s0838A
+;世界樹戦
+
+;ユニットセット
+[battle_unit_in e0=297]
+[battle_bgm ref="026_battle4"]

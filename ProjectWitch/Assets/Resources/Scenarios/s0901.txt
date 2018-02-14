@@ -1,0 +1,475 @@
+;s0901
+;臨時徴収イベント2
+;地点番号13
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="holybell"]
+
+[filter name="fade" time=500]
+[drawbg ref="1015m"]
+[drawcg id=0 pos=2 state=1 dir="right"]
+[filter name="clear" time=500]
+
+;進行度をローカル変数へ
+[sys_memget index=4014 local=0]
+
+[show_message]
+#アリス
+よーし！　あらかたとり尽したな。[n]
+撤収だーーーーー！！！[p]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[drawcg id=1 pos=4]
+[filter name="clear" time=500]
+
+[changecg id=0 state=6]
+[move id=0 y=10 x=-5 time=100]
+[move id=0 y=-10 x=-5 time=100]
+#アリス
+わっ！！[p]
+
+;初回
+[if opr="eqr" index0=0 value1=0]
+
+なんだ、敵か！！[p]
+#？？？
+ん？　あれ、ここは……。[p]
+[changecg id=0 state=2]
+#アリス
+……お、オイ。[n]
+お前誰だよ。[p]
+……ってか人間か？[n]
+そのみょうちくりんな格好はなんだよ。[p]
+#？？？
+んー、ねむい。[n]
+ふわーあ……。[p]
+
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+#アリス
+ん……、な、なんだ。[p]
+き、きえた……。[p]
+……………。[p]
+ん？　なんだこれ。[p]
+[move id=0 x=20 time=800]
+[cn]
+アリスは、足元に落ちていた何かを拾い上げた。[p]
+#アリス
+ビー玉？[n]
+あいつのものか？[p]
+……しかし、妙なやつだったな。[p]
+
+[endif]
+
+;二回目
+[if opr="eqr" index0=0 value1=1]
+
+お……お前この前の。[p]
+#？？？
+ん？　あ！　こんにちはー……。[p]
+あれ、クロは？[p]
+[scale id=1 sx=-1 time=300]
+[wait time=500]
+[scale id=1 sx=-1 time=300]
+ねえ、クローーー？[p]
+んー、私やることがあったような……。[p]
+まあいっかぁ……。[p]
+んー、ねむいなあ……。[n]
+ふわーあ。[p]
+
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+
+#アリス
+き、きえた……。[p]
+なんだってんだ……一体。[p]
+[changecg id=0 state=0]
+ん？　なんだこれ。[p]
+[move id=0 x=20 time=800]
+[cn]
+アリスは、足元に落ちていた何かを拾い上げた。[p]
+#アリス
+またビー玉だ……。[p]
+[changecg id=0 state=6]
+お、お化け、亡霊とか、[n]
+そんなんじゃないだろうな。[p]
+
+[endif]
+
+;三回目
+[if opr="eqr" index0=0 value1=2]
+
+ま、またか……。[p]
+#？？？
+あっ！　さっきの子！[p]
+ねえ、ちょっと聞きたいんだけど、[n]
+バルバロッサ山ってどっちの方向かな？[p]
+#アリス
+ば、バルバロッサ山ぁ？[n]
+知るかよ、そんな山。[p]
+#？？？
+うぅ……そっか。[p]
+参ったなぁ、日が暮れるまでに行かなきゃいけないのに。[p]
+[changecg id=0 state=2]
+#アリス
+ちょ、ちょっと待て、前から思ってたが、[n]
+お前一体何もんだ？[p]
+突然現れるし、不気味でしょうがないぞ。[p]
+#？？？
+突然……？　ああ！[n]
+そっか……じゃあこれはそういう。[p]
+#アリス
+オイ、一人でぶつぶつ言っててもわかんねえよ……。[p]
+#？？？
+ええっと、詳しくは言えないから……。[n]
+とりあえず私の名前は「リン」でいいわ！[p]
+#アリス
+でいいわってオイ……。[p]
+#リン
+あなたの名前は？[p]
+[changecg id=0 state=0]
+#アリス
+私はアリスだ。華の魔女アリス。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#リン
+魔女！　あなた、魔女なのね！[p]
+[changecg id=0 state=1]
+#アリス
+クフフッ！　そうだ、驚いたか！[p]
+#リン
+私もなの！[p]
+[changecg id=0 state=6]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+んなっ！？　ま、マジか……。[p]
+いや、そうか、突然現れるのも魔法だったわけだな。[p]
+#リン
+そうなの！　詳しくは話せないけど魔法なの！[p]
+ん……そろそろ時間みたい。[p]
+アリスちゃん……また、会いましょう……。[p]
+ふあーあ。[p]
+
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+
+[changecg id=0 state=0]
+#アリス
+消えた……。[p]
+一体何の魔法なんだ、[n]
+「眠気」がトリガーみたいだけど……。[p]
+[move id=0 x=20 time=500]
+このビー玉にも、何か意味があるのか……？[p]
+
+[endif]
+
+;四回目
+[if opr="eqr" index0=0 value1=3]
+
+な、なんだ、リンか。[n]
+何回見ても驚いちまうぜ……クソ。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#リン
+あっ、アリスちゃん！！[n]
+また会えたね！[p]
+[changecg id=0 state=0]
+#アリス
+おう、しかし、その妙な魔法はなんなんだよ。[p]
+その口ぶりから、狙ったところに[n]
+移動するようなワープ呪文でもないんだろ？[p]
+#リン
+うんと……、魔女協会の規定で、[n]
+うっかり口を滑らせると大目玉なんだけど……。[p]
+うん、このくらいならいってもいいかな。[p]
+[changecg id=0 state=2]
+#アリス
+なんだよ、もったいぶらずに言えよ。[p]
+#リン
+この呪文は世界に一つだけの呪文。[p]
+ほとんどの魔女が知らない……、[n]
+時を操る呪文……。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+……なーんて、かっこいいでしょ！[p]
+[changecg id=0 state=6]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+は、はあ！？[p]
+おまえ、ふざけてんじゃ……！[p]
+#リン
+あっ、そろそろ時間だ。[p]
+ふあーあ……、じゃあね、アリスちゃん。[p]
+#アリス
+お、オイ！！[p]
+[hide_message]
+
+[se ref="117_fx_velonicaB"]
+[move id=0 x=30 time=500]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[scale id=0 sx=-1 time=300]
+[wait time=500]
+[scale id=0 sx=-1 time=300]
+[wait time=800]
+[show_message]
+
+#アリス
+く、クソ……。[n]
+なんだってんだ……。[p]
+時を操る呪文だって！？[p]
+冗談なのか本気なのか……。[p]
+……またビー玉落ちてるし。[n]
+くそう、もう一回出てこねえかなぁ。[p]
+
+[endif]
+
+;五回目
+[if opr="eqr" index0=0 value1=4]
+
+で、出たな！　リン！！[p]
+[move id=1 y=5 time=200]
+[move id=1 y=-5 time=200]
+#リン
+え、な、なになに？[n]
+殺気立っちゃって。[p]
+#アリス
+うるさい、観念しろーーー！[p]
+[hide_message]
+[move id=0 x=70 time=400]
+[filter name="flush" color="ffffff" time=300]
+[scale id=1 sx=-1 time=300]
+[show_message]
+#アリス
+んなっ！！！　すりぬけた……？[p]
+[scale id=0 sx=-1 time=300]
+ど、どうなってんだ……。[p]
+[move id=1 x=-20 time=300]
+#リン
+あー……。その。[p]
+[move id=0 x=-20 time=300]
+#アリス
+オイ！　その魔法は一体何なんだ！[n]
+そんなびっくり呪文を使う魔女が無名だなんて。[p]
+それに、時を操るってのはなんなんだ！[p]
+[move id=1 x=-10 time=300]
+#リン
+い、いや、だからそれは言っちゃいけなくて……。[p]
+さ、さよなら～……。[p]
+[scale id=1 sx=-1 time=200]
+[move id=1 x=-100 time=500]
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+
+#アリス
+あっ！　消えやがった！[n]
+クソ！　……自分から消えることもできるのか。[p]
+……ビー玉はちゃんと落としていくんだな。[p]
+
+[endif]
+
+;六回目
+[if opr="eqr" index0=0 value1=5]
+
+[changecg id=0 state=2]
+あっ、出たなリン！[p]
+#リン
+わっ！　あ、アリスちゃん……。[p]
+#アリス
+今日こそ、そのびっくり魔法の秘密を暴露してもらおうか！[p]
+#リン
+うぅ～……だから言っちゃダメなんだって。[p]
+#アリス
+……………。[p]
+#リン
+うっ……わかったよぅ。[n]
+ちょっとだけだからね？[p]
+[changecg id=0 state=1]
+#アリス
+やった！　クフフッ！　いってみるもんだなぁ。[p]
+#リン
+はぁ……これでまた階級降格だよう……。[p]
+あのね、この魔法は「タイムトリップ」。[p]
+つまり未来に行ったり、[n]
+過去に行ったりできる魔法なの。[p]
+[changecg id=0 state=2]
+#アリス
+あん？　漫画の世界じゃねえんだから、[n]
+そんなことできるかよ。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#リン
+できるんだってば！[p]
+確かにかなり難しい大魔法だから、[n]
+発動するのは難しくて、[p]
+私みたいな未熟な魔女だと、[n]
+そんなに長くトリップしていられないの。[n]
+すぐ魔力不足で眠くなってきちゃうのよ。[p]
+しかもトリップ直後に記憶があいまいになったり、[n]
+狙った時代より少しずれちゃったりと、[n]
+とにかく繊細なのよ。[p]
+さらにその時代に干渉できちゃうから[n]
+制約もかなり多いの。[p]
+偽名を名乗らなくちゃいけなかったりね。[p]
+[changecg id=0 state=0]
+#アリス
+じゃあ体をすり抜けるってのは、[n]
+どういうことだよ。[p]
+#リン
+マナの濃度が足りないと実体化すらできないの。[p]
+前に出会った場所はマナの濃度が足りなかったのよ。[p]
+#アリス
+ふうん？[p]
+で、そんな難しい魔法を使って、何しようってんだよ。[p]
+遊びでってのじゃなさそうだけど。[p]
+#リン
+あ……そろそろ限界かも。[p]
+[changecg id=0 state=2]
+#アリス
+お、オイ！[p]
+#リン
+ごめんねアリスちゃん……[n]
+また会えたら話すから……。[p]
+
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+
+#アリス
+……………。[p]
+[move id=0 x=20 time=800]
+リン………。[p]
+[cn]
+アリスは、地面に落ちたビー玉を拾い上げた。[p]
+
+[endif]
+
+;七回目
+[if opr="eqr" index0=0 value1=6]
+
+[changecg id=0 state=2]
+リン！！[p]
+#リン
+アリス……ちゃん。[p]
+[move id=1 y=-10 time=300]
+[cn]
+リンは現れるなり、地面に突っ伏した。[p]
+[move id=0 x=30 time=300]
+#アリス
+リン！！　どうしたんだ。[p]
+#リン
+だ、大丈夫……魔力を使いすぎちゃって。[p]
+[move id=1 y=10 time=500]
+[move id=0 x=-10 time=500]
+#アリス
+リン……。[p]
+#リン
+賢者の石さえあれば……。[p]
+#アリス
+賢者の石だって……？[p]
+#リン
+アリスちゃん、知ってるの……？[p]
+#アリス
+ああ、何度か見かけた。[n]
+多分、館の方にも毒の魔女のところから回収したやつがあると思うけど……。[p]
+#リン
+本当！？[p]
+それ、一つ分けてもらえることはできる？[p]
+[changecg id=0 state=6]
+#アリス
+ま、まてまて！[n]
+あんな危ないものをやすやすと譲るわけには……。[p]
+大体何に使うんだよ、あれを……。[p]
+[bgm ref="023_event8"]
+#リン
+……戦争を終わらせるの。[p]
+[changecg id=0 state=2]
+#アリス
+あん……？[p]
+#リン
+たくさんの人が死んだの。[p]
+私の仲間も、私の弟子も、その家族も、[n]
+たくさん死んだの……。[p]
+もう、手段を選んでいる暇はないの。[p]
+賢者の石があれば、戦争に勝つことができる。[p]
+そのために石を使うの。[p]
+#アリス
+（そうか、こいつはここより未来か、[n]
+過去の世界から来たんだったな……。）[p]
+……………。[p]
+お前の世界がどういう状況で、[n]
+何の戦争が起きているのかは知らないけど、[n]
+こんなものに頼っても、ろくなことにならないと思うぞ。[p]
+#リン
+……そうかもしれない。[n]
+でも、私はやらないといけないの。[p]
+死んでいったみんなのために……。[p]
+#アリス
+リン……。[p]
+#リン
+アリス……、賢者の石をもってバルバロッサ山へ来て……。[p]
+あそこならマナがたくさんある。[p]
+きっと、実体化ができるから、[n]
+賢者の石を手渡しで受け取れるわ。[p]
+まってるわよ……。[p]
+
+[hide_message]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[clearcg id=1]
+[filter name="clear" time=500]
+[show_message]
+
+[move id=0 x=10 time=300]
+#アリス
+リン！！[p]
+……………。[p]
+[scale id=0 sx=-1 time=300]
+バルバロッサ山か……。[p]
+[cn]
+アリスは足元に落ちているビー玉を拾い上げ、[n]
+バルバロッサ山の位置する、[n]
+北の空を見上げるのだった。[p]
+[stopbgm]
+
+[endif]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+[calc opr="add" index0=0 value1=1 to=0]
+[sys_memset index=4014 local=0]

@@ -1,0 +1,85 @@
+[setskin ref="skin1"]
+;[skip_enable enable=0]
+
+[bgm ref="002_alice1"]
+[loadfg id=0 ref="alice"]
+[loadfg id=1 ref="chishire"]
+
+[show_message]
+[drawfg id=0 state=2]
+#アリス
+はぁ、疲れたぞ……。[p]
+[drawfg id=1]
+#チシャ
+お疲れ様でございますアリス様。[p]
+[drawfg id=0]
+#アリス
+兵にもちょっと被害が出たな。[p]
+[drawfg id=1]
+#チシャ
+アリス様、減ってしまった兵は補充をすることができます。[p]
+
+[create_gameobject id=0 ref="Tutorial/field_menubar_menu_hilight"]
+
+補充はメニューの「軍団編成」から行うことができます。[p]
+[drawfg id=0 state=0]
+#アリス
+へえ、他にもメニューがあるみたいだけど。[p]
+[drawfg id=1]
+#チシャ
+はい！[p]
+
+[create_gameobject id=1 ref="Tutorial/field_menubar_army_cursor"]
+
+「軍団編成」は、[n]
+主に兵の補充や最大兵数の増加[n]
+ユニットそのものを強化するレベルアップなどを行うことができます。[p]
+
+[delete_gameobject id=1]
+[create_gameobject id=1 ref="Tutorial/field_menubar_item_cursor"]
+
+「アイテム」は、[n]
+現在所持している[n]
+「装備」「カード」を確認することができます。[p]
+
+[delete_gameobject id=1]
+[create_gameobject id=1 ref="Tutorial/field_menubar_tips_cursor"]
+
+「図書館」は、[n]
+ゲームの操作に関するヘルプや、[n]
+この世界に関する様々な書籍を読むことができます。[p]
+
+[delete_gameobject id=1]
+[create_gameobject id=1 ref="Tutorial/field_menubar_system_cursor"]
+
+最後に「システム」ですが、[n]
+「セーブ」「ロード」「設定」[n]
+の３つを行うことができます。[p]
+
+[delete_gameobject id=0]
+[delete_gameobject id=1]
+
+[drawfg id=0 state=2]
+#アリス
+うーん、いっぱいあって覚えきれないな……。[p]
+[drawfg id=1]
+#チシャ
+アリス様、細かい操作は[n]
+「図書館」の書籍に書いてあります。[p]
+操作に行き詰ったときは、ここをのぞいてみてください。[p]
+[drawfg id=0 state=0]
+#アリス
+そうだな、とりあえずやってみて、わかんなかったらのぞいてみるわ。[p]
+[drawfg id=1]
+#チシャ
+はい！[p]
+[clearfg]
+[cn]
+【これにてチュートリアルは終了です。】[p]
+【何か操作でわからない部分があれば[n]
+メニューの図書室をのぞいてみてください。】[p]
+【それでは、わがままアリスと百日戦争の世界をお楽しみください。】[p]
+
+[hide_message]
+
+[sys_memset index=9805 value=1]

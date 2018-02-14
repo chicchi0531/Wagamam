@@ -1,0 +1,226 @@
+;s0220
+;author: yuichi
+;timing: s0219戦闘後、勝敗関係なし
+
+;ロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+[loadcg id=2 ref="triaina"]
+[loadcg id=3 ref="marger"]
+[loadcg id=4 ref="orivia"]
+[loadcg id=5 ref="karton"]
+
+;マップスクロール
+[field_area_hilight id=28]
+[wait time=200]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1005m"]
+[filter name="clear" time=500]
+[bgm ref="005_battle2"]
+
+[show_message]
+[drawcg id=0 pos=2 dir="right" state=2]
+[drawcg id=1 pos=1 dir="right"]
+[drawcg id=2 pos=5]
+
+#アリス
+[voice ref="020588"]
+ぜえ、ぜえ……。さすがに三人相手はきついな……。[p]
+#トリアイナ
+[voice ref="020589"]
+引けっ、引けー！！[p]
+[scale id=2 sx=-1 time=100]
+[move id=2 x=100 time=300]
+#アリス
+[voice ref="020590"]
+あっ！　待てこら！！[p]
+[move id=0 x=30 time=300]
+[move id=1 x=30 time=300]
+[cn]
+中央のトリアイナが引くと、それに遅れて左翼と右翼のオリヴィアとマルゲル軍が撤退を始める。[p]
+アリス軍は当然それを追いかけた。[p]
+#トリアイナ
+[voice ref="020591"]
+……かかったわね！[p]
+#オリヴィア
+[voice ref="020592"]
+カートン、お願い！！[p]
+[drawcg id=5 posx=-70 dir="right" mode="slidein"]
+#カートン
+[voice ref="020592a"]
+ウオオオォォン！！[p]
+[scale id=1 sx=-1 time=100]
+[scale id=0 sx=-1 time=0]
+[move id=0 x=5 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+[voice ref="020592b"]
+何ッ！？[n]
+後ろか！！[p]
+[cn]
+マルゲルの計略だった。[p]
+アリス軍はあっという間に四方を囲まれてしまった。[p]
+これでは体制を立て直すことはおろか、[n]
+撤退することすらできない。[p]
+#アリス
+[voice ref="020593"]
+くっ、くそおおおーーーー！！！[p]
+#クロ
+[voice ref="020594"]
+向こうには大した軍略家がいるようですな。[p]
+#アリス
+[voice ref="020595"]
+なに余裕ぶっこいてんだ！[n]
+撤退するぞ！[p]
+#クロ
+[voice ref="020596"]
+四方を囲まれております。[n]
+撤退するならばどこかを突破しませんと。[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+[voice ref="020597"]
+んー、じゃああっちだ！[n]
+なんか弱そうだからな。[p]
+[cn]
+アリスが指さしたのはオリヴィア軍の方だった。[p]
+[scale id=1 sx=-1 time=100]
+#クロ
+[voice ref="020598"]
+承知！　では私が先頭で切り込みますので、[n]
+ついてきてください。[p]
+[hide_message]
+[move id=1 x=100 time=300]
+[move id=0 x=100 time=300]
+
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=5]
+[clearcg id=2]
+
+[show_message]
+#トリアイナ
+[voice ref="020599"]
+軍が向きを変えた……右っ！？[n]
+オリヴィア！！[p]
+[drawcg id=4 pos=5 state=1]
+#オリヴィア
+[voice ref="020600"]
+こっちにきた……どっ、どうしよう。[p]
+[drawcg id=1 posx=-100 dir="right"]
+[move id=1 x=80 time=400]
+#クロ
+[voice ref="020601"]
+どけ、どけえい！！[p]
+[voice ref="020601a"]
+死ぬ覚悟のあるもののみかかってこられよ！！[p]
+[move id=4 x=10 time=200]
+#オリヴィア
+[voice ref="020602"]
+きゃっ！！[p]
+#クロ
+[voice ref="020603"]
+ぬ……あれは森の魔女殿。[n]
+ついでに首をあげておくか。[p]
+#オリヴィア
+[voice ref="020604"]
+こっ、こっち来た！！[n]
+ま、守りを固めて！！[p]
+[voice ref="020604a"]
+それから、えっとえっと！[p]
+#クロ
+[voice ref="020605"]
+森の魔女殿！[n]
+覚悟ッ！！[p]
+
+[hide_message]
+[se ref="158"]
+[filter name="color" color="FFFFFF" time=500]
+[wait time=500]
+[se ref="156"]
+[filter name="clear" time=500]
+[show_message]
+
+[drawcg id=3 posx=20 mode="slidein"]
+[move id=1 x=-5 time=50]
+[cn]
+クロが放った弾丸はオリヴィアに到達する前に、[n]
+その間に割り込んだものにはじかれた。[p]
+#クロ
+[voice ref="020606"]
+何者ッ！[p]
+#マルゲル
+[voice ref="020607"]
+私はマルゲル！[n]
+オリヴィア殿には指一本触れさせぬ！[p]
+[changecg id=4 state=0]
+#オリヴィア
+[voice ref="020608"]
+マルゲルさん！[n]
+あの、持ち場は大丈夫なんですか？[p]
+#マルゲル
+[voice ref="020609"]
+ええ、問題ありません。[p]
+[voice ref="020609a"]
+オリヴィア殿下がって。[n]
+ここは私が。[p]
+#クロ
+[voice ref="020610"]
+ふむ、なかなかやりおるわい……。[p]
+[voice ref="020610a"]
+いいだろう、華の魔女アリスの部下、[n]
+クロがお相手いたす。[p]
+[drawcg id=0 pos=1 layer="front" dir="right" mode="slidein"]
+#アリス
+[voice ref="020611"]
+クロ、先にいってるぞー！[p]
+
+[scale id=0 sx=-1 time=100]
+[move id=0 x=-100 time=400]
+[scale id=1 sx=-1 time=100]
+
+#クロ
+[voice ref="020612"]
+アリス様！[p]
+[voice ref="020612a"]
+……。[p]
+[scale id=1 sx=-1 time=300]
+[voice ref="020612b"]
+……命拾いしましたな。[p]
+
+[scale id=1 sx=-1 time=100]
+[move id=1 x=-100 time=400]
+
+[cn]
+クロはそういうと、くるりと向きを変え、[n]
+アリスを追いかけていってしまった。[p]
+#マルゲル
+[voice ref="020613"]
+……私たちも下がりましょうか、オリヴィア殿。[p]
+#オリヴィア
+[voice ref="020614"]
+はっ、はひ……。[p]
+[scale id=3 sx=-1 time=300]
+#マルゲル
+[voice ref="020615"]
+オリヴィア殿？[p]
+
+
+;クリア処理
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=3]
+[clearcg id=4]
+[filter name="clear" time=500]
+
+;オリヴィアとトリアイナを死亡可能にする
+
+;終了処理
+[stopbgm]
+[sys_memset index=220 value="1"]
+
+[change_area_owner area=28 owner=2]

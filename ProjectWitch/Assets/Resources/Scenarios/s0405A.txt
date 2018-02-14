@@ -1,0 +1,6 @@
+;s0405A
+;シデン戦
+
+;ユニットをセット
+[battle_unit_in e0=11]
+[battle_bgm ref="005_alice2"]

@@ -1,0 +1,31 @@
+;s0711
+;場面12後　魔女の沼戦闘前
+
+[field_area_hilight id=76]
+[wait time=200]
+
+[filter name="fade" time=500]
+[drawbg ref="Event/704"]
+[bgm ref="013_lily"]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+[voice ref="070163"]
+ついに最後だな……。[n]
+覚悟しろよ化け物！！[p]
+[voice ref="070164"]
+この世界は私が残らずいただくのだ。[n]
+おとなしく土地を明け渡してもらうぜ！！！！[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[filter name="clear" time=500]
+
+;ユニットセット
+[battle_unit_in e0=21]
+[battle_bgm ref="005_battle2"]
+
+[stopbgm]
+[sys_memset index=711 value="1"]

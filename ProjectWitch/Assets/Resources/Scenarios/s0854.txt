@@ -1,0 +1,163 @@
+﻿;script 854
+;directer:yuichi
+;script:nikai
+;timing:s0848後
+[field_area_hilight id=104]
+[filter name="fade" time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="raisa"]
+[loadcg id=2 ref="nia"]
+[loadcg id=3 ref="eli"]
+[loadcg id=4 ref="seedle"]
+[loadcg id=5 ref="kuro"]
+
+[bgm ref="005_battle2"]
+[drawbg ref="1039n"]
+
+[drawcg id=2 posx=-20 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+
+[wait time=500]
+[filter name="clear" time=500]
+
+
+[show_message]
+#ライザ
+[voice ref="080860"]
+キヒヒッ！！[n]
+びっくりさせやがって。 たいした事ねえじゃんか。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=1]
+[clearcg id=2]
+[drawcg id=0 pos=4 state=2]
+[filter name="clear" time=100]
+#アリス
+[voice ref="080862"]
+畜……生……。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=0]
+[drawcg id=2 posx=-20 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+[filter name="clear" time=100]
+#ライザ
+[voice ref="080863"]
+オイ！　やっちまえ。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=1]
+[clearcg id=2]
+[drawcg id=0 pos=4]
+[filter name="clear" time=100]
+#アリス
+[voice ref="080864"]
+や……めろ……。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=0]
+[drawcg id=2 posx=-20 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+[filter name="clear" time=100]
+#ヴェロニカ
+[voice ref="080865"]
+…………。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=1]
+[clearcg id=2]
+[drawcg id=0 pos=4]
+[filter name="clear" time=100]
+#アリス
+[voice ref="080866"]
+やめろっ……。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=0]
+[drawcg id=2 posx=-20 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+[filter name="clear" time=100]
+#ライザ
+[voice ref="080867"]
+キヒヒッ！！[p]
+#ヴェロニカ
+[voice ref="080868"]
+アリス……ごめんなさい。[p]
+
+[filter name="color" color="FFFFFF" time=100]
+[clearcg id=1]
+[clearcg id=2]
+[drawcg id=0 pos=4 state=2]
+[filter name="clear" time=100]
+#アリス
+[voice ref="080869"]
+やめろおおおおおおおーーーーー！！！！[p]
+[filter name="color" color="FF0000" time=100]
+[stopbgm]
+[se ref="150"]
+[cn]
+ギロチンの刃が落とされた。[n]
+アリスの叫びもむなしく、[n]
+ヴェロニカの首が胴から切り離された……。[p]
+#アリス
+[voice ref="080870"]
+あ……あ……。[n]
+……………。[p]
+[voice ref="080871"]
+ああああああああぁあぁあぁぁああーーーー！！！！[p]
+
+[clearcg id=0]
+[drawcg id=3 pos=2]
+[drawcg id=4 posx=0]
+[drawcg id=5 pos=5]
+[filter name="clear" time=500]
+#エリ
+[voice ref="080872"]
+ヴェ、ヴェロニカ様……そんな。[p]
+[move id=3 y=-20 time=400]
+#シードル
+[voice ref="080873"]
+間に合わなかった……。[p]
+#クロ
+[voice ref="080874"]
+ヴェロニカ様……。[p]
+[filter name="fade" time=500]
+[clearcg id=3]
+[clearcg id=4]
+[clearcg id=5]
+[drawcg id=2 posx=10]
+[drawcg id=1 pos=3]
+[filter name="clear" time=500]
+#ライザ
+[voice ref="080875"]
+キッ、キヒヒッ！！[n]
+キヒヒヒヒヒッ！！！！！！[p]
+[voice ref="080876"]
+やった、やったぞ！！[n]
+ついにヴェロニカを殺してやった！！[p]
+[voice ref="080877"]
+殺してやったぞォーーーー！！！！[p]
+[cn]
+マジノライン中央をめぐる戦いは、[n]
+ヴェロニカの死によって決着がついた。[p]
+アリス軍は撤退を余儀なくされ、[n]
+マジノラインの端まで兵を後退させた。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=1]
+[clearcg id=2]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+;アリス離脱処理
+[unit_unemploy unit=0]
+
+;アリスを死亡可能にする
+[unit_data_change id=0 member="Deathable" value="true"]
+
+[sys_memset index=4015 value=1]
+[sys_memset index=854 value="1"]

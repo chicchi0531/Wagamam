@@ -1,0 +1,14 @@
+;シナリオその他
+;アリスＢＡＤ
+
+[stopbgm]
+[filter name="fade" time=500]
+[drawbg ref="Event/gameover1"]
+[filter name="clear" time=500]
+
+[show_message]
+[cn]
+アリスの館は敵の手に落ち、ここにアリス領は滅亡した。[p]
+アリスはその後、[n]
+戦争を起こした悪者として、後世まで語り継がれたのであった……。[p]
+[hide_message]

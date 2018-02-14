@@ -1,0 +1,24 @@
+﻿;script 831
+;directer:yuichi
+;script:nikai
+;timing:s0827後
+
+;場面32後
+;自動戦闘
+;ライザ勝利
+;84:ベルリ城占領
+[unit_heal unit=30]
+[battle_unit_in p0=26 p1=25 p2=24 e0=30 e1=194]
+[battle_time time=3]
+[battle_area id=84]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=200] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=1800] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=1500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=100] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=100] ;シードル
+
+[field_area_hilight id=84]
+[sys_memset index=831 value="1"]

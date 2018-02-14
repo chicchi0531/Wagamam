@@ -1,0 +1,207 @@
+;町イベント
+;No.1012
+;site：まちはずれ
+;time : いつでも
+;author：chicchi
+;title : ミグの魔法修行2
+;member : ミグ
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="mig"]
+
+[filter name="fade" time=500]
+[bgm ref="007_town"]
+[drawbg ref="1031m"]
+[drawcg id=0 pos=1 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+
+[show_message]
+[cn]
+前回のあらすじ。[p]
+アリスに修行を付けてもらうことになったミグ。[p]
+ちょっとはやるところを[n]
+見せたつもりのミグだったが、[p]
+アリスとの圧倒的な実力差を見せつけられ[n]
+衝撃を受ける。[p]
+それからは真面目に修行に打ち込むミグだったが……。[p]
+[filter name="clear" time=500]
+#ミグ
+ファイアーボール！[p]
+;演出
+[filter name="flush" color="ff0000" time=100]
+[filter name="flush" color="ff0000" time=100]
+[filter name="flush" color="ff0000" time=100]
+[se ref="132_fx_fireball"]
+[cn]
+アリスはいつものようにミグの修行を見てやっていた。[p]
+#アリス
+かなり威力が上がってきたな。[n]
+これなら、そろそろあそこに行っても大丈夫そうだな。[p]
+[move id=0 x=40 time=800]
+#ミグ
+あ、あそこって……どこ？[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+ついて来ればわかる。[n]
+ほら、行くぞ。[p]
+[scale id=0 sx=-1 time=300]
+[move id=0 x=70 time=1000]
+#ミグ
+あっ、師匠！[p]
+[move id=1 x=100 time=1000]
+[cn]
+アリスの跡について、ミグは走り出した。[p]
+[filter name="fade" time=500]
+……………。[p]
+[hide_message]
+[clearcg id=0]
+[clearcg id=1]
+[clearbg]
+[bgm ref="003_alice2"]
+[drawbg ref="1012m"]
+[drawcg id=0 pos=1 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+[filter name="clear" time=500]
+
+;アリス領の森背景
+[show_message]
+[cn]
+アリスはミグを、[n]
+アリスの館の南にあるクラブの森の奥の[n]
+崖の近くに連れてきた。[p]
+#アリス
+ミグ、アレが見えるか。[p]
+#ミグ
+……う、うん。[p]
+[cn]
+アリスが指を指したのは崖の下に広がる森の先、[n]
+ここよりも少し高い位置にある小高い丘だった。[p]
+#アリス
+あそこにはな、この世界と外の世界の境界線がある。[p]
+境界線には石積みの目印があるから、[n]
+そこにこれを結んでこい。[p]
+[move id=0 x=30 time=500]
+[scale id=0 sx=-1 time=300]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[wait time=500]
+[scale id=0 sx=-1 time=500]
+[move id=0 x=40 time=700]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[cn]
+アリスはそう言って、ミグに黄色のリボンを渡し、[n]
+崖に縄ばしごをかけた。[p]
+#ミグ
+あの、師匠は一緒に来ないの？[p]
+[scale id=0 sx=-1 time=500]
+#アリス
+ああ、私はお前が帰ってくるのをここで待ってるよ。[p]
+[changecg id=0 state=2]
+ただし、３日以内に帰ってくることだ。[n]
+それ以上経ったらこの縄ばしごを切る。[p]
+下には厄介なモンスターがうじゃうじゃ居るからな。[n]
+そのための対策だ。[p]
+#ミグ
+そ、それじゃあ、そのときはミグはどうなるの？[p]
+[changecg id=0 state=0]
+#アリス
+さあな、そんなことは知らん。[n]
+下で餓死するか、モンスターに食われるか、[n]
+私の知ったことじゃねえ。[p]
+#ミグ
+や、ヤダ！　そんなのやだ！[p]
+こ、怖いもん！ ミグ、行きたくない！[p]
+[changecg id=0 state=2]
+#アリス
+強くなるんだろ。[n]
+強くなって私を殺すんじゃなかったのか？[p]
+#ミグ
+師匠を殺すなんてしないもん！[p]
+……し、師匠が一緒に来てくれなきゃやだもん。[p]
+ミグ、いかないもん！！[p]
+[changecg id=0 state=6]
+#アリス
+ちっ、まどろっこしいやつだ……。[n]
+いいからつべこべ言わずとっとと行け！！[p]
+[hide_message]
+
+[move id=0 x=-70 time=300]
+[scale id=0 sx=-1 time=100]
+[move id=0 x=-5 time=800]
+[wait time=100]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[move id=0 x=5 time=50]
+[se ref="151"]
+[move id=1 x=10 y=5 time=50]
+[move id=1 x=10 y=4 time=50]
+[move id=1 x=10 y=3 time=50]
+[move id=1 x=10 y=2 time=50]
+[move id=1 x=10 y=1 time=50]
+[move id=1 x=10 y=0 time=50]
+[move id=1 x=10 y=-1 time=50]
+[move id=1 x=10 y=-2 time=50]
+[move id=1 x=10 y=-3 time=50]
+[move id=1 x=10 y=-4 time=50]
+[move id=1 x=10 y=-5 time=50]
+[move id=1 x=10 y=-6 time=50]
+[move id=1 x=10 y=-7 time=50]
+
+[show_message]
+[cn]
+しびれを切らしたアリスはミグを崖下へ突き飛ばした。[p]
+#ミグ
+きゃあああーーーーーー！！！[p]
+[changecg id=0 state=2]
+[move id=0 x=60 time=200]
+#アリス
+ふんっ！！[p]
+[filter name="flush" color="ffffff" time=100]
+[filter name="flush" color="ffffff" time=100]
+[cn]
+ミグが地面に追突する間際、[n]
+アリスはミグに浮遊魔法をかけ、[n]
+ふわりと地面へ着地させた。[p]
+#ミグ
+わっ、わっ！[p]
+[cn]
+驚いているミグをよそに、[n]
+アリスは縄ばしごを回収していった。[p]
+#ミグ
+し、師匠！[p]
+[changecg id=0 state=1]
+#アリス
+クフフッ！[n]
+いいか、リボンを結んで戻るまでは[n]
+この縄ばしごをおろしてやらんからな！[p]
+#ミグ
+う、ぐす……うええ。[n]
+師匠ぅ………。[p]
+[changecg id=0 state=6]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+#アリス
+だーーーー！！[n]
+泣くな！！　ほら、さっさと行け！！[n]
+しっし！[p]
+#ミグ
+うぅー……。[p]
+[cn]
+[filter name="fade" time=500]
+仕方なくミグは、暗い森の中へ足を踏み入れるのだった。[p]
+続く……。[p]
+[hide_message]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[stopbgm]
+[filter name="clear" time=500]
+
+[sys_memset index=1012 value=1]

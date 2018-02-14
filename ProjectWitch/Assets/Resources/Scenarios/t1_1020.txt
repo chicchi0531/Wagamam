@@ -1,0 +1,103 @@
+;町イベント
+;No.1020
+;site：酒場
+;time : いつでも
+;author：chicchi
+;title : どっちが本当？
+;member :　メイジー
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="meisie"]
+[loadcg id=2 ref="master"]
+
+[filter name="fade" time=500]
+[drawbg ref="1051m"]
+[drawcg id=0 pos=2 dir="right"]
+[drawcg id=1 pos=3 dir="right"]
+[bgm ref="020_event5"]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+おーい、マスター。[n]
+会計！[p]
+[drawcg id=2 pos=5 mode="slidein"]
+#マスター
+はいよ、えっと……おぉ、[n]
+よく食べたな。[p]
+二人で65マナだ。[p]
+[changecg id=0 state=6]
+#アリス
+そんなにいったのか……。[p]
+なあメイジー、お前いくら持ってる？[p]
+わたしは25マナしかねえんだが……。[p]
+#メイジー
+40マナ弱ね……。[p]
+[changecg id=0 state=0]
+#アリス
+そうか……ん？[p]
+#メイジー
+どうしたの？　ねえさん。[p]
+#アリス
+40マナ弱ってさ、40マナより少ないのか多いのかどっちだ？[p]
+#メイジー
+それは……40マナとちょっとって意味だと思ってたけど、[n]
+違うのかしら。[p]
+#マスター
+いやいや、40マナ弱ってのは40マナよりちょっと少ないって意味だろう。[p]
+[changecg id=0 state=6]
+#アリス
+や……ややこしいな。一体どっちが正しいんだよ。[p]
+#メイジー
+でも辞書には弱がその値に少し加算した値、[n]
+強がその値に大きく加算した値って書いてあるわよ。[p]
+#マスター
+おかしいな……俺の辞書には、[n]
+弱がその数に少し満たない値、[n]
+強がその数を少し超えた値[p]
+って書いてあるぞ。[p]
+#アリス
+何で二人とも辞書が手元にあるんだよ……。[p]
+どっちもかいてあること違うし……。[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+私はどっちを信じればいいんだよ！[p]
+#メイジー
+ある値と「弱」と考えれば、この辞書のような意味になるわ。[p]
+#マスター
+しかし、ある値より「弱い」のだから、[n]
+ある値より少ない、という解釈をするなら、[n]
+俺の辞書のような意味になる。[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+あーもう！[p]
+そんなややこしい意味の言葉は禁止だ禁止！！[p]
+40マナちょっと、40マナよりちょい少ない、[n]
+これでいいだろ！！[p]
+#メイジー
+いやでも……。[p]
+#マスター
+ここははっきりさせないと……。[p]
+#メイジー・マスター
+気が収まらないから。[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+二人でやってろ！！[p]
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[filter name="clear" time=500]
+[stopbgm]
+
+[sys_memset index=1020 value=1]

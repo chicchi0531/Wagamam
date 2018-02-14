@@ -1,0 +1,237 @@
+;s0849
+;script:nikai
+;direction:yuichi
+;timing:s0848後　戦闘勝利
+
+[field_area_hilight id=94]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="eli"]
+[loadcg id=2 ref="kuro"]
+[loadcg id=3 ref="veronica"]
+[loadcg id=4 ref="raisa"]
+[loadcg id=5 ref="nia"]
+[loadcg id=6 ref="seedle"]
+[loadcg id=7 ref="Event/711"]
+
+[filter name="fade" time=500]
+[bgm ref="023_event8"]
+[drawcg id=7 pos="event"]
+[drawbg ref="1039n"]
+
+[show_message]
+#ライザ
+[voice ref="080704"]
+ぐっ……！　畜生……。[p]
+#アリス
+[voice ref="080705"]
+ヴェロニカッ！！[p]
+[cn]
+アリスはすんでのところでヴェロニカをギロチン台から抱き起した。[p]
+
+[filter name="clear" time=1500]
+#ヴェロニカ
+[voice ref="080706"]
+…………アリス。[p]
+[move id=4 x=-10 time=300]
+#アリス
+[voice ref="080707"]
+ヴェロニカ！[n]
+お前……ヴェロニカなんだな……。[p]
+[move id=5 x=-10 time=300]
+#ヴェロニカ
+[voice ref="080708"]
+何を言っているのですか……アリス。[n]
+私は……ヴェロニカですよ？[p]
+[move id=4 x=-10 time=300]
+#アリス
+[voice ref="080709"]
+よかった……よかった！！[p]
+[cn]
+アリスはヴェロニカを一層強く抱きしめた。[p]
+[changecg id=7 state=1]
+#エリ・シードル
+[voice ref="080710"]
+ヴェロニカ様！[p]
+[cn]
+周りの敵を片付けたエリとシードルが駆け寄ってきた[p]
+#ヴェロニカ
+[voice ref="080711"]
+あなたたち……ああ、苦労をかけましたね。[p]
+#エリ
+[voice ref="080712"]
+いえ！　いえ！！[n]
+ご無事で何よりです、ヴェロニカ様！！[p]
+[hide_message]
+[filter name="fade" time=500]
+
+[clearcg id=7]
+[bgm ref="017_event2"]
+[drawcg id=5 pos=3]
+[drawcg id=4 posx=-10]
+[filter name="clear" time=500]
+[move id=4 x=-5 time=400]
+[move id=5 x=-5 time=400]
+[move id=4 x=-5 time=400]
+[move id=5 x=-5 time=400]
+[move id=4 x=-5 time=400]
+[move id=5 x=-5 time=400]
+#ライザ
+[voice ref="080713"]
+ぐッ……。[p]
+[move id=4 y=-5 time=100]
+#クロ
+[voice ref="080714"]
+またれい、ライザ殿。[p]
+[move id=5 y=-2 time=20]
+[move id=5 y=2 time=20]
+[move id=4 y=-2 time=20]
+[move id=4 y=2 time=20]
+[scale id=4 sx=-1 time=400]
+[scale id=5 sx=-1 time=400]
+[drawcg id=2 pos=4]
+
+#ライザ
+[voice ref="080715"]
+てっ、てめえ……。[n]
+私を殺すのか……。[p]
+#クロ
+[voice ref="080716"]
+……お覚悟なされませ。[p]
+[cn]
+クロに躊躇はなかった。[n]
+彼愛用の銃がライザに向けられ、[n]
+そして引き金が引かれた。[p]
+[move id=5 x=5 y=3 time=100]
+#ニア
+[voice ref="080717"]
+ライザっ！！[p]
+[cn]
+その瞬間、ニアが飛び出して来てライザの上に覆いかぶさった。[p]
+[se ref="158"]
+[filter name="flush" time=100 color="FFFFFF"]
+[wait time=200]
+
+大きな破裂音と共にニアの胴体から鮮血が飛び散った[p]
+[se ref="157"]
+#ニア
+[voice ref="080718"]
+あっ……が……。[p]
+[move id=5 y=-100 time=500]
+[clearcg id=5]
+[move id=4 x=5 y=-5 time=100]
+#ライザ
+[voice ref="080719"]
+ニア！！！！[p]
+[move id=4 x=-5 y=5 time=100]
+[scale id=4 sx=-1 time=100]
+[move id=4 x=-50 time=200]
+#クロ
+[voice ref="080720"]
+ぬっ！！[p]
+[se ref="158"]
+[wait time=200]
+[se ref="158"]
+[cn]
+クロは一瞬驚いたが、すぐに銃口を構え直し２発３発と立て続けに発砲した。[p]
+しかし、その一瞬のうちにライザはニアを抱えて飛びのき、背後のがけから飛び降りた。[p]
+#クロ
+[voice ref="080721"]
+逃がさん！[p]
+[moveto id=2 x=10 time=300]
+[cn]
+クロは追撃をかけた。[n]
+しかし、がけの下を覗いた時にはすでに彼女らの姿はなかった。[p]
+#クロ
+[voice ref="080722"]
+しまった……、取り逃がしたか。[p]
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=2]
+[drawbg ref="1002m"]
+[bgm ref="023_event8"]
+[drawcg id=3 pos=3]
+[drawcg id=0 pos=2 dir="right"]
+[filter name="clear" time=500]
+[cn]
+[show_message]
+アリスの館。[p]
+アリスの部屋でアリスとヴェロニカは、ソファに並んで座っている。[p]
+#ヴェロニカ
+[voice ref="080723"]
+アリス……、助けてくれてありがとう。[p]
+#アリス
+[voice ref="080724"]
+どうして言わなかったんだよ……[n]
+お前が、あの時のヴェロニカだったなんて。[p]
+#ヴェロニカ
+[voice ref="080725"]
+すみません……てっきり忘れているものだと。[n]
+あれ以来あっていませんでしたから。[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+[voice ref="080726"]
+忘れるもんか！[p]
+[voice ref="080727"]
+私は……私は、ヴェロニカみたいな魔女になりたくて[n]
+……ここまで来たんだ。[p]
+#ヴェロニカ
+[voice ref="080728"]
+アリス…………。[p]
+#アリス
+[voice ref="080729"]
+ヴェロニカ……、お前、もういなくなったりするなよな。[p]
+#ヴェロニカ
+[voice ref="080730"]
+ええ……[n]
+これからは、あなたのそばにいるわ。[p]
+[voice ref="080731"]
+あの時……サーカスであなたの言葉を信じなかったこと、[n]
+ずっと後悔していたわ。[p]
+[voice ref="080732"]
+本当にごめんなさい。[n]
+…………大きくなりましたね、アリス。[p]
+[move id=3 x=-10 time=500]
+[cn]
+ヴェロニカはそっと、アリスを抱きしめた。[p]
+#アリス
+[voice ref="080734"]
+ヴェロニカ……[n]
+私、この世界を統一して、大魔女になるんだ。[p]
+#ヴェロニカ
+[voice ref="080735"]
+ええ……。[p]
+#アリス
+[voice ref="080736"]
+それで、ヴェロニカにたくさん魔法教えてもらって…[n]
+それで、えっと……。[p]
+#ヴェロニカ
+[voice ref="080737"]
+ええ……。[p]
+#アリス
+[voice ref="080738"]
+ヴェロニカ……。[n]
+ふふ……。[p]
+[cn]
+アリスは嬉しそうにほほを緩め、[n]
+きゅっとヴェロニカのスカートの裾を握りしめた。[p]
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=3]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+;ヴェロニカ雇用
+[unit_employ unit=27]
+
+;アリスを死亡可能にする
+[unit_data_change id=0 member="Deathable" value="true"]
+
+;CGフラグ
+[sys_memset type="system" index=111 value=1]
+
+[sys_memset index=849 value="1"]

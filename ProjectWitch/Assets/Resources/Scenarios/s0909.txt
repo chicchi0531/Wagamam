@@ -1,0 +1,120 @@
+;s0909
+;裏ボス戦イベント3
+;s0908を見た後
+
+[field_area_hilight id=81]
+[wait time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="holybell"]
+[loadcg id=2 ref="kuro"]
+
+[filter name="fade" time=500]
+[drawbg ref="1046m"]
+[bgm ref="200_env0"]
+[drawcg id=0 pos=2 dir="right" state=0]
+[drawcg id=2 pos=1 dir="right"]
+[filter name="color" color="ffffff" trans=80 time=500]
+
+[show_message]
+[cn]
+バルバロッサ山。[p]
+#クロ
+アリス様、またホーリーベル様のところへ行くつもりで？[p]
+#アリス
+いやさ、よく考えたら、[n]
+ホムンクルスを作った本人なんだから、[p]
+ホムンクルスを楽に倒す方法くらい[n]
+知ってるんじゃないかなって。[p]
+[filter name="color" color="F7FE2E" trans=50 time=500]
+[cn]
+アリスの懐から光が漏れだした。[p]
+[changecg id=0 state=1]
+#アリス
+おっ！　きたきた！[p]
+[hide_message]
+
+[stopbgm]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=2000]
+[drawbg ref="1011m"]
+[drawcg id=1 pos=4]
+[changecg id=0 state=2]
+[bgm ref="027_alice3"]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+ん……。[p]
+[cn]
+アリスが目を開けると、[n]
+そこにはホーリーベルがいた。[p]
+[changecg id=0 state=0]
+[move id=1 x=5 y=10 time=50]
+[move id=1 x=5 y=-10 time=50]
+#ホーリーベル
+わあっ！！[n]
+あ、アリス！！[p]
+なんでまた来られたの？[p]
+#アリス
+え、そりゃ……ビー玉持ってるし、来られるだろ。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#ホーリーベル
+もー！　そんな簡単に来られるわけないでしょ！[p]
+時の最果てだよ！[n]
+本当なら、生きている魔女が来られる[n]
+ところじゃないんだよ！[p]
+#アリス
+そういわれてもなぁ……来られちゃってるし。[p]
+[move id=1 x=-10 time=500]
+#ホーリーベル
+んもう……、それで？[n]
+私に用があってきたんでしょ？[p]
+#アリス
+あっ、そうそう。[p]
+[cn]
+アリスはホーリーベルに事情を説明した。[p]
+#ホーリーベル
+ええ！　ホムンクルスを簡単に倒すって……。[n]
+まあ、方法がなくはないけど。[p]
+#アリス
+本当か！[p]
+#ホーリーベル
+……うん、また来られたってことは、[n]
+そういうことなのかもしれないね。[p]
+#アリス
+な、なんだよ。[p]
+#ホーリーベル
+アリス、私と勝負だ！！[p]
+[changecg id=0 state=6]
+#アリス
+えっ、な……なんだよ突然。[p]
+#ホーリーベル
+ホムンクルスに有効な魔法を私は知ってる。[n]
+だけど、並大抵の魔女に使える魔法じゃない……。[p]
+だから、アリスがもし私に勝つことができたら、[n]
+その力を認めて、教えてあげる。[p]
+[changecg id=0 state=1]
+#アリス
+ふん！　そういうことなら受けて立つぜ！[p]
+クフフッ！　ババア、私の力を見くびるなよ！！[p]
+[hide_message]
+
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[stopbgm]
+[filter name="clear" time=500]
+
+;戦闘設定
+[unit_heal unit=47]
+[battle_bgm ref="030_battle5"]
+[battle_area id=78]
+[battle_unit_in e0=47]
+
+[sys_memset index=909 value=1]

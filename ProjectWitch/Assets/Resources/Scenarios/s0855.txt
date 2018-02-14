@@ -1,0 +1,96 @@
+﻿;script 855
+;directer:yuichi
+;script:nikai
+;timing:s0831後
+[field_area_hilight id=1]
+[filter name="fade" time=500]
+
+[loadcg id=0 ref="chishire"]
+[loadcg id=1 ref="eli"]
+[loadcg id=2 ref="seedle"]
+[loadcg id=3 ref="kuro"]
+
+[bgm ref="019_event4"]
+[drawbg ref="1002e"]
+
+[drawcg id=0 pos=2]
+[drawcg id=1 pos=4]
+[drawcg id=2 posx=40]
+[drawcg id=3 pos=3]
+
+[wait time=500]
+[filter name="clear" time=500]
+
+
+[show_message]
+;場面56後
+#チシャ
+[voice ref="080878"]
+アリス様！
+[move id=0 x=-5 y=-5 time=50]
+[move id=0 x=5 y=5 time=50]
+　アリス様ッ！
+[move id=0 x=-5 time=50]
+[move id=0 x=5 time=50][n]
+[move id=0 x=-5 time=50]
+[move id=0 x=5 time=50]
+[move id=0 x=-5 time=50]
+[move id=0 x=5 time=50]
+[wait time=1000]
+[scale id=0 sx=-1 time=300]
+……だめなんです、いくら話しかけても返事がなくて[p]
+#エリ
+[voice ref="080879"]
+ずっとあこがれていた魔女が[n]
+目の前で殺されたんだもの。[n]
+当然ショックよね。[p]
+#シードル
+[voice ref="080880"]
+エリ様は……悲しくないのですか。[p]
+#エリ
+[voice ref="080881"]
+バカね……、悲しいに決まってるじゃない。[p]
+[scale id=1 sx=-1 time=200]
+[voice ref="080882"]
+でも、今はそれ以上にライザをぶち殺してやりたい気分だわ。[p]
+[voice ref="080883"]
+あいつ……絶対に許さない。[p]
+[scale id=3 sx=-1 time=300]
+#クロ
+[voice ref="080884"]
+エリ様……、ひとまずはエリ様が中心で指揮をとり、
+アリス様のお帰りを待つしかありません。[p]
+#エリ
+[voice ref="080885"]
+ええ、わかったわ……。[n]
+[scale id=1 sx=-1 time=200]
+アリス！　早く戻ってきなさいよ！！[p]
+[voice ref="080886"]
+本当にヴェロニカ様のことを思うならね、[n]
+その手でライザを止めなさい！[p]
+[scale id=1 sx=-1 time=200]
+[voice ref="080887"]
+いいわね、待ってるわよ！！[p]
+[se ref="046"]
+[move id=1 x=50 time=500]
+[scale id=2 sx=-1 time=300]
+[move id=2 x=50 time=500]
+[move id=3 x=70 time=700]
+#アリス
+[voice ref="080888"]
+…………。[p]
+[cn]
+戦線からアリスが離脱し、エリが指揮をとることになった。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+[sys_memset index=855 value="1"]

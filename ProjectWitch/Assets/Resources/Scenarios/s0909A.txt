@@ -1,0 +1,134 @@
+;s0909A
+;裏ボス戦イベント3
+;s0909 戦闘勝利
+
+[field_area_hilight id=81]
+[wait time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="holybell"]
+[loadcg id=2 ref="kuro"]
+
+[filter name="fade" time=500]
+[drawbg ref="1011m"]
+[bgm ref="027_alice3"]
+[drawcg id=0 pos=2 dir="right" state=1]
+[drawcg id=2 pos=1 dir="right"]
+[drawcg id=1 pos=4]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+か、勝った！[p]
+ど、どうだ……クフフッ！[n]
+見たか、私の力を！[p]
+#ホーリーベル
+うぅ……ほんとに負けるなんて。[p]
+#アリス
+約束だ！　とっておきの魔法を教えてもらおうか。[p]
+#ホーリーベル
+わかったよ……じゃあハイ、手出して。[p]
+[changecg id=0 state=0]
+[move id=0 x=20 time=500]
+#アリス
+お、おう……。[p]
+#ホーリーベル
+いくよ……。[p]
+[cn]
+[filter name="color" color="ffffff" time=500]
+ホーリーベルの手から光があふれだす。[p]
+その光は徐々にアリスの手から[n]
+体の中へ入っていき、消えた。[p]
+[filter name="clear" time=500]
+#ホーリーベル
+ハイ、終わり！[p]
+#アリス
+これだけか？[n]
+何か変わったようには……。[p]
+#ホーリーベル
+アリス、あの木に向かって破壊光線を撃ってみて。[p]
+#アリス
+お、おう……。[p]
+[changecg id=0 state=2]
+破壊……光線ッッ！！！[p]
+[se ref="100_fx_aliceA"]
+[filter name="color" color="ffffff" time=3000]
+[filter name="clear" time=500]
+[move id=0 x=-10 time=100]
+#アリス
+どわっ！！[p]
+なんだぁ……！？[p]
+[cn]
+アリスの放った破壊光線は、[n]
+今までのものをはるかに上回る大きさだった。[p]
+目の前の木どころか、[n]
+あたり一帯の木をすべて燃やし尽くしていた。[p]
+#ホーリーベル
+破壊光線の威力をあげたの。[n]
+その分魔力も使うから、乱発はダメだけどね。[p]
+この威力なら、ホムンクルスにも大打撃よ！[p]
+[changecg id=0 state=6]
+#アリス
+どんな魔法かと思えば……、[n]
+とんでもなく力づくなんだな。[p]
+#ホーリーベル
+いいじゃん！[n]
+アリスそういうの好きでしょ？[p]
+[changecg id=0 state=0]
+#アリス
+ま、まあ確かに……私にはあってるかも。[p]
+#ホーリーベル
+はい！　解決！[n]
+さあ、でてったでてった！[p]
+もうここに来ちゃだめだよ？[p]
+散歩ついでに来るようなところじゃないんだから。[p]
+#アリス
+わかったわかった……。[p]
+じゃあな、ババア。[p]
+[scale id=0 sx=-1 time=300]
+[move id=0 x=-20 time=500]
+#ホーリーベル
+あっ、アリス！[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+なんだよ……。[p]
+#ホーリーベル
+アンタならできる！[n]
+だから頑張れ！！[p]
+[changecg id=0 state=1]
+#アリス
+………おう。[p]
+[cn]
+
+[filter name="fade" time=500]
+こうして、アリスは元の世界へ帰りついた。[p]
+そのあとも何度か、[n]
+アリスはバルバロッサ山へ足を運んだが、[n]
+二度とホーリーベルに会うことはかなわなかった。[p]
+
+[n]
+【アリスの破壊光線が「新破壊光線」に進化した！】[p]
+【図書館に歴史書が入荷した！】[p]
+【マナの泉のカードを手に入れた！】[p]
+
+[hide_message]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[stopbgm]
+[filter name="clear" time=500]
+
+[get_item category="card" id=25]
+
+;図書館解放
+[sys_memset index=5001 value=1]
+[sys_memset index=5002 value=1]
+[sys_memset index=5003 value=1]
+[sys_memset index=5004 value=1]
+[sys_memset index=5005 value=1]
+[sys_memset index=5006 value=1]
+[sys_memset index=5007 value=1]
+
+;新破壊光線にスキルを切り替え
+[unit_data_change id=0 member="LAtkSkill" value="64"]

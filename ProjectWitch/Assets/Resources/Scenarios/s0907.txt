@@ -1,0 +1,42 @@
+;s0907
+;裏ボス戦イベント1
+;まだ臨時徴収イベントを全部見ていない場合
+
+;戦闘禁止
+[battle_disable]
+
+[field_area_hilight id=81]
+[wait time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+
+[bgm ref="200_env0"]
+[filter name="fade" time=500]
+[drawbg ref="1046m"]
+[drawcg id=0 pos=2 dir="right" state=6]
+[drawcg id=1 pos=1 dir="right"]
+[filter name="color" color="ffffff" trans=80 time=500]
+
+[show_message]
+[cn]
+バルバロッサ山。[p]
+#アリス
+うわ！　こりゃひどい霧だな。[n]
+何も見えやしねえ。[p]
+#クロ
+アリス様、これだけの霧ですと、[n]
+山中の行軍は難しいかと思われます。[p]
+#アリス
+ちっ……、まあこの先に何があるわけでもないしな。[p]
+とりあえず引き返すか。[p]
+#クロ
+はっ！[p]
+[hide_message]
+
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+[stopbgm]

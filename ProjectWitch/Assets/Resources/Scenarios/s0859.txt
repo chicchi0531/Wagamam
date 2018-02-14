@@ -1,0 +1,9 @@
+;s0859
+;directer:yuichi
+;script:nikai
+;timing;s0856後 勝利
+[field_area_hilight id=104]
+[filter name="fade" time=500]
+
+
+[call_ending index=0]

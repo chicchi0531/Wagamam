@@ -1,0 +1,85 @@
+﻿;script 822
+;directer:yuichi
+;script:nikai
+;timing:s0822後
+
+[field_area_hilight id=80]
+[wait time=500]
+
+[loadcg id=0 ref="veronica"]
+[loadcg id=1 ref="raisa"]
+[loadcg id=2 ref="nia"]
+
+[filter name="fade" time=500]
+[bgm ref="004_battle1"]
+[drawbg ref="1030m"]
+[drawcg id=0 pos=3]
+[filter name="clear" time=500]
+
+[show_message]
+この日、レーニングラッド砦は騒がしかった。[p]
+#ヴェロニカ
+[voice ref="080162"]
+急ぎ、配置につきなさい。[n]
+合図とともに総攻撃をかけます。[p]
+[cn]
+ヴェロニカはライザ軍の消耗がピークに達したと判断していた。[p]
+そして、今度の攻撃で決着をつける気だった。[p]
+ヴェロニカ側は、まだ半分以上の兵士が万全の状態にあった。[n]
+ヴェロニカには絶対的な勝算があったのだ。[p]
+#ヴェロニカ
+[voice ref="080163"]
+……さあ、行くわよ。[p]
+[voice ref="080164"]
+開門ッ！！[n]
+総員突撃！！[p]
+[cn]
+そして、砦の門が開き、ヴェロニカ軍が突撃を開始した。[p]
+[filter name="fade" time=500]
+[clearcg id=0]
+[drawbg ref="1037m"]
+[drawcg id=2 pos=3 dir="right"]
+[drawcg id=1 pos=3 dir="right"]
+[wait time=500]
+
+[filter name="clear" time=500]
+ライザ陣営。[p]
+#ライザ部下
+[voice ref="080165"]
+ライザ様！[n]
+ヴェロニカの軍勢が一斉に砦を出て総攻撃を始めた模様！[p]
+#ライザ
+[voice ref="080165a"]
+キヒヒッ！　ご苦労！[n]
+ヴェロニカめ……一足遅かったな。[p]
+[voice ref="080166"]
+俺たちも出るぞ！　例のやつらを先方に配置しろ。[n]
+全員突撃だ！！[p]
+[filter name="fade" time="500"]
+[stopbgm]
+[cn]
+ヴェロニカがライザ軍の異変に気付いたのはすぐのことだった。[p]
+
+[hide_message]
+[clearbg]
+[clearcg id=1]
+[clearcg id=2]
+[wait time=500]
+[filter name="clear" time="500"]
+
+;自動戦闘
+;時間切れ
+;レーニングラッド砦　キープ
+[battle_unit_in p0=24 e0=194 e1=30]
+[battle_time time=3]
+[battle_area id=80]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2000] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=1500] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=1200] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2000] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2000] ;シードル
+
+[sys_memset index=822 value="1"]

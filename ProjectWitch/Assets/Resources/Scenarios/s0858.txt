@@ -1,0 +1,39 @@
+;s0858
+;directer:yuichi
+;script:nikai
+;timing:s0856後
+[field_area_hilight id=104]
+[filter name="fade" time=500]
+
+[loadcg id=0 ref="alice"]
+
+[bgm ref="006_battle3"]
+[drawbg ref="1001m"]
+
+[drawcg id=0 pos=3 state=2]
+
+[wait time=500]
+[filter name="clear" time=500]
+
+
+[show_message]
+;場面59-2
+#名無しの大魔女
+[voice ref="080945o"]
+ふん、性懲りもなく現れたな。[n]
+何度来たところで同じことだ……。[p]
+#アリス
+[voice ref="080945p"]
+うるさい！[p]
+[voice ref="080945q"]
+絶対……、絶対ぶち殺す。[n]
+何年かかろうと……絶対！[p]
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+[sys_memset index=858 value="1"]

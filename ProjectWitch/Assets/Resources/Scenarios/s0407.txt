@@ -1,0 +1,407 @@
+;s0407
+;author: yuichi
+;timing: ベガ戦後
+
+;マップスクロール
+[field_area_hilight id=42]
+[wait time=200]
+
+;ロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+[loadcg id=2 ref="vega"]
+[loadcg id=3 ref="messer"]
+[loadcg id=4 ref="chishire"]
+
+[filter name="fade" time=500]
+[drawbg ref="1006e"]
+[filter name="clear" time=500]
+
+[if_alive unit=9]
+;通常のベガルート
+[bgm ref="021_event6"]
+[drawcg id=0 pos=2 state=1 dir="right"]
+[drawcg id=1 pos=1 dir="right"]
+[drawcg id=2 pos=4 posy=-20]
+[drawcg id=3 pos=5 posy=-20 layer="front"]
+#アリス
+[voice ref="040286"]
+クフフフフッ！！　アーッハッハッハッハ！！[n]
+山の魔女ほかーーーく！！[p]
+#ベガ
+[voice ref="040287"]
+くっ……。[p]
+#アリス
+[voice ref="040288"]
+ドラゴンって種族は強いと聞いていたが、[n]
+所詮私の敵ではなかったということだな。[p]
+#ベガ
+[voice ref="040289"]
+ドラゴンを馬鹿にするな！！[n]
+私が……私に力があれば、お前など……。[p]
+#メッサーシュミット
+[voice ref="040290"]
+ベガぁっ……。[p]
+[scale id=2 sx=-1 time=100]
+#ベガ
+[voice ref="040291"]
+メッサーシュミット！！　[n]
+動くな、ダメだ、死んでしまうぞ！！[p]
+[changecg id=0 state=0]
+#アリス
+[voice ref="040292"]
+何だ、子供のドラゴンか？[p]
+[scale id=2 sx=-1 time=100]
+#ベガ
+[voice ref="040293"]
+メッサーシュミットに触れるな！！[p]
+あいつは関係ない。私を連れていけばいいだろう！！[p]
+#アリス
+[voice ref="040294"]
+そうか……。[p]
+[changecg id=0 state=1]
+[voice ref="040295"]
+おいクロ、そいつの手当てをしてやれ、[n]
+手当てをしたら、[n]
+温かい食事と寝床も用意してやるんだ。[p]
+#クロ
+[voice ref="040297"]
+はっ、承知しました。[p]
+[move id=3 x=5 time=200]
+[move id=1 x=60 time=300]
+[wait time=400]
+[clearcg id=3 mode="fadeout"]
+[scale id=1 sx=-1 time=100]
+[move id=1 x=-150 time=1500]
+[clearcg id=3]
+#ベガ
+[voice ref="040298"]
+何のつもりだ！[p]
+#アリス
+[voice ref="040299"]
+いや、脅迫の道具につかえるかなーと。[p]
+#ベガ
+[voice ref="040300"]
+なっ！？　貴様、外道！！[p]
+#アリス
+[voice ref="040301"]
+…………。[n]
+お前、私の仲間になれ。[p]
+#ベガ
+[voice ref="040302"]
+なっ！　そんなことできるわけないだろう！[p]
+[voice ref="040303"]
+私がお前に従ったら、[n]
+ドラゴンたちの立場はどうなる！[p]
+#アリス
+[voice ref="040304"]
+ああ、そっか。[n]
+邪魔なドラゴンたちは全部殺しておかんとな。[p]
+#ベガ
+[voice ref="040305"]
+やめろ！！　そんなことは私が許さない！[p]
+#アリス
+[voice ref="040306"]
+許さないと、どうなんだ？[n]
+負けた分際でよく言うぜ……。[p]
+#ベガ
+[voice ref="040307"]
+それは…………。[p]
+#アリス
+[voice ref="040308"]
+クフフフフッ！　自分の立場が分かったようだな。[n]
+お前はこれから、私の部下になるのだ。[p]
+[voice ref="040309"]
+ドラゴンたちは生かしておいてやる。[n]
+さっきのチビもな。[p]
+#ベガ
+[voice ref="040310"]
+……私は、お父様にどう言い訳したらよいのだ。[p]
+[changecg id=0 state=0]
+#アリス
+[voice ref="040311"]
+あん？　なんだ、突然。[p]
+[drawcg id=1 pos=1 dir="right"]
+#クロ
+[voice ref="040312"]
+アリス様。どうやらこのベガという魔女は、[n]
+先の領主のドラゴンと旅の魔女の間にできた子供のようです。[p]
+[changecg id=0 state=2]
+#アリス
+[voice ref="040313"]
+魔女が子供を産むだって？[n]
+なんて馬鹿なことを……。[p]
+[voice ref="040314"]
+魔女はヤッちまうと魔法を使えなくなるんだぞ。[p]
+#クロ
+[voice ref="040315"]
+ええ、純粋なドラゴンの血に魔女の血が混ざったことで、[n]
+ドラゴンたちからは強い反発があったのでしょう。[p]
+[voice ref="040316"]
+そのあとの、その魔女に関する記録は一切見つかりませんでした。[p]
+[voice ref="040317"]
+魔法が使えなくなったことで抵抗もできず、[n]
+殺されたものと推察いたします。[p]
+#ベガ
+[voice ref="040318"]
+…………本当は、[n]
+私も母とともに殺されているはずだったのだ。[p]
+[voice ref="040319"]
+それを、お父様がせめて私だけでもと、[n]
+助けてくださった。[p]
+[voice ref="040320"]
+そのうえ領主という大役まで。[p]
+[voice ref="040321"]
+私はお父様の期待に沿えるよう[n]
+せめて領主という大役は立派に勤め上げようと……。[p]
+[voice ref="040322"]
+しかしこうなってしまってはもう……[n]
+お父様に合わせる顔がない。[p]
+#クロ
+[voice ref="040323"]
+差し出がましいようでございますが、[n]
+察するに、お父様はあなた様に[n]
+そのようなことを期待なされていたわけではありますまい。[p]
+[changecg id=0 state=0]
+#アリス
+[voice ref="040324"]
+まあそうだな。[p]
+[voice ref="040325"]
+領主にでもしとかないと、[n]
+自分が死んだときについでに処刑されかねないと思ったんだろう。[p]
+[voice ref="040326"]
+仮にも領主を処刑するわけにはいかんからな。[p]
+#ベガ
+[voice ref="040327"]
+そんな……、私は、私はッッ！！[p]
+#アリス
+[voice ref="040328"]
+どうする。私に従わないのなら、[n]
+私はこのままお前を殺すぞ。[p]
+#ベガ
+[voice ref="040329"]
+…………ああ、もう、わかった。[n]
+お前の言うとおりにしよう。[p]
+[voice ref="040330"]
+それが、お父様の望みであるのなら……。[p]
+[cn]
+この地に国ができてから数千年。[p]
+長きにわたり栄華を極めたドラゴンの王国は、[n]
+その歴史に幕を閉じた。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[filter name="clear" time=500]
+[bgm ref="002_alice1"]
+
+[field_area_hilight id=1]
+[wait time=200]
+
+[filter name="fade" time=500]
+[drawbg ref="1002m"]
+[bgm ref="003_alice2"]
+[filter name="clear" time=500]
+
+;場面転換
+[drawcg id=0 pos=2 dir="right" state=1]
+[drawcg id=1 pos=1 dir="right"]
+[drawcg id=4 posx=-10 dir="right" layer="front"]
+[drawcg id=2 pos=5]
+[show_message]
+アリスの館。[p]
+#ベガ
+[voice ref="040331"]
+ここに血判を押すのだな。[p]
+#アリス
+[voice ref="040332"]
+よしよし、お前はこういう魔女の常識を知らなそうだからな。[p]
+[cn]
+アリスはベガが血判を押したのを確認すると、[n]
+書類を受け取った。[p]
+#チシャ
+[voice ref="040334"]
+アリス様も知らなかったではないですか。[n]
+契約の書の事。[p]
+[changecg id=0 state=2]
+#アリス
+[voice ref="040335"]
+あん？　すりつぶしてネコ缶にするぞ。[p]
+[move id=4 y=5 time=50]
+[move id=4 y=-5 time=50]
+[scale id=4 sx=-1 time=100]
+#チシャ
+[voice ref="040336"]
+ねっ、ネコ缶って意味違いますよぅ……。[p]
+[changecg id=0 state=0]
+#アリス
+[voice ref="040337"]
+ともかくだ。
+[scale id=4 sx=-1 time=300]
+[p]
+[voice ref="040338"]
+お前がもし私にたてついたら、[n]
+ドラゴンどもをその手で皆殺しにする……と。[p]
+[voice ref="040339"]
+これでいいな？[p]
+#ベガ
+[voice ref="040340"]
+拒否権なんてないのだ。わざわざ聞かないでくれ。[p]
+[changecg id=0 state=1]
+#アリス
+[voice ref="040341"]
+クフフ……まあそうだな。[n]
+それじゃあこっちも人質を解放しよう。[p]
+[voice ref="040342"]
+クロ、あのチビを連れてこい。[p]
+#クロ
+[voice ref="040343"]
+はっ。[p]
+[scale id=1 sx=-1 time=300]
+[move id=1 x=-50 time=800]
+[cn]
+クロが部屋を出ていき、しばらくすると、[n]
+翼をしきりに羽ばたかせる音が聞こえてきた。[p]
+その音に、今まで固く結んでいたベガの口が、[n]
+初めて緩んだ。[p]
+[drawcg id=3 posx=-100 dir="right" layer="front"]
+[move id=3 x=120 time=500]
+#メッサーシュミット
+[voice ref="040344"]
+ベガ！！[p]
+#ベガ
+[voice ref="040345"]
+メッサーシュミット！！[p]
+#メッサーシュミット
+[voice ref="040346"]
+ああ！　よかった！！[p]
+[voice ref="040347"]
+もしかして死んじゃったんじゃないかって、[n]
+僕心配で……！[p]
+#ベガ
+[voice ref="040348"]
+私も同じだ……、ああ、[n]
+すまなかったメッサーシュミット。[p]
+#メッサーシュミット
+[voice ref="040349"]
+ねえ、どこもケガしてない？[n]
+あの魔女にひどいことされなかった？[p]
+#ベガ
+[voice ref="040350"]
+大事ない。[p]
+[voice ref="040351"]
+メッサーシュミット……[n]
+私は領主じゃなくなってわかったのだ。[n]
+お父様の望みが、私のすべきことが。[p]
+[voice ref="040352"]
+今まで本当に苦労を掛けた。[n]
+すまなかった、メッサーシュミット。[p]
+#メッサーシュミット
+[voice ref="040353"]
+ううん！　ベガが元気になってくれるなら、[n]
+僕はなんでもうれしいんだよ！[p]
+[voice ref="040354"]
+さっ、行こう！[n]
+僕、街を見るの初めてなんだ！[p]
+[voice ref="040355"]
+とってもにぎやかなところで、[n]
+人間もたくさんいるんだって！[p]
+#ベガ
+[voice ref="040356"]
+ああ、そうだな。[p]
+共に行こう、メッサーシュミット。[p]
+[changecg id=0 state=0]
+#アリス
+[voice ref="040357"]
+こういうクサい友情はあんま好きじゃねえんだけどなぁ……。[p]
+#チシャ
+[voice ref="040358"]
+そうですか？[n]
+僕は結構好きなんですけど。[p]
+#アリス
+[voice ref="040359"]
+……まあ、たまには悪くないかもな。[p]
+[cn]
+その日は雲一つない良く晴れた日だった。[p]
+メッサーシュミットに連れられて、[n]
+ベガは生まれて初めての街に内心胸を躍らせながら歩いてゆく。[p]
+その足取りは軽く、表情は晴れ晴れとしていた。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[clearcg id=4]
+[filter name="clear" time=500]
+
+[else]
+
+;タイミング：ベガ戦後
+;条件：ベガ死亡
+[bgm ref="019_event4"]
+[drawcg id=2 pos=2 posy=-20 dir="right"]
+[drawcg id=3 pos=4 posy=-20 layer="front"]
+#メッサーシュミット
+[voice ref="040360"]
+ベガ……。[p]
+#ベガ
+[voice ref="040361"]
+メッサーシュミット……、よかった……、[n]
+生きて……いるのだな。[p]
+#メッサーシュミット
+[voice ref="040362"]
+ベガ……動いちゃダメ……だよ。[n]
+しんで……しまうよ。[p]
+#ベガ
+[voice ref="040363"]
+メッサーシュミット……、すまなかった。[p]
+[voice ref="040364"]
+私では……やはり無理だった……。[n]
+領主など……私にはやはり……。[p]
+#メッサーシュミット
+[voice ref="040365"]
+ち……がう、ベガ……。[p]
+[voice ref="040366"]
+ベガはとっても、立派な……領主で、僕は……。[p]
+………………。[p]
+[voice ref="040367"]
+#ベガ
+メッサー……シュミット……？[p]
+[voice ref="040368"]
+どうした……、返事を、しないか……。[n]
+メッサー……シュミッ……ト…………。[p]
+………………。[p]
+[cn]
+
+[filter name="fade" time=500]
+この地に国ができてから数千年。[p]
+栄華を極めたドラゴンの王国はこの日、その長い歴史に幕を閉じた。[p]
+[hide_message]
+[clearcg id=2]
+[clearcg id=3]
+[clearbg]
+[filter name="clear" time=500]
+
+[endif]
+
+;終了処理
+[stopbgm]
+[sys_memset index=210 value="1"]
+
+;ベガ領占領
+[sys_memset index=10003 value="1"]
+
+;図書館更新「魔女　処女性」
+[sys_memset index=5009 value=1]
+
+;ショップフラグの加算
+[sys_memget index=4010 local=0]
+[calc opr="add" index0=0 value1=1 to=0]
+[sys_memset index=4010 local=0]

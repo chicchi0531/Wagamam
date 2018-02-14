@@ -1,0 +1,109 @@
+;s0224
+;author: yuichi
+;timing: オリヴィア領に攻め込む
+
+;ロード
+[loadcg id=0 ref="triaina"]
+[loadcg id=1 ref="orivia"]
+[loadcg id=2 ref="helen"]
+
+;フィールドスクロール
+[field_area_hilight id=19]
+[wait time=200]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1050m"]
+[filter name="clear" time=500]
+[bgm ref="009_triaina"]
+
+[show_message]
+魔女の湖。[n]
+氷の宮殿内。[p]
+[drawcg id=0 pos=5]
+[drawcg id=1 pos=4]
+[drawcg id=2 pos=3]
+#部下
+[voice ref="020789"]
+申し上げます！！[p]
+#トリアイナ
+[voice ref="020790"]
+なんですか、騒々しい。[p]
+[cn]
+トリアイナたちは、[n]
+いつものように三人でお茶会をしていた。[p]
+そこへ、水を差すように部下があわただしく入ってきたのだ。[p]
+#部下
+[voice ref="020791"]
+華の魔女アリス、カプリ砦付近に現れ、[n]
+こちらに向かって攻撃を仕掛けた模様！[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[changecg id=1 state=1]
+[changecg id=2 state=1]
+[move id=1 y=2 time=20]
+[move id=2 y=2 time=20]
+[move id=1 y=-2 time=20]
+[move id=2 y=-2 time=20]
+#トリアイナ
+[voice ref="020792"]
+なんですって！[p]
+#オリヴィア
+[voice ref="020793"]
+わっ、私の領地に！？[p]
+#部下
+[voice ref="020794"]
+いかがいたしますか。[p]
+#トリアイナ
+[voice ref="020795"]
+……ピノの町、アイスの町に徴兵をかけてちょうだい[n]
+オリヴィア軍に援軍を向かわせるわ。[p]
+[voice ref="020796"]
+それと、シャーベット砦の守りを強化するように。[p]
+#部下
+[voice ref="020797"]
+はっ、承知しました。[n]
+失礼します！[p]
+;部下退出
+[scale id=1 sx=-1 time=100]
+[scale id=2 sx=-1 time=100]
+#トリアイナ
+[voice ref="020798"]
+してやられたわ……。[n]
+まさか突然攻めてくるなんて。[p]
+[voice ref="020799"]
+オリヴィア、自分の領地に戻って軍備を整えなさい。[n]
+私も後で向かってあげるわ。[p]
+#オリヴィア
+[voice ref="020800"]
+う、うん……わかった。[p]
+#トリアイナ
+[voice ref="020801"]
+ヘレン。オリヴィアを送り届けたらすぐに戻ってきてちょうだい。[p]
+[voice ref="020802"]
+忙しくなるわよ。[p]
+#ヘレン
+[voice ref="020803"]
+ええ、わかったわ！[p]
+
+;クリア処理
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[filter name="clear" time=500]
+
+;終了処理
+[stopbgm]
+[sys_memset index=224 value="1"]
+[sys_memset index=4000 value="5"]
+
+;トリアイナ、オリヴィアと交戦状態になる
+[sys_memset index=10011 value="1"]
+[sys_memset index=10012 value="1"]
+
+
+;ドード隊を有効にする
+[sys_memset index=10102 value=1]

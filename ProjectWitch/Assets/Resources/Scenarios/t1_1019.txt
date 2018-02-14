@@ -1,0 +1,262 @@
+;町イベント
+;No.1019
+;site：酒場
+;time : いつでも
+;author：chicchi
+;title : カートンに声を
+;member : カートン
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="karton"]
+[loadcg id=2 ref="master"]
+[loadcg id=3 ref="orivia"]
+
+[filter name="fade" time=500]
+[drawcg id=0 posx=-70 dir="right"]
+[drawcg id=2 pos=4]
+[drawcg id=1 posx=-90 dir="right"]
+[drawbg ref="1051m"]
+[bgm ref="020_event5"]
+[filter name="clear" time=500]
+
+[se ref="166"]
+[show_message]
+[cn]
+チリンチリン。[p]
+#マスター
+いらっしゃい。[p]
+[move id=1 x=50 time=500]
+#カートン
+……！[p]
+#マスター
+うおっ！[p]
+（こりゃまたでかくて強そうなのが来たなぁ……。）[p]
+お客さん、ご注文は？[p]
+#カートン
+……………。[p]
+[move id=1 x=5 time=500]
+[move id=1 x=-5 time=500]
+[move id=1 x=5 time=500]
+[move id=1 x=-5 time=500]
+[cn]
+カートンは懐からメモ用紙とペンを取り出し、[n]
+「晩酌セット」と書き込んだ。[p]
+#マスター
+……お客さん、もしかして声が？[p]
+#カートン
+……！[p]
+#マスター
+そうでしたか。[n]
+かしこまりました、[n]
+晩酌セット、少々お待ちを。[p]
+[scale id=2 sx=-1 time=300]
+[move id=2 x=80 time=500]
+[cn]
+そういってマスターは厨房へ消えていった。[p]
+#アリス
+……おい金ピカ。[p]
+#カートン
+……？[p]
+[move id=0 x=80 time=1200]
+[scale id=0 sx=-1 time=300]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[move id=0 y=5 time=100]
+[move id=0 y=-5 time=100]
+[cn]
+そばのテーブルで飲んでいたアリスがカートンの隣に腰掛ける。[p]
+#アリス
+お前、普通の人間だろ？[n]
+獣人ってわけでもないだろうし、[n]
+生まれつき話せなかったのか？[p]
+[changecg id=0 state=6]
+……の割にはきったない字だけどな。[p]
+[cn]
+カートンがマスターに差し出したメモを見て、[n]
+アリスは顔をしかめた。[p]
+#カートン
+…………。[p]
+[cn]
+カートンは、再びメモ用紙に何かを書き始めた。[p]
+書き終わると、それをアリスに差し出す。[p]
+[changecg id=0 state=2]
+#アリス
+あん……？[p]
+[cn]
+今度は下手なりに丁寧に書いた風な字だった。[p]
+#アリス
+あー……と、「ドラゴンとの戦争でのどを焼かれた」…ね。[p]
+[cn]
+アリスが文を読み上げると、[n]
+カートンは首元の鎖帷子をめくり、[n]
+生々しく残るやけど後を見せた。[p]
+[changecg id=0 state=0]
+#アリス
+なるほどな、炎を吸い込んだってことか。[p]
+[changecg id=0 state=1]
+……なあちょっとこれを試してみないか？[p]
+#カートン
+…………？[p]
+[cn]
+アリスはスカートのポケットから、[n]
+立方体で紫色のキャンディを取り出した。[p]
+#アリス
+声帯の形を変えて、[n]
+好きな人の声を真似ることのできる魔法アイテムだ。[p]
+声帯が完全につぶれちまってたら意味ないかもしれんが、[n]
+うなり声をあげられるんだ。[p]
+もしかしたら、残った声帯に反応して[n]
+話すことができるようになるかもしれんぞ。[p]
+#カートン
+………。[p]
+（うむ、声か……。そうだな、どうせならうら若き乙女のような可憐な声になりたいのう……。）[p]
+[cn]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+カートンはキャンディを口に運んだ。[p]
+#カートン
+もぐもぐ……。[p]
+#アリス
+どうだ？　なにか変化はあるか？[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+……ん、おっ、おお！！（美少女ボイス）[p]
+[changecg id=0 state=6]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+！？[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+話せる、話せるぞぉ！！（美少女ボイス）[p]
+[scale id=2 sx=-1 time=0]
+[move id=2 x=-60 time=500]
+#マスター
+なんだ、お客さんか？[n]
+いらっしゃい……って、誰もいねえな。[p]
+勘違いか……。[p]
+ん？　おい、アリス。[n]
+どうしたんだよ、そんなみょうちくりんな顔して。[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+おお、マスター！[n]
+晩酌セットはできましたかな？（美少女ボイス）[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#マスター
+！？[n]
+[scale id=2 sx=-1 time=100]
+[wait time=300]
+[scale id=2 sx=-1 time=100]
+あ、お、えっ……？[p]
+[move id=2 x=5 time=100]
+[wait time=500]
+[move id=2 x=5 time=100]
+[wait time=500]
+あ、ああ……えっと、もう少し待ってください。[p]
+……失礼します。[p]
+[scale id=2 sx=-1 time=100]
+[move id=2 x=60 time=300]
+[cn]
+目の前の光景を信じられないというかのように、[n]
+マスターは奥の厨房へそそくさと引っ込んでしまった。[p]
+#アリス
+お、オイ！[n]
+お前一体何をイメージしたんだよ！[p]
+#カートン
+ふむ……、どうせならきれいな声がいいと[n]
+思ったのだが、変だろうか？（美少女ボイス）[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+変！　すっげー変！[n]
+超キモイ！！　マジキモイ！！！！[p]
+#カートン
+そ、そこまで言うことないではないか……。[n]
+（美少女ボイス）[p]
+他の声にすることはできんのか……？[n]
+（美少女ボイス）[p]
+#アリス
+うぅ……鳥肌が立つぜ。[p]
+そのキャンディの効力は丸一日だ。[n]
+それまでは解除できないし、[n]
+他の声にすることもできん。[p]
+そもそもスパイ用のアイテムなんだ。[p]
+そういう使い方も想定内ということだな……。[p]
+[scale id=2 sx=-1 time=0]
+[move id=2 x=-80 time=500]
+#マスター
+晩酌セットお待ちどう……。[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+おお！　かたじけない。（美少女ボイス）[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#マスター
+うっ……あ、頭がついていかない……。[p]
+[cn]
+[filter name="fade" time=500]
+結局声が戻らないまま、カートンは屋敷へ帰ったのだった。[p]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[drawbg ref="1003m"]
+[bgm ref="003_alice2"]
+[drawcg id=1 pos=5 dir="left"]
+[filter name="clear" time=500]
+
+[se ref="160"]
+[wait time=1000]
+[se ref="155"]
+[wait time=300]
+[drawcg id=3 pos=2 mode="slidein" dir="right"]
+#オリヴィア
+カートン！　ちょっと相談があるんだけど……。[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+おお！　オリヴィア様、なんですかな？[n]
+（美少女ボイス）[p]
+[changecg id=3 state=1]
+[move id=3 x=-5 time=100]
+[wait time=500]
+[move id=3 x=-5 time=100]
+#オリヴィア
+あ……あ……。[p]
+#カートン
+オリヴィア様？（美少女ボイス）[p]
+[scale id=3 sx=-1 time=100]
+[move id=3 x=-80 time=100]
+#オリヴィア
+へ、部屋を間違えましたああーーーー！！[n]
+いやああああああーーーーーー！！！！！[p]
+[move id=1 y=5 time=100]
+[move id=1 y=-5 time=100]
+#カートン
+オリヴィア様ーーー！！！？（美少女ボイス）[p]
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=3]
+[clearcg id=1]
+[clearbg]
+[stopbgm]
+[filter name="clear" time=500]
+
+[sys_memset index=1019 value=1]

@@ -1,0 +1,4 @@
+;s0405B
+;シデン戦後
+
+[sys_memset index=408 value=1]

@@ -1,0 +1,16 @@
+;シナリオその他
+;アリスＢＡＤ
+
+[stopbgm]
+[filter name="fade" time=500]
+[drawbg ref="Event/gameover0"]
+[filter name="clear" time=500][voice ref="090000"]
+
+[show_message]
+#チシャ
+あっ、アリス様が死ぬなんて……。[n]
+そんな……ぐす。[p]
+[voice ref="090001"]
+アリス様、安らかに眠ってくださいね。[n]
+なむなむ……。[p]
+[hide_message]

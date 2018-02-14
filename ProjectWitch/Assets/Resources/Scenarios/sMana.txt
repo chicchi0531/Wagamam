@@ -1,0 +1,45 @@
+;マナ収集時 script
+[setskin ref="skin1"]
+
+[loadfg id=0 ref="alice"]
+[loadfg id=1 ref="kuro"]
+[loadfg id=2 ref="chishire"]
+
+;ノーマルエンドフラグをローカルへ
+[sys_memget index=4015 local=0]
+
+[show_message]
+
+;ノーマルエンド突入後
+[if opr="eqr" index0=0 value1=1]
+
+[drawfg id=2]
+#チシャ
+アリス様。[n]
+マナの結晶に混ざってこんなものが……。[p]
+[drawfg id=0]
+#アリス
+……ああ。[n]
+軍の備品に加えておけ。[p]
+[drawfg id=2]
+#チシャ
+は、はい……。[p]
+
+[else]
+
+[drawfg id=1]
+#クロ
+アリス様。[n]
+マナの結晶に混ざってこんなものが……。[p]
+[drawfg id=0]
+#アリス
+あん？[n]
+まあ使えそうだし、とっておけ。[p]
+[drawfg id=1]
+#クロ
+はっ。[n]
+では、軍の備品に加えておきます。[p]
+
+[endif]
+
+[hide_message]

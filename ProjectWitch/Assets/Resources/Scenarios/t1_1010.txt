@@ -1,0 +1,274 @@
+;町イベント
+;No.1010
+;site：酒場
+;time : いつでも
+;author：chicchi
+;title :シャルロッテはすすれない
+;member : シャルロッテ、メイジー
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="master"]
+[loadcg id=2 ref="charlotte"]
+[loadcg id=3 ref="meisie"]
+
+[filter name="fade" time=500]
+[bgm ref="020_event5"]
+[drawbg ref="1051m"]
+[drawcg id=1 pos=5]
+[filter name="clear" time=500]
+
+[se ref="166"]
+[wait time=1000]
+[drawcg id=2 mode="slidein" pos=1 dir="right"]
+[show_message]
+#マスター
+いらっしゃい。[n]
+やあ、シャルロッテさん。[p]
+#シャルロッテ
+こんにちは。[n]
+ナスのアラビアータのセットをいただけるかしら。[p]
+#マスター
+飲み物は何にしますか？[p]
+#シャルロッテ
+アイスティーでお願いしますわ。[p]
+#マスター
+はいよ。[n]
+少々お待ち下さい。[p]
+[scale id=1 sx=-1 time=300]
+[move id=1 x=40 time=800]
+[wait time=500]
+[drawcg id=0 pos=4]
+[drawcg id=3 pos=3]
+#アリス
+ん、なんだ、シャルロッテじゃねえか。[p]
+[cn]
+テーブルに座っていたアリスとメイジーが、[n]
+シャルロッテに声をかける。[p]
+#シャルロッテ
+あら、アリスにメイジーさん。[n]
+お食事ですか？[p]
+#メイジー
+シャルロッテさん、一緒に食べませんか？[p]
+せっかくだし、お話しましょうよ。[p]
+#シャルロッテ
+ええ、ぜひ。[n]
+ご一緒させていただきますわ。[p]
+[move id=2 x=10 time=500]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[wait time=500]
+[scale id=0 sx=-1 time=300]
+[changecg id=0 state=2]
+#アリス
+おーい、マスター。[n]
+天ぷらそばまだー？[p]
+#マスター
+待て待て、今天ぷら揚げてるから。[n]
+魚天と海老天どっちがいい？[p]
+[changecg id=0 state=1]
+#アリス
+どっちも！！[p]
+#マスター
+じゃあ半分にカットしてどっちものせてやるよ。[p]
+[changecg id=0 state=2]
+#アリス
+なっ！[n]
+ケチくせえの！！[p]
+#マスター
+もう半分はメイジーちゃんのにのせてあげるからな。[p]
+[scale id=3 sx=-1 time=300]
+#メイジー
+わあっ、ありがとうございます！[p]
+[changecg id=2 state=1]
+#シャルロッテ
+あの……ソバというのはなんですの？[p]
+[scale id=3 sx=-1 time=300]
+[scale id=0 sx=-1 time=300]
+[changecg id=0 state=0]
+#メイジー
+シャルロッテさん、ソバ食べたことないんですか？[p]
+#シャルロッテ
+ええ……私の領地にはそういったものは。[p]
+[scale id=1 sx=-1 time=0]
+[move id=1 x=-40 time=500]
+#マスター
+はい、お待ちどう。[n]
+天ぷらそば２つと、アラビアータね。[p]
+今スープとサラダ持ってくるから。[p]
+[scale id=1 sx=-1 time=300]
+[move id=1 x=40 time=500]
+[changecg id=2 state=0]
+#シャルロッテ
+ありがとうございますわ。[p]
+[changecg id=0 state=1]
+#アリス
+おお！　きたきた～。[n]
+いただきまーすっと！[p]
+#メイジー
+いただきます。[p]
+#シャルロッテ
+お箸ありますわよ？[n]
+わざわざ割り箸を使うんですの？[p]
+#アリス
+こっちのが滑りにくくて食いやすんだよ。[p]
+ふう、ふう……。[n]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[wait time=200]
+ずるずるずる！！[p]
+[changecg id=2 state=1]
+#シャルロッテ
+まあ！　アリスさんったら下品なんですから。[p]
+[changecg id=0 state=0]
+#アリス
+はあ？　なにがだよ？[n]
+なかなかうまいぞ、そば。[p]
+#シャルロッテ
+そうではなくて、音を立てて食べるんですもの。[p]
+#メイジー
+シャルロッテさん、[n]
+ソバは音を立ててすするように食べるのが普通なんですよ。[p]
+#シャルロッテ
+あ、あら……？[n]
+そうなんですの？[p]
+#アリス
+ホントだって、ほら、食ってみろよ。[n]
+ずずっと一気にすするんだぞ。[p]
+#シャルロッテ
+そ、それでは……。[n]
+んんっ……。[p]
+[cn]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+ちゅるちゅるちゅるっ！[p]
+#シャルロッテ
+はあ……む、難しいですわね。[p]
+[changecg id=0 state=1]
+#アリス
+クフフッ！[n]
+へったくそだなあ！[p]
+#シャルロッテ
+くっ、悔しいですわ！[n]
+も、もう一回お願いします！[p]
+[cn]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+ちゅるちゅるちゅる！！[p]
+#シャルロッテ
+も、もう一回！！[p]
+[cn]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+ちゅるちゅるちゅる！！[p]
+[changecg id=0 state=2]
+#アリス
+お、おい……。[p]
+#シャルロッテ
+う、うまくいかないですわ！！[n]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[wait time=200]
+[changecg id=2 state=0]
+ぱく、もぐもぐ……あら、このエビ美味しいですわ。[p]
+[changecg id=0 state=6]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+わ、私の海老天！！[p]
+おい、バカ、返せ！！[n]
+それ以上食うな！！[p]
+[changecg id=2 state=1]
+#シャルロッテ
+悔しいですわ！　悔しいですわ！[p]
+[cn]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+[move id=2 y=5 time=100]
+[move id=2 y=-5 time=100]
+ちゅるちゅるちゅる！！[p]
+[changecg id=2 state=0]
+#シャルロッテ
+もぐもぐ……。[n]
+あら、この魚天も美味しいですわね。[p]
+#アリス
+め、メイジぃ～……。[p]
+#メイジー
+（あ、これはなんやかんやで、[n]
+海老天と魚天を取られるやつだわ。[n]
+はやく食べなきゃ。）[p]
+あむ……むぐむぐ……。[n]
+[move id=3 y=5 time=50]
+[move id=3 y=-5 time=50]
+[move id=3 y=5 time=50]
+[move id=3 y=-5 time=50]
+[wait time=200]
+ずるるるるるっ！[p]
+な、何かしらねえひゃん…？[p]
+#アリス
+な、そんなに急いで食わなくてもいいだろ！！[p]
+#メイジー
+な、なんのことかしら……。[p]
+あー、美味しかった！[n]
+ごちそうさま！[p]
+#シャルロッテ
+私も、ごちそうさまですわ！[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+ああーーーーーー！！！[n]
+私の天ぷらそばーーーー！！[p]
+[scale id=0 sx=-1 time=300]
+マスタぁ……。[p]
+[scale id=1 sx=-1 time=0]
+[move id=1 x=-30 time=300]
+#マスター
+ああ……、悪い、エビもイカも今ので最後だ。[n]
+水ぶどうのかき揚げなら代わりに出せるが……。[p]
+#アリス
+あんな生臭いのいやだ！！[p]
+#シャルロッテ
+ごめんなさい、アリスさん……。[n]
+私のパスタで良ければ差し上げますから。[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+こ、このやろぉ……。[p]
+…………。[p]
+食べるけどぉ……。[p]
+くそーー！[n]
+[cn]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+ずるずるずるずる！！！[p]
+[scale id=3 sx=-1 time=300]
+#メイジー
+パスタでそれはマナー違反よ、姉さん。[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+うるせえ！！[p]
+[hide_message]
+
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[stopbgm]
+[filter name="clear" time=500]
+
+[sys_memset index=1010 value=1]

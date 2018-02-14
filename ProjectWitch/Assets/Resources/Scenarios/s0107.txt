@@ -1,0 +1,135 @@
+﻿;s0107
+;script yuichi
+;direction yuichi
+;アリス領　アッサム砦（夜）
+;条件　なし
+;タイミング　■場面7のつづき アッサム砦西、高台。 アリスはアッサム砦を崖の上から一望しながら、いつもの笑みを浮かべていた。
+
+[field_area_hilight id=9]
+[wait time=200]
+
+;リソースロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+[loadcg id=2 ref="werewolf"]
+
+[filter name="fade" time=500]
+[drawbg ref="Event/706B"]
+[bgm ref="018_event3"]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+[voice ref="010040"]
+クフフフフッ！！[n]
+抜け道は下からとは限るまい？[p]
+#クロ
+[voice ref="010041"]
+アリス様、地上軍待機完了です。[n]
+いつでも突撃可能です。[p]
+#アリス
+[voice ref="010042"]
+よし、では手筈通りに頼むぞ。[p]
+#クロ
+[voice ref="010043"]
+はっ！[n]
+しかし、主力部隊をおとりにして上から砦に直接乗り込むとは
+なんと大胆な……。[p]
+#アリス
+[voice ref="010044"]
+上から忍び込む以上、ばれないためには必然的に少数精鋭になる。[n]
+それに、おとりはでかければでかいほど意味があるんだぜ？[p]
+[voice ref="010045"]
+クフフ！ まあ私の心配はしなくていい。 [n]
+クロ、地上部隊は任せたぞ。[p]
+#クロ
+[voice ref="010046"]
+はっ。[p]
+
+[filter name="fade" time=500]
+[drawbg ref="1048n"]
+[cn]
+…………。[p]
+[drawcg id=2 pos="center"]
+[filter name="clear" time=500]
+
+#伝令
+[voice ref="010048"]
+申し上げます！[n]
+アリス率いる軍勢が砦の前方に布陣。[n]
+その数、2000！！[p]
+#ワーウルフ
+[move id=2 x=0 y=5 time=50]
+[move id=2 x=0 y=-5 time=50]
+[voice ref="010049"]
+にっ、2000だと！？[n]
+一体どこにそんな兵力を残して……。[n]
+ええいっ、どっちにしろ魔導砲で迎撃するだけの話！[n]
+総員持ち場につけっ！！[p]
+#伝令
+[voice ref="010050"]
+申し上げます！[n]
+アリス軍進軍を開始、あと三分で魔導砲の射程に入ります！[p]
+[scale id=2 sx=-1 time=100]
+#ワーウルフ
+[voice ref="010051"]
+よし！　ある程度ひきつけたら一斉掃射しろ！[n]
+敵は大軍だ、全員で攻撃にあたれ！！ [p]
+[cn]
+
+[filter name="fade" time=500]
+[clearcg id=2]
+…………。[p]
+[drawbg ref="1047n"]
+[filter name="clear" time=500]
+
+[drawcg id=1 pos="center" dir="right"]
+#クロ
+[voice ref="010052"]
+全軍前ヘッ！！[n]
+[scale id=1 sx=-1 time=200]
+いいかっ、合図があったら一斉に引くのだ！　[n]
+深入りはするなっ！！[p]
+[scale id=1 sx=-1 time=200]
+[move id=1 x=70 time=400]
+#アリス軍
+[voice ref="010053"]
+オオオオオォォォーー！！！[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=1]
+[drawbg ref="Event/710"]
+[filter name="clear" time=300]
+[wait time=500]
+
+[show_message]
+一方のアリスは数十名の部下を連れて空中へ飛び出した。[p]
+いくつもの落下傘が、闇夜に紛れて砦の中へと降り立っていく。[p]
+前方の兵士に気を取られているワーウルフの軍勢のなかに、
+上空からの侵入者に気付くものはいない。[p]
+#アリス
+[voice ref="010047"]
+クフフッ！[n]
+さあ行くぞお前たち、裏切り者の犬にはしつけが必要だ！！ [p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[filter name="clear" time=500]
+
+;ボス戦ユニットセット
+[battle_unit_in e0=63 e1=57 e2=3]
+[battle_card_in e0=6 e1=6 e2=6]
+[battle_bgm ref="005_battle2"]
+[battle_time time=3]
+
+;アリスを出撃済みにする
+[unit_data_change id=0 member="IsBattled" value="true"]
+
+;CGフラグ
+[sys_memset type="system" index=106 value=1]
+[sys_memset type="system" index=110 value=1]
+
+[stopbgm]
+[sys_memset index=107 value="1"]

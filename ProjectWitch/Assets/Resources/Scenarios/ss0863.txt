@@ -1,0 +1,20 @@
+;ss0863
+;directer:yuichi
+;script:nikai
+;timing:s0803のあと　ターンはじめ
+;s0803と0804の間の補完
+
+[field_area_hilight id=88]
+
+;自動戦闘
+;ライザ勝利
+;88ペトロパブロフスク街道西占領
+[unit_heal unit=25]
+[unit_heal unit=26]
+[unit_heal unit=30]
+[battle_unit_in p0=26 p1=25 e0=30]
+[battle_time time=3]
+[battle_area id=88]
+[battle_auto][battle_nonpre]
+
+[sys_memset index=863 value="1"]

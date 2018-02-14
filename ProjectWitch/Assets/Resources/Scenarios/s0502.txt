@@ -1,0 +1,51 @@
+;s0502
+;directer:yuichi
+;script: nikai
+;direction yuichi
+;timing: 地点45番占領時
+
+;フィールドスクロール
+[field_area_hilight id=45]
+[wait time=200]
+
+;ロード
+[loadcg id=0 ref="charlotte"]
+[loadcg id=1 ref="kasumi"]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1048e"]
+[bgm ref="011_charlotte"]
+[filter name="clear" time=500]
+
+[show_message]
+[drawcg id=0 pos=5 state=1]
+[drawcg id=1 pos=3]
+#シャルロッテ
+[voice ref="050048"]
+そんな馬鹿な……。[n]
+あの量の魔法を浴びても引かないなんて……。[p]
+[scale id=1 sx=-1 time=100]
+#カスミ
+[voice ref="050049"]
+ロッテさん！　[n]
+悠長に悔しがってる場合じゃないっすよ！[p]
+[voice ref="050050"]
+早いとこ引き上げないと！！[p]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+#シャルロッテ
+[voice ref="050051"]
+……ッ！[n]
+わかってますわ。[p]
+
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+[stopbgm]
+[sys_memset index=502 value="1"]

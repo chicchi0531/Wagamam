@@ -1,0 +1,6 @@
+;s0709A
+;ゾンビリリィ右腕戦
+
+;ユニットセット
+[battle_unit_in e0=10]
+[battle_bgm ref="013_lily"]

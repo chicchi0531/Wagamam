@@ -1,0 +1,118 @@
+﻿;script 861
+;directer:yuichi
+;script:nikai
+;timing:s0860後
+[field_area_hilight id=104]
+[filter name="fade" time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="veronica"]
+
+[drawbg ref="1000n"]
+
+[drawcg id=0 pos=2]
+[drawcg id=1 pos=4]
+
+[wait time=500]
+[filter name="clear" time=500]
+
+[show_message]
+;ヴェロニカ宮突入
+#アリス
+[voice ref="080952"]
+いよいよだな……。[p]
+#ヴェロニカ
+[voice ref="080952a"]
+アリス、気を付けて。[p]
+[voice ref="080952b"]
+ライザのことですから、何をしてくるかわからないわ……。[p]
+[changecg id=0 state=2]
+#アリス
+[voice ref="080953"]
+ああ……わかってる。[n]
+さあ、行くぞ。[p]
+[cn]
+アリスは勢いよく謁見の間へ続く扉を開いた。[p]
+
+;場面転換
+[filter name="fade" time=500]
+[se ref="044"]
+[bgm ref="029_raisania2"]
+[drawbg ref="1001m"]
+[filter name="clear" time=500]
+#アリス
+[voice ref="080954"]
+これはいったい……。[p]
+#ヴェロニカ
+[voice ref="080955"]
+ホムン……クルスなの？[p]
+[cn]
+そこにあったのは、神々しく光り輝く生命体だった。[p]
+#大魔女ライザニア
+[voice ref="080956"]
+コー……、コー……。[p]
+[voice ref="080957"]
+わが名は、大魔女ライザニア……。[p]
+[voice ref="080958"]
+魔女アリス……、魔女ヴェロニカを殺し、[n]
+世界の王とならん……。[p]
+[move id=0 x=5 time=50]
+[move id=1 x=5 time=50]
+[changecg id=0 state=0]
+#アリス
+[voice ref="080959"]
+なっ、なんだなんだ！？[n]
+なんかヤバそうなのが出てきたぞ……。[p]
+#ヴェロニカ
+[voice ref="080960"]
+その声……、ライザとニア！！[p]
+[move id=0 y=-2 time=20]
+[move id=0 y=2 time=20]
+#アリス
+[voice ref="080961"]
+なっ！？[n]
+[scale id=0 sx=-1 time=100]
+おい、ヴェロニカ！　それはいったいどういう……。[p]
+#大魔女ライザニア
+[voice ref="080962"]
+わが名は、大魔女ライザニア……。[p]
+[scale id=0 sx=-1 time=300]
+[changecg id=0 state=2]
+#アリス
+[voice ref="080963"]
+大魔女……ライザ、ニア。[n]
+って、つまり……。[p]
+#ヴェロニカ
+[voice ref="080964"]
+魔女の心臓を……二個使ったのね。[p]
+[voice ref="080965"]
+そうじゃなきゃ、こんなめちゃくちゃなこと出来っこないわ……！[p]
+[move id=1 x=-5 time=-50]
+
+;[voice ref="080966"]
+;ライザ！　ニア！[n]
+;あなたたち、こんな無茶苦茶な魔法で肉体がもつと思っているの！！[n]
+;すぐに崩壊して死んでしまうわよ！！[p]
+
+#大魔女ライザニア
+[voice ref="080968"]
+我は世界最強の生命体……。[n]
+大魔女、ライザニアである……。[p]
+#アリス
+[voice ref="080969"]
+やべえ、来るぞっ！！[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+;戦闘設定
+[battle_unit_in e0=31]
+[battle_bgm ref="006_battle3"]
+
+[sys_memset index=861 value="1"]

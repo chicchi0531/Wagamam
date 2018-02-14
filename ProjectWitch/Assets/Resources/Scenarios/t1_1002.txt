@@ -1,0 +1,115 @@
+;町イベント
+;No.1002
+;site : 酒場
+;time : いつでも
+;author : chicchi
+;title : トリアイナのバイト日記1
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="master"]
+[loadcg id=2 ref="triaina"]
+
+[filter name="fade" time=500]
+[bgm ref="020_event5"]
+[drawbg ref="1051m"]
+[drawcg id=1 pos=4]
+[drawcg id=0 posx=-70 dir="right"]
+[filter name="clear" time=500]
+
+[se ref="166"]
+[move id=0 x=30 time=600]
+[show_message]
+#マスター
+いらっしゃい。[p]
+#アリス
+おう、煮込みとハイボール。[p]
+#マスター
+また昼間から飲みに来たのか。[n]
+まあこっちとしてはありがたいけどな。[p]
+[changecg id=0 state=2]
+#アリス
+うるせえ、戦争の箸休めだ。[p]
+#マスター
+（箸休めって表現はどうなんだ……？）[p]
+[drawcg id=2 pos=3 mode="slidein"]
+[move id=2 x=-30 time=600]
+[move id=2 x=10 time=500]
+#トリアイナ
+おう、煮込みとハイボールお待ち！[p]
+[changecg id=0 state=0]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+うわっ！　びっくりした。[p]
+あっ、オマエ氷の魔女！[n]
+こんなところで何してるんだ！[p]
+ってかその口調はなんだ……？[p]
+#トリアイナ
+あら、居酒屋の接客ってこういうものでしょう？[p]
+[changecg id=0 state=0]
+#マスター
+居酒屋じゃなくてバーなんだがな……。[p]
+誰かさんのせいでそれっぽいメニューばかりにはなっちまったが。[p]
+#トリアイナ
+バイトというものを一度やってみたかったのよ。[n]
+私と同じくらいの人間の女の子はみんなやっていると聞いたわ。[p]
+#アリス
+そうだけど、魔女がバイトって……あむ。[p]
+[changecg id=0 state=6]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+！！！！！[p]
+つめたっ！！　
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+おいマスター！[n]
+この煮込み冷えてるじゃねえか！！[p]
+#マスター
+ああ……、悪い[n]
+実は彼女が料理を運ぶと、運んでいる間に全部冷えちまうんだ……。[p]
+[scale id=2 sx=-1 time=300]
+[move id=2 x=20 time=600]
+#トリアイナ
+…………氷の魔女だから。[n]
+仕方ないじゃない？[p]
+#アリス
+……ハイボールに至ってはフローズンっぽくなってるし。[n]
+うう、寒い……。[p]
+#マスター
+心なしか気温も下がるみたいでな[n]
+送風機も停止したんだが、それでも涼しすぎるくらいなんだ。[p]
+#マリス
+こいつ接客に向いてないんじゃ……。[p]
+[changecg id=0 state=1]
+………いや、まてよ？[p]
+[move id=0 x=20 time=600]
+おい、ちょっと。[p]
+[scale id=2 sx=-1 time=200]
+[move id=0 x=-5 time=200]
+[move id=2 x=-5 time=200]
+#トリアイナ
+なっ、なによ。[n]
+ちょっと、引っ張らないでよ！[p]
+[move id=1 x=-5 time=50]
+#マスター
+おい！　どこへ連れて行くんだ！[p]
+#アリス
+クフフッ！　すぐ返すって！[p]
+[scale id=0 sx=-1 time=100]
+[move id=0 x=-50 time=1000]
+[move id=2 x=-30 time=600]
+[se ref="166"]
+[cn]
+………続く。[p]
+
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[hide_message]
+[clearbg]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+[sys_memset index=1002 value=1]

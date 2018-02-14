@@ -1,0 +1,247 @@
+;s0500_43
+;directer:yuichi
+;script: nikai
+;timing: ロレーヌ領侵入時
+
+;マップスクロール
+[field_area_hilight id=43]
+[wait time=200]
+
+;ロード
+[loadcg id=0 ref="emil"]
+[loadcg id=1 ref="ema"]
+[loadcg id=2 ref="charlotte"]
+[loadcg id=3 ref="kasumi"]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1043n"]
+[filter name="clear" time=500]
+[bgm ref="011_charlotte"]
+
+[show_message]
+
+[cn]
+ロレーヌ城[n]
+領主シャルロッテの居城の一室。[p]
+ここはシャルロッテの部下、[n]
+エマとエミル姉弟の部屋であった。[p]
+[drawcg id=0 pos=4 dir="right"]
+#エミル
+[voice ref="050000"]
+えっと……、ここで玉虫の羽を3枚、と……。[p]
+[drawcg id=1 pos=2 dir="right"]
+#エマ
+[voice ref="050001"]
+エミルぅ？ ……まだ起きてたの。[n]
+もう真夜中だよォ？[p]
+[move id=0 y=-2 time=20]
+[move id=0 y=2 time=20]
+[wait time=300]
+[scale id=0 sx=-1 time=200]
+#エミル
+[voice ref="050002"]
+あっ、姉さん！ [n]
+ごめん。 起こしちゃった……？[p]
+#エマ
+[voice ref="050003"]
+うん？ 別にいいけどさぁ。[p]
+[voice ref="050004"]
+子供は寝ないと育たないんだって[n]
+カスミが言ってたよ？[p]
+#エミル
+[voice ref="050005"]
+もうちょっとしたら寝るから、今いいとこなんだ。[p]
+#エマ
+[voice ref="050006"]
+何してんのさ。[p]
+#エミル
+[voice ref="050007"]
+ふふーん！[n]
+ロレーヌ一派に伝わる伝説の秘薬を作ってるんだ！[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#エマ
+[voice ref="050008"]
+へえ！[n]
+[move id=1 x=10 time=300]
+ナニナニ、すごそうじゃん！！[p]
+#エミル
+[voice ref="050009"]
+これを飲むと、人間でも魔法を使えるようになるんだよ。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#エマ
+[voice ref="050010"]
+人間でも魔法が！？[n]
+それ、あたしにも効くの？[p]
+#エミル
+[voice ref="050011"]
+もっちろん！　本当にすごい薬なんだから！[p]
+[move id=0 y=-2 time=20]
+[move id=0 y=2 time=20]
+#シャルロッテ
+[voice ref="050012"]
+あら……[n]
+二人とも、まだ起きていたんですの？[p]
+
+[se ref="155"]
+[scale id=1 sx=-1 time=300]
+[drawcg id=2 posx=-80 dir="right" layer="front"]
+[moveto id=2 x=10 time=500]
+
+#エミル
+[voice ref="050013"]
+ロッテ様！[p]
+[cn]
+領主シャルロッテが部屋に入ってきた。[p]
+#シャルロッテ
+[voice ref="050014"]
+あら……[n]
+エミル、それは……？[p]
+#エミル
+[voice ref="050015"]
+あっ……、これはその。[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#エマ
+[voice ref="050016"]
+ロッテ様！ エミルってばすごいんですよ！[p]
+[voice ref="050017"]
+人間でも魔法が使えるようになる薬を作っているんですって！[p]
+[move id=0 x=-5 time=100]
+#エミル
+[voice ref="050018"]
+あっ、姉さん。[p]
+#シャルロッテ
+[voice ref="050019"]
+エミル、それはもしかして……。[p]
+#エミル
+[voice ref="050020"]
+ごめんなさい……[n]
+勝手に図書館から持ち出して。[p]
+[voice ref="050021"]
+でも、ぼくでもロッテ様のお役に立てるかなって。[p]
+[move id=2 x=40 time=640]
+[scale id=1 sx=-1 time=300]
+[move id=2 y=-10 time=300]
+[cn]
+シャルロッテはエミルに近づくと[n]
+しゃがみ込んでそっと、彼を抱きしめた。[p]
+#シャルロッテ
+[voice ref="050022"]
+エミル、あなたは本当にすごいわ。[p]
+[voice ref="050023"]
+けれど、そんな薬に頼らなくても、[n]
+あなたたちは十分わたくしの力になってくれていますわ。[p]
+#エミル
+[voice ref="050024"]
+ロッテ様……。[p]
+
+[move id=2 y=10 time=300]
+[scale id=2 sx=-1 time=300]
+[move id=2 x=-40 time=600]
+[scale id=1 sx=-1 time=300]
+[scale id=2 sx=-1 time=300]
+
+#シャルロッテ
+[voice ref="050025"]
+さ、もう寝ましょう。[n]
+エマ、エミルをよろしく頼みますわ。[p]
+#エマ
+[voice ref="050026"]
+は、はい！ ロッテ様。[p]
+
+;シャルロッテ退出
+[se ref="155"]
+[scale id=2 sx=-1 time=0]
+[move id=2 x=-50 time=800]
+
+#エマ
+[voice ref="050027"]
+寝よっか。 エミル……。[p]
+#エミル
+[voice ref="050028"]
+うん……。[p]
+[voice ref="050029"]
+（でも僕、少しでもロッテ様のお役に立ちたいんです……。）[p]
+[cn]
+
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+……………。[p]
+[drawbg ref="1043m"]
+[filter name="clear" time=500]
+
+;場面転換
+
+[drawcg id=2 pos=4]
+[drawcg id=3 pos=2 dir="right"]
+シャルロッテの部屋。[p]
+シャルロッテと、部下のカスミが話している。[p]
+#カスミ
+[voice ref="050030"]
+前々から油断のならないやつだとは思ってたっすけど
+まさか秘薬にまで手を出しているとは。[p]
+[voice ref="050031"]
+ちびっこのくせに、やるっすね。[p]
+#シャルロッテ
+[voice ref="050032"]
+幼いエミルにまで迷惑をかけてしまっていますわね。[n]
+わたくしが未熟なために。[p]
+#カスミ
+[voice ref="050033"]
+好きでやってるんすから
+ロッテさんが気に病む必要はないっすよ。[p]
+[cn]
+カスミは暖炉の上に置いてある帽子に目をやった。[p]
+#カスミ
+[voice ref="050034"]
+そういえば、あの帽子って……。[p]
+#シャルロッテ
+[voice ref="050035"]
+あら、話していませんでしたか？[n]
+ロレーヌ代々の領主がかぶる帽子ですわ。[p]
+#カスミ
+[voice ref="050036"]
+でも、ロッテさんがあれかぶってるとこ
+見たことないんすけど。[p]
+#シャルロッテ
+[voice ref="050037"]
+一人前にならないとかぶれないのです。[p]
+[voice ref="050038"]
+そう決めていますの。[p]
+#カスミ
+[voice ref="050039"]
+一人前じゃないんすか？[p]
+#シャルロッテ
+[voice ref="050040"]
+わたくしはまだまだ未熟ですもの。[p]
+[voice ref="050041"]
+いつか、師匠のように素晴らしい魔女になることができたその時は、胸を張ってあの帽子をかぶるのですわ[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=2]
+[clearcg id=3]
+[filter name="clear" time=500]
+
+[stopbgm]
+[sys_memset index=500 value="1"]
+
+;図書館フラグ 「風土　シャルロッテ領」「魔女　流派」
+[sys_memset index=5018 value=1]
+[sys_memset index=5011 value=1]
+
+
+;シャルロッテ領と交戦開始
+[sys_memset index=10014 value="1"]
+
+;カスミ隊始動
+[sys_memset index=10105 value="1"]

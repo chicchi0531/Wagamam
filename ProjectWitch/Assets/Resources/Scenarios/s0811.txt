@@ -1,0 +1,117 @@
+﻿;script 811
+;directer:yuichi
+;script:nikai
+;timing:s0810後
+
+[field_area_hilight id=86]
+[wait time=500]
+
+[loadcg id=0 ref="eli"]
+[loadcg id=1 ref="seedle"]
+
+[filter name="fade" time=500]
+[bgm ref="017_event2"]
+[drawbg ref="1037m"]
+[drawcg id=0 pos=2]
+[drawcg id=1 pos=4]
+[filter name="clear" time=500]
+
+[show_message]
+ペトロパブロフスク街道東[p]
+[se ref="047"]
+#エリ
+[voice ref="080077"]
+ああっ！　こら！！[n]
+逃げるな、戦えーーー！！[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[se ref="047"]
+[se ref="159"]
+[cn]
+連日敗戦を重ね、民兵で構成されたエリたちの軍勢は支離滅裂状態となっていた。[p]
+[se ref="156"]
+[se ref="047"]
+毎日数百人の逃亡者が出ており、士気も兵数も圧倒的に足りない状況だった。[p]
+[se ref="159"]
+[se ref="047"]
+#シードル
+[voice ref="080078"]
+エリ様、ここはいっそレーニングラッド要塞まで後退して、そこで再起を図るのがよろしいかと。[p]
+[scale id=0 sx=-1 time=100]
+[se ref="047"]
+#エリ
+[voice ref="080079"]
+私に逃げろっていうの！？[n]
+そんなのいやよ！　絶対ないわ！！[p]
+#シードル
+[voice ref="080080"]
+引くも作戦のうちです。[n]
+さあ！　お引き退きを！！[p]
+[se ref="047"]
+[se ref="156"]
+[move id=0 y=-2 time=50]
+[move id=0 y=2 time=50]
+[move id=0 y=-2 time=50]
+[move id=0 y=2 time=50]
+#エリ
+[voice ref="080081"]
+きーーー！！　この馬鹿ッ！！[p]
+[moveto id=0 x=60 time=100]
+[se ref="044"]
+[move id=1 x=10 time=50]
+[move id=1 y=-10 time=50]
+[se ref="047"]
+#シードル
+[voice ref="080082"]
+いたいっ！！[p]
+[se ref="156"]
+[se ref="047"]
+[scale id=0 sx=-1 time=100]
+#エリ
+[voice ref="080083"]
+全軍退却！！　シードルはしんがりを務めなさい！！[p]
+[scale id=0 sx=-1 time=100]
+[move id=0 x=70 time=300]
+[move id=1 y=2 x=2 time=500]
+[move id=1 y=2 x=-4 time=500]
+[move id=1 y=2 x=4 time=500]
+[move id=1 y=2 x=-4 time=500]
+[move id=1 y=2 x=2 time=500]
+[se ref="047"]
+[se ref="156"]
+#シードル
+[voice ref="080084"]
+いてて……[n]
+はい、承知しました……。[p]
+
+
+[hide_message]
+[filter name="fade" time="500"]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+;自動戦闘
+;ライザ勝利
+;86ペトロパブロフスク街道東占領
+[unit_heal unit=25]
+[unit_heal unit=26]
+[unit_heal unit=30]
+[battle_unit_in p0=26 p1=25 e0=30]
+[battle_time time=3]
+[battle_area id=86]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2000] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=1000] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=2300] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=1800] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=1900] ;シードル
+[sys_memset index=811 value="1"]
+[sys_memset index=811 value=1]

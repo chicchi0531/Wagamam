@@ -1,0 +1,34 @@
+;sStopDomination
+;侵攻戦を中止するときの汎用スクリプト
+
+[setskin ref="skin1"]
+
+[loadfg id=0 ref="alice"]
+[loadfg id=1 ref="chishire"]
+
+[show_message]
+
+[drawfg id=0 state=1]
+#アリス
+さーて、攻め込むぞ！[p]
+[drawfg id=1]
+#チシャ
+待ってください、アリス様！[p]
+[drawfg id=0 state=2]
+#アリス
+あん？　なんだよ……慌てて。[p]
+[drawfg id=1]
+#チシャ
+新たに手に入れた領地の整備で人手が足りていないんです。[p]
+兵士の皆さんにも協力してもらっているので、[p]
+とても戦闘をできる状態じゃないんです。[p]
+[drawfg id=0]
+#アリス
+ぐぬ……しょうがねえ。[n]
+攻め込むのは明日に延期だ！[p]
+[clearfg]
+[cn]
+一日に占領できる領地は一つのみです。[p]
+空いた時間は軍団の強化に使いましょう。[p]
+
+[hide_message]

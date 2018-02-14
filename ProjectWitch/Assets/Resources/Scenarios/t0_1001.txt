@@ -1,0 +1,225 @@
+;町イベント
+;No.1001
+;site : 広場
+;time : 昼
+;author : chicchi
+;title : ベガとメッサーシュミットのあつあつカレー対決
+;ロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="vega"]
+[loadcg id=2 ref="messer"]
+
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1029m"]
+[filter name="clear" time=500]
+[bgm ref="007_town"]
+
+[show_message]
+町の広場。[p]
+[drawcg id=0 pos=5 state=6]
+#アリス
+はぁ、今日は一段と熱いなぁ……。[p]
+[cn]
+うっとうしいセミの鳴き声をBGMにアリスが広場を歩いていると、[n]
+その一角に人だかりを見つけた。[p]
+[changecg id=0 state=0]
+[move id=0 y=5 time=70]
+[move id=0 y=-5 time=70]
+[wait time=200]
+[move id=0 y=5 time=70]
+[move id=0 y=-5 time=70]
+#アリス
+……ジャンボカツカレー、30分で完食したら賞金贈呈……ね。[p]
+まったく暑苦しい……って、ん？[p]
+
+[drawcg id=1 pos=2 layer="front"]
+[drawcg id=2 pos=1 dir="right" layer="front"]
+#ベガ
+…もっ、もっ………んぐ。[p]
+ふーっ、ふーっ！[n]
+はふっ、もぐもぐ………。[p]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+#アリス
+ベガ……！？[n]
+あいつなにやってんだ……。[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#メッサーシュミット
+ベガ！　人間のご飯っておいしいねえ！[n]
+もぐもぐ……！[p]
+#ベガ
+うむ……もぐもぐ。[p]
+この辛さが、後をひく……むぐ。[p]
+#観客A
+すげえ……、本当に完食するんじゃねえの。[p]
+#観客B
+みろよ、あっちの小さいドラゴン、風船みたいになってるぞ……。[p]
+[move id=0 x=5 time=200]
+#アリス
+ただでさえ暑いのに……なんつー暑苦しい光景だよ。[p]
+#ベガ
+ふう、うまかったぞ。[p]
+#観客A
+完食だ！！[p]
+#観客B
+あっちのドラゴンもだ！　すげえなこいつら。[p]
+[scale id=1 sx=-1 time=300]
+[changecg id=0 state=6]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+#ベガ
+む、おーい、アリス殿！[p]
+#アリス
+げ……見つかった。[p]
+[move id=1 x=30 time=900]
+#ベガ
+なんだ、アリス殿も食べに来たのか。[n]
+さあさあ、一緒に食べようじゃないか。[p]
+このカレーとかいう食べ物、非常に美味だぞ。[p]
+[move id=1 x=5 time=150]
+#アリス
+いや、カレーとかこのくそアツい……
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+って、お前！[n]
+汗だくじゃねえか！　うわっ！　さわるなっ！！[p]
+[scale id=1 sx=-1 time=300]
+#ベガ
+私たちの山では、汗は戦いの勲章で尊いものなのだ。[n]
+気にすることはない。[p]
+ご主人。彼女にも同じものを。[p]
+[move id=1 x=-5 time=300]
+[move id=0 x=-5 time=300]
+[move id=1 x=-5 time=300]
+[move id=0 x=-5 time=300]
+[move id=1 x=-5 time=300]
+[move id=0 x=-5 time=300]
+#アリス
+こっ、この脳筋種族め……！！[p]
+うっ、熱気が……。[p]
+[move id=1 x=-5 time=300]
+[move id=0 x=-5 time=300]
+[move id=1 x=-5 time=300]
+[move id=0 x=-5 time=300]
+[move id=1 x=-10 time=600]
+[scale id=1 sx=-1 time=300]
+[move id=2 x=70 time=1000]
+[scale id=2 sx=-1 time=300]
+#店主
+へいおまち！　今から30分ね。[n]
+はい、スタート！[p]
+#アリス
+えっ、いや。私はやるとは……。[n]
+[move id=0 y=-2 time=20]
+[move id=0 y=2 time=20]
+げっ！！[p]
+[cn]
+アリスの前に置かれたのは、アリスの帽子よりもでかいカレーの山だった！！[p]
+#アリス
+いや……無理だろこれ。[p]
+#ベガ
+さあさあ！　食べろ食べろ！[p]
+万一時間オーバーになっても私が持とう。[p]
+#アリス
+そういう問題じゃっ……くふぅっ！！[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#メッサーシュミット
+ほらっ！　どんどん食べてー！！[p]
+#アリス
+やっ、やめろ！！[p]
+勝手に人の口にねじこむな！！！！[p]
+#ベガ
+ほらほら！！[p]
+#メッサーシュミット
+ほらほらほら！！[p]
+#ベガ
+ほらほらほらほら！！[p]
+#メッサーシュミット
+ほらほらほらほらほらほらほら！！！！[p]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+#アリス
+ひゃっ、ひゃめろおおおおおーーーー！！！！[p]
+
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[cn]
+……………。[p]
+
+[drawcg id=2 pos=1 dir="right"]
+[drawcg id=1 pos=2 dir="right"]
+[drawcg id=0 pos=3 dir="right" state=6 layer="front"]
+[filter name="clear" time=500]
+[move id=0 y=5 time=200]
+[move id=0 y=-5 time=200]
+[wait time=200]
+[move id=0 y=5 time=200]
+[move id=0 y=-5 time=200]
+#アリス
+はあ、はあ……。えらい目に合った。[n]
+くち辛……。[p]
+#ベガ
+いやあっ！　見ているだけならそういえばよいではないか！[p]
+#アリス
+いう暇もなく強引に引っ張ってきたのはどこのどいつだよ……。[p]
+あー、畜生。帰ったらまず風呂だな。[n]
+汗べたべた……。[p]
+
+#ベガ
+風呂か！　風呂といえば、メッサーシュミットは風呂を沸かすのが得意なんだ。[p]
+炎のブレスでこう、メラメラっと……。[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#メッサーシュミット
+メラメラっと！[p]
+[scale id=0 sx=-1 time=100]
+#アリス
+や、やめておく……。[p]
+#ベガ
+そう遠慮するな！[p]
+さあさあ、メッサーシュミット！[p]
+[move id=2 y=5 time=50]
+[move id=2 y=-5 time=50]
+#メッサーシュミット
+はい！　早速お風呂を沸かしますね。[p]
+[move id=2 x=100 time=500]
+[scale id=0 sx=-1 time=100]
+[clearcg id=2]
+#アリス
+えっ、バカ！　本当にやらなくていいっての！[p]
+[move id=1 x=30 time=600]
+#ベガ
+まあまあ、行こうではないか！[p]
+[move id=1 x=10 time=600]
+[move id=0 x=10 time=600]
+#アリス
+オイ！　
+[move id=1 x=10 time=600]
+[move id=0 x=10 time=600]
+どこにつれていくんだ！！[p]
+[move id=1 x=10 time=600]
+[move id=0 x=10 time=600]
+わっ、やめろおおおーーーー！！！[p]
+[move id=1 x=50 time=600]
+[move id=0 x=50 time=600]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="fade" time=500]
+
+[cn]
+このあとベガとぐらぐらに煮えたぎった風呂に入浴したアリスは、[n]
+のぼせて半日ベッドから動けなかったそうな。[p]
+
+[hide_message]
+[clearbg]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+[sys_memset index=1001 value=1]

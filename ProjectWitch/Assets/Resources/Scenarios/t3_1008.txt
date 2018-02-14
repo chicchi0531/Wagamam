@@ -1,0 +1,321 @@
+;町イベント
+;No.1008
+;site：街はずれ
+;time : いつでも
+;author：chicchi
+;title : 増えるシードル！？
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="eli"]
+[loadcg id=2 ref="seedle"]
+[loadcg id=3 ref="seedle"]
+[loadcg id=4 ref="seedle"]
+
+[filter name="fade" time=500]
+[bgm ref="007_town"]
+[drawbg ref="1031m"]
+[drawcg id=0 posx=70 state=1]
+[drawcg id=1 pos=2]
+[drawcg id=2 pos=1 dir="right" layer="back"]
+[filter name="clear" time=500]
+
+[show_message]
+まちはずれ[p]
+[move id=0 x=-30 time=800]
+#アリス
+へへー、今日はいい買い物したなあ。[n]
+蛇のおもちゃに魔法爆竹、珍しい東の国の巻物……[p]
+[changecg id=0 state=0]
+……ん？　あれは。[p]
+[cn]
+町に行った帰り、アリスが館への道を歩いていると[n]
+むこうのほうで何やら話をしている[n]
+エリとシードルの姿を見つけた。[p]
+#アリス
+何話してんだ、あいつら。[p]
+[scale id=0 sx=-1 time=200]
+[wait time=500]
+[scale id=0 sx=-1 time=200]
+[wait time=500]
+[scale id=0 sx=-1 time=200]
+[move id=0 x=10 time=300]
+[scale id=0 sx=-1 time=0]
+[rotate id=0 angle=10 time=500]
+[cn]
+アリスはこっそりと二人に近づき、[n]
+近くの木の陰に身を隠した。[p]
+#アリス
+別に隠れる必要もなかったかな……。[p]
+[cn]
+そういいながら、アリスは二人の会話に耳を傾ける[p]
+#エリ
+ねえシードル。[n]
+あなた、その体ずいぶん古くなってきたん[n]
+じゃない？[p]
+#シードル
+そうですね……、激戦続きで急に傷んできてます。[n]
+殻にひびも入ってるし。[p]
+#エリ
+ちょっと周期が早いかもしれないけど、[n]
+今のうちにやっておくわ。[p]
+ちょっと待ってなさい……[n]
+[scale id=1 sx=-1 time=300]
+めておいんぱくと！！！！[p]
+;se メテオインパクト
+;se 爆発音
+;フラッシュ
+[filter name="flush" color="FFFF00" time=200]
+[wait time=200]
+[se ref="118_fx_eriA"]
+[wait time=3000]
+[filter name="flush" color="FF0000" time=200]
+[filter name="flush" color="FF0000" time=200]
+[se ref="050_b_bomb1"]
+[changecg id=0 state=6]
+[move id=0 y=-70 time=300]
+#アリス
+どわあああーーーー！！！！[p]
+[cn]
+エリの放っためておいんぱくとが、[n]
+アリスの隠れていた木の近くに落下した。[p]
+[scale id=1 sx=-1 time=300]
+;
+
+#エリ
+ん？　何か言った？　シードル。[p]
+#シードル
+いえ？　僕は何も。[p]
+[scale id=1 sx=-1 time=300]
+#エリ
+ふん、まあいいわ。[n]
+ほら、早くそこの穴に入りなさいよ。[p]
+[cn]
+エリは、先ほどのめておいんぱくとで地面にできた[n]
+穴を指さした。[p]
+[moveto id=2  x=50 time=800]
+[move id=2 y=-100 time=1000]
+#シードル
+こんな感じでいいですか？[p]
+#エリ
+ええ…………。[p]
+#シードル
+エリ様？[p]
+#エリ
+………ふ、……ふふ。[p]
+#シードル
+？[p]
+#エリ
+ふふふふふ！！[p]
+シードル！[n]
+何よそんなところに這いつくばっちゃって！！[p]
+そんなに私に踏まれたいのかしら！！？[p]
+#シードル
+ええっ！！？[p]
+いや、だってエリ様がそこに寝ろって……[n]
+[move id=1 x=5 y=-5 time=50]
+[se ref="044_kick"]
+[move id=1 x=-5 y=5 time=50]
+いたいっ！！[p]
+#エリ
+そんなに踏まれたいなら存分に踏んであげるんだから！[p]
+[move id=1 x=5 y=-5 time=50]
+[se ref="044_kick"]
+[move id=1 x=-5 y=5 time=50]
+ほらっ、
+[move id=1 x=5 y=-5 time=50]
+[se ref="044_kick"]
+[move id=1 x=-5 y=5 time=50]
+ほらあっ！！！！[p]
+#シードル
+いたっ、ああっ！！[n]
+いたいですよ！　エリ様ぁーーー！！！[p]
+[changecg id=0 state=2]
+[move id=0 y=70 time=600]
+#アリス
+ぐ……てて、えらい目に合った。[n]
+なんだよ、ただ変態プレイしてただけじゃねえか。[p]
+くそ、買い物袋もずたずたになっちまった……。[p]
+#シードル
+いてっ、いてっ！！[n]
+え、エリ様、早く埋めてくださいよ！[p]
+#エリ
+はっ……！[n]
+そうだったわ。[p]
+シードルが寝ていたからつい……。[p]
+
+[changecg id=0 state=6]
+#アリス
+おいおい、今度は生き埋めプレイか？[n]
+ついていけねえっての……。[p]
+[move id=1 y=-5 time=200]
+[move id=1 x=10 time=500]
+[move id=1 x=-10 time=200]
+[move id=1 x=10 time=500]
+[move id=1 x=-10 time=200]
+[move id=1 x=10 time=500]
+[move id=1 x=-10 time=200]
+[move id=1 y=5 time=200]
+[cn]
+アリスがドン引きしているあいだに、[n]
+エリは手際よくシードルを地中に埋めてしまった。[p]
+#エリ
+シードル！[n]
+いいわよ、生えてきなさい！！[p]
+#シードル
+はいっ！[p]
+#アリス
+！？[p]
+なっ、なんだぁ！！？[p]
+[se ref="117_fx_velonicaB"]
+[filter name="color" color="ffffff" time=1000]
+[cn]
+シードルの返事が聞こえると同時に、[n]
+彼が埋まっているあたりの地面がまばゆい光を放った。[p]
+その光は徐々に木の形へと変わり、光が収まると、[n]
+そこには青々とした広葉樹がたっていた。[p]
+[filter name="clear" time=1000]
+#アリス
+……な、なんの魔法だよ、これ。[p]
+#エリ
+よいしょっと……。[p]
+[move id=1 y=3 x=1 time=200]
+[wait time=100]
+[move id=1 y=3 x=1 time=200]
+[wait time=100]
+[move id=1 y=3 x=1 time=200]
+[cn]
+広葉樹の下に、エリはどこから取り出したのか[n]
+脚立を立て、それに上ると、[n]
+広葉樹に実った木の実をもぎ取った。[p]
+[scale id=1 sx=-1 time=300]
+[move id=1 y=-3 x=-1 time=200]
+[wait time=100]
+[move id=1 y=-3 x=-1 time=200]
+[wait time=100]
+[move id=1 y=-3 x=-1 time=200]
+[scale id=1 sx=-1 time=300]
+すべての木の実を収穫すると、[n]
+エリはそれを地面にばらまき、呪文を唱え始めた。[p]
+#エリ
+大樹の祝福を受けしあまたの精霊よ、[n]
+今この種子に新たな命を与えたまえ。[p]
+目覚めよ、シードラウト。[p]
+[cn]
+[se ref="129_fx_poison"]
+エリの詠唱に呼応し、[n]
+地面の木の実がぶくぶくと膨れ始めた。[p]
+それは次第に人の大きさまで膨れ、手足をはやし、[n]
+ついには見慣れたシードルの姿を成した。[p]
+
+[scale id=2 sx=-1 time=0]
+[move id=2 y=100 time=0]
+[drawcg id=3 posx=10]
+[drawcg id=4 posx=20]
+#アリス
+……な、わ、私は夢でも見てるのか。[p]
+#エリ
+調子はどう？　シードル。[p]
+#シードル１
+大丈夫そうです、エリ様。[p]
+#シードル２
+殻も新品になりましたから、[n]
+これで激戦にも耐えられそうです。[p]
+#シードル３
+でも、３体も作ってどうするんですか？[p]
+#エリ
+あら、まとめて作っておけば、[n]
+万が一壊れても替えがきくじゃない！[p]
+#シードル１
+さすが、エリ様！[n]
+そこまで考えていたなんて！[p]
+#エリ
+ええ！　でも安心しなさい。[n]
+お仕置きはみんな平等にしてあげるんだから！[p]
+#シードル２
+やったあ、じゃあ早速僕から！[p]
+#シードル３
+なっ、ずるいぞシードル！[p]
+#シードル２
+お前もシードルだろ！[p]
+#シードル３
+ああ、それもそうだ！！[p]
+#シードルたち
+あはは、あはは、あはははは！！[p]
+#アリス
+あ、悪夢だ……[n]
+そうだといってくれぇ。[p]
+[scale id=2 sx=-1 time=300]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+#シードル１
+あっ、エリ様、アリス様が！[p]
+[scale id=3 sx=-1 time=100]
+[scale id=4 sx=-1 time=100]
+#エリ
+しまった！[n]
+今のを見ていたんだわ。[p]
+シードル！　アリスを捕まえてきなさい！！[p]
+#シードルたち
+はい！！！[p]
+#アリス
+わっ、わっ！[n]
+くっ、くるな……。[p]
+こっちへ来るなああああーーーー！！！[p]
+[hide_message]
+[filter name="fade" time=500]
+[stopbgm]
+[rotate id=0 angle=-10 time=0]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[clearcg id=4]
+[bgm ref="003_alice2"]
+[drawcg id=0 pos=2 dir="right" state=6]
+[drawcg id=1 posx=70]
+[drawbg ref="1002m"]
+[filter name="clear" time=500]
+;アリスの居室
+#アリス
+はっ！！！！[p]
+よ、よかった……夢か。[p]
+ま、マジで悪夢だったぞ……。[p]
+;ノック
+[se ref="160"]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+おぉ、入っていいぞ。[p]
+[move id=1 x=-30 time=1000]
+[changecg id=0 state=6]
+[move id=0 y=2 time=20]
+[move id=0 y=-2 time=20]
+#エリ
+アリス、シードルのことなんだけど……。[p]
+[move id=0 x=-5 time=50]
+#アリス
+！？[p]
+お、おい……。[p]
+#エリ
+シードルの殻が最近傷んでて……。[p]
+[scale id=0 sx=-1 time=100]
+#アリス
+わーー！！　みてない！[n]
+私は何にもみてないぞおぉぉーーー！！！[p]
+[move id=0 x=-50 time=300]
+[move id=1 x=-10 time=60]
+#エリ
+あっ、ちょっと！！[n]
+どこ行くのよ！！[p]
+……なんなの、もう。[p]
+シードルの殻の修繕費が経費でおりないか[n]
+聞きに来ただけなのに……。[p]
+
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[hide_message]
+[clearbg]
+[wait time=500]
+[filter name="clear" time=500]
+[stopbgm]
+
+[sys_memset index=1008 value=1]

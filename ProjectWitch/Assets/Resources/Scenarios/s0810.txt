@@ -1,0 +1,104 @@
+﻿;script 810
+;directer:yuichi
+;script:nikai
+;timing:s0809後
+
+[field_area_hilight id=91]
+[wait time=500]
+
+[loadcg id=0 ref="veronica"]
+[loadcg id=1 ref="nia"]
+
+[filter name="fade" time=500]
+[bgm ref="005_battle2"]
+[drawbg ref="1030m"]
+[drawcg id=0 pos=5]
+[filter name="clear" time=500]
+
+[show_message]
+エカテリーナ要塞[p]
+#ヴェロニカ
+[voice ref="080065"]
+右翼と左翼は前進して敵軍の横をついて！[n]
+中央軍は敵を食い止めるのよ！！[p]
+[voice ref="080066"]
+みんな頑張って！　耐えるのよ！！[p]
+[cn]
+エカテリーナ要塞は守りの薄い小さな要塞だった。[p]
+壁の高さはマジノラインやレーニングラッド要塞と比べると半分にも満たず、[n]
+敵は城壁の上までやすやすと登ってきていた。[p]
+#ヴェロニカの部下
+[voice ref="080067"]
+西門が破られました！！[n]
+敵がなだれ込んできます！！[p]
+[drawcg id=1 pos=1 dir="right" layer="front" mode="slidein"]
+#ニア
+[voice ref="080068"]
+キャハハハハハッ！！[n]
+ライザから援軍もらったもんね！[p]
+[voice ref="080069"]
+こんな小さい砦、力押しでもらくしょーだよ！[p]
+[move id=0 x=-5 time=50]
+#ヴェロニカ
+[voice ref="080070"]
+ニア！！[p]
+#ニア
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[voice ref="080071"]
+ああっ！　ヴェロニカだ！！[p]
+[rotate id=1 angle=10 time=200]
+[voice ref="080072"]
+キヒヒッ！　
+[rotate id=1 angle=-10 time=200]
+ねえねえ、私たちに裏切られて今どんな気分？[n]
+[move id=1 x=5 time=50]
+[move id=1 x=-5 time=50]
+悔しい？
+[move id=1 x=5 time=50]
+[move id=1 x=-5 time=50]
+　悔しい？[p]
+#ヴェロニカ
+[voice ref="080073"]
+いいえ、この結果は私の未熟さが招いたもの……。[p]
+[voice ref="080074"]
+ですから、私はこの戦いに勝ってあなたたちを反省させる義務があります。[p]
+#ニア
+[move id=1 y=-5 time=200]
+[voice ref="080075"]
+えー、なにそれ。[n]
+ちょーつまんないんですけどぉー。[p]
+[move id=1 x=4 y=2 time=200]
+[move id=1 x=-8 y=2 time=200]
+[move id=1 x=4 y=1 time=200]
+[voice ref="080076"]
+もういいや、キヒヒッ……ヴェロニカぁ。[n]
+死んじゃえええーーー！！[p]
+[hide_message]
+[filter name="fade" time="0"]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+;自動戦闘
+;ニア勝利
+;91エカテリーナ要塞占領
+;ニアの兵数を増加
+[unit_heal unit=24]
+[unit_heal unit=32]
+[battle_unit_in p0=24 e0=32]
+[battle_time time=3]
+[battle_area id=91]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2300] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=3800] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=2500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2100] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2200] ;シードル
+
+[sys_memset index=810 value="1"]

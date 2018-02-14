@@ -1,0 +1,22 @@
+;s0606B
+;パンプキング戦、敗北時の処理
+
+;パンプキングを捕獲していた場合は解雇する
+[unit_unemploy unit=17]
+
+;パンプキングの部下が死んでいた場合は元データの部下も殺す
+[if_death unit=289]
+[unit_kill unit=36]
+[endif]
+
+[if_death unit=290]
+[unit_kill unit=37]
+[endif]
+
+[if_death unit=291]
+[unit_kill unit=38]
+[endif]
+
+[if_death unit=292]
+[unit_kill unit=39]
+[endif]

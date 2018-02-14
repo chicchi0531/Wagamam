@@ -1,0 +1,211 @@
+;s0208
+;author:yuichi
+;timing:s0207戦闘後
+
+;マップスクロール
+[field_area_hilight id=22]
+[wait time=200]
+
+;ロード
+[loadcg id=0 ref="triaina"]
+[loadcg id=1 ref="helen"]
+[loadcg id=2 ref="alice"]
+[loadcg id=3 ref="kuro"]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1030e"]
+
+[show_message]
+
+
+[if_alive unit=5]
+[bgm ref="021_event6"]
+
+[drawcg id=2 pos=4 state=1]
+[drawcg id=0 pos=2 dir="right"]
+[drawcg id=3 pos=5 layer="front" mode="slidein"]
+[filter name="clear" time=500]
+#アリス
+[voice ref="020362"]
+お前が氷の魔女、トリアイナか。[p]
+#トリアイナ
+[voice ref="020363"]
+くっ……。[p]
+#アリス
+[voice ref="020364"]
+おいお前。[n]
+よくも山の魔女なんかと組んで私の邪魔をしてくれたな？[p]
+#トリアイナ
+[voice ref="020365"]
+優勢につくのは当然のことよ……。[p]
+[voice ref="020366"]
+あの時は山の魔女のほうが優勢だった。[n]
+それだけのことよ……。[p]
+#アリス
+[voice ref="020367"]
+ほう？[n]
+では、今ならどっちにつく？[p]
+#クロ
+[voice ref="020368"]
+アリス様。むやみに勧誘する癖、[n]
+いい加減おやめください。[p]
+[changecg id=2 state=2]
+[scale id=2 sx=-1 time=100]
+#アリス
+[voice ref="020369"]
+いいから、黙って聞いてろ。[p]
+#トリアイナ
+[voice ref="020370"]
+あなた、[n]
+まさか私を仲間に誘っているんじゃないでしょうね？[p]
+[changecg id=2 state=1]
+[scale id=2 sx=-1 time=100]
+#アリス
+[voice ref="020371"]
+なかま？ んなわけねえだろ。[n]
+クフフフッ！[p]
+[voice ref="020372"]
+お前は今日から、私の部下になるんだよ！[p]
+[voice ref="020373"]
+部下だぞ？[n]
+仲間なんてお友達ごっこじゃねえんだ。[p]
+[voice ref="020373a"]
+私の指示には従ってもらう。[n]
+守れないならこの場で殺す。[p]
+[voice ref="020373b"]
+……さあ、選びな。[p]
+#トリアイナ
+[voice ref="020374"]
+……ヘレンは。ヘレンはどこにいるの。[p]
+[changecg id=2 state=0]
+#アリス
+[voice ref="020375"]
+ヘレン？[p]
+[voice ref="020376"]
+……ああ、あの人間のかっこうした人魚か。[n]
+珍しいからとらえてあるぞ。[p]
+[scale id=2 sx=-1 time=100]
+[voice ref="020377"]
+おい、そこのお前、持ってきてやれ。[p]
+#トリアイナ
+[voice ref="020378"]
+あなた……意外と博識なのね。[n]
+人魚と人間の違いが判るなんて。[p]
+[scale id=2 sx=-1 time=300]
+#アリス
+[voice ref="020379"]
+昔ババアに教わっただけだ。[n]
+それより、返事はどうなんだ？[p]
+#トリアイナ
+[voice ref="020380"]
+……私は、ずっと一人だったわ。[n]
+氷の世界で生まれて、一人で氷の世界で生きてきた。[p]
+[drawcg id=1 pos=1 dir="right" mode="slidein" state=5]
+#ヘレン
+[voice ref="020381"]
+トリアイナ！[p]
+[scale id=0 sx=-1 time=100]
+#トリアイナ
+[voice ref="020382"]
+……！[n]
+……でも、ヘレンとオリヴィアが来てから変わったわ[p]
+[scale id=0 sx=-1 time=400]
+[wait time=100]
+[move id=0 x=10 time=500]
+[voice ref="020383"]
+二人とお茶会を開くのは、とても楽しかった。[p]
+[voice ref="020384"]
+……オリヴィアが死んで、ヘレンがいなくなって、[n]
+私はまた一人になったわ。[p]
+[voice ref="020385"]
+もとに戻っただけのはずだった。[n]
+……でも違ったわ。[p]
+[voice ref="020386"]
+心にぽっかりと穴が開いた気分、というのは、[n]
+あんな感じなんでしょうね。[p]
+[voice ref="020387"]
+今は私の日常を奪った山の魔女が許せない。[p]
+[voice ref="020388"]
+……私はオリヴィアのかたきが討ちたい。[p]
+#ヘレン
+[voice ref="020389"]
+トリアイナ……。[p]
+#トリアイナ
+[voice ref="020389a"]
+ヘレン、ごめんなさい。[p]
+[voice ref="020389b"]
+華の魔女アリス。[n]
+氷の魔女トリアイナ、今より、あなたの部下として、精一杯力を尽くします。[p]
+[changecg id=2 state=1]
+#アリス
+[voice ref="020389c"]
+ふん、よく言った！[p]
+[voice ref="020389d"]
+クフフフフッ！　たっぷり働いてもらうから、[n]
+覚悟しておけよ！[p]
+[cn]
+トリアイナとヘレンが、アリスの部下に加わった。[p]
+ドラゴンたちの軍勢を前にして、[n]
+二人はオリヴィアのために戦う決意をしたのだった。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[filter name="clear" time=500]
+
+;進行度を加算
+[sys_memset index=4000 value="3"]
+
+[else]
+
+[cn]
+[bgm ref="019_event4"]
+戦闘の終わった砦に、[n]
+二人の亡骸が折り重なるようにして横たわっていた。[p]
+トリアイナとヘレンだ。[p]
+[drawcg id=2 pos=4 state=2]
+[filter name="clear" time=500]
+#アリス
+[voice ref="020359"]
+こいつ……、氷の魔女か。[n]
+ふん、無様なもんだ。[p]
+[voice ref="020360"]
+山の魔女なんかと組まず、[n]
+私のほうに来ればいいようにしてやったのに。[p]
+[scale id=2 sx=-1 time=100]
+[voice ref="020361"]
+おい、全員ゆっくり休めよ。[n]
+明日から本格的にドラゴンとの戦いになるぞ。[p]
+[move id=2 x=50 time=500]
+[cn]
+アリスの吐き捨てた言葉が届くはずもなく、[n]
+二人の亡骸は、そのうつろな目で、[n]
+遠くの空を見上げていた。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=2]
+[filter name="clear" time=500]
+
+[endif]
+
+
+[stopbgm]
+[sys_memset index=208 value="1"]
+
+;トリアイナ占領フラグ
+[sys_memset index=10001 value="1"]
+
+;トリアイナ軍をベガ軍に混ぜるフラグを折る
+[sys_memset index=10104 value=0]
+
+;ショップフラグの加算
+[sys_memget index=4010 local=0]
+[calc opr="add" index0=0 value1=1 to=0]
+[sys_memset index=4010 local=0]

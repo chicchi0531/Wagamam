@@ -1,0 +1,65 @@
+;s0701_71
+;リリィ領、アリス軍
+;地点66 ot 71占領時
+;リソースロード
+
+[field_area_hilight id=71]
+[wait time=200]
+
+;load
+[filter name="fade" time=500]
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+[drawbg ref="1022m"]
+[bgm ref="018_event3"]
+[filter name="clear" time=500]
+
+[show_message]
+[drawcg id=0 pos=2 dir="right"]
+[drawcg id=1 pos=1 dir="right"]
+#アリス
+[voice ref="070029"]
+クロ、敵の様子は。[p]
+#クロ
+[voice ref="070030"]
+はっ。[p]
+[voice ref="070031"]
+どうやら本隊が動き始めた模様です。[p]
+[voice ref="070032"]
+無数のゾンビ軍団が[n]
+こちらへ向かっているとの情報が入りました。[p]
+#アリス
+[voice ref="070033"]
+なに？　こっちは領地に入ったばかりだぞ。[n]
+思ったより動きが早いな……。[p]
+#クロ
+[voice ref="070034"]
+アリス様、沼の魔女の率いるゾンビたちは[n]
+とても手ごわいといいます。[p]
+[voice ref="070035"]
+ご用心なされませ。[p]
+[changecg id=0 state=1]
+#アリス
+[voice ref="070036"]
+ふん、ゾンビだか何だか知らんが、私の敵ではないわ[n]
+兵を進めるぞ、クロ。[p]
+#クロ
+[voice ref="070037"]
+はっ、承知しました。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+[stopbgm]
+
+;図書館フラグ 「風土　リリィ領」
+[sys_memset index=5020 value=1]
+
+[sys_memset index=701 value="1"]
+
+[sys_memset index=10016 value="1"]
+[sys_memset index=10107 value="1"]

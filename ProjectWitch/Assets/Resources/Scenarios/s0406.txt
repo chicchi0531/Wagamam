@@ -1,0 +1,83 @@
+;s0406
+;author: yuichi
+;timing: ベガ戦前
+
+[field_area_hilight id=42]
+[wait time=200]
+
+[loadcg id=0 ref="messer"]
+[loadcg id=1 ref="vega"]
+
+[filter name="fade" time=500]
+[drawbg ref="1006m"]
+[bgm ref="010_vega"]
+[filter name="clear" time=500]
+
+[drawcg id=1 pos=5 ]
+[drawcg id=0 pos=2 dir="right"]
+#メッサーシュミット
+[voice ref="040273"]
+長老もやられたって……。[p]
+#ベガ
+[voice ref="040274"]
+メッサーシュミット、言葉に気を付けろとあれほど……。[p]
+[move id=0 x=10 time=300]
+#メッサーシュミット
+[voice ref="040275"]
+いまさらそんなこと気にしていられないよ！！[p]
+[voice ref="040276"]
+ねえベガ！　今なら間に合うよ、[n]
+華の魔女に降参するんだ！[p]
+#ベガ
+[voice ref="040277"]
+私にはドラゴンたちの尊厳と魂を守る義務が……。[p]
+#メッサーシュミット
+[voice ref="040278"]
+ベガはドラゴンじゃない！！　魔女だろ！！[p]
+#ベガ
+[voice ref="040279"]
+ッ……！！[p]
+もういい出ていけ……。[p]
+[move id=0 x=10 time=300]
+#メッサーシュミット
+[voice ref="040280"]
+出ていかないよ！　ベガが降参するまで、[n]
+ここにいるから！！[p]
+[move id=1 x=-5 time=50]
+[move id=0 x=-20 time=100]
+#ベガ
+[voice ref="040281"]
+出ていけーーーーッッッッ！！！！！！[p]
+#メッサーシュミット
+[voice ref="040282"]
+ひっ……！！[p]
+[scale id=0 sx=-1 time=0]
+[move id=0 x=-50 time=300]
+[cn]
+ベガの怒号は神殿を震わせた、メッサーシュミットはあまりの迫力に腰を抜かし、逃げるように神殿から出て行った。[p]
+あとに残されたベガは、ぺたりと崩れ落ち、[n]
+はあっ、と、深いため息をついた。[p]
+#ベガ
+[voice ref="040283"]
+……………。[n]
+……私は器ではないのだ。[p]
+[voice ref="040284"]
+そんなこと、私が一番わかっているのだ。[p]
+[voice ref="040285"]
+…………お父様、私にはやっぱり無理なんです。[p]
+[cn]
+アリスの軍勢は目の前まで迫っているというのに、神殿の中は恐ろしいほど静まり返っていた。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+;ユニットセット
+[battle_unit_in e0=9]
+[battle_bgm ref="005_battle2"]
+
+[stopbgm]
+[sys_memset index=406 value="1"]

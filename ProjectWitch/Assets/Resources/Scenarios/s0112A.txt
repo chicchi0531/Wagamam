@@ -1,0 +1,7 @@
+;s0112A
+;メイジーボス戦用
+
+;ユニットセット
+[battle_unit_in e0=2]
+[battle_card_in e0=13 e1=15 e2=16]
+[battle_bgm ref="005_battle2"]

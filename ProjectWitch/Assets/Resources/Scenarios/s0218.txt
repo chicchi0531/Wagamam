@@ -1,0 +1,154 @@
+;s0218
+;author: yuichi
+;timing:s0217翌ターン
+
+;ロード
+[loadcg id=0 ref="triaina"]
+[loadcg id=1 ref="helen"]
+[loadcg id=2 ref="marger"]
+[loadcg id=3 ref="orivia"]
+
+;マップスクロール
+[field_area_hilight id=28]
+[wait time=200]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1005m"]
+[filter name="clear" time=500]
+[bgm ref="008_orivia"]
+
+
+[show_message]
+オリヴィアの家。[p]
+トリアイナたちに続き、追っ手を逃れたマルゲルが、オリヴィアの家にたどり着いた。[p]
+[drawcg id=3 pos=3 state=1]
+#オリヴィア
+[voice ref="020553"]
+マルゲルさん！！[p]
+[drawcg id=2 pos=2 dir="right"]
+#マルゲル
+[voice ref="020554"]
+すみません……少し、敵の矢を受けてしまって……。[p]
+#オリヴィア
+[voice ref="020555"]
+ひどい出血……！！[n]
+今魔法でふさぎますからね！[p]
+[se ref="153"]
+[filter name="flush" color="FFFFFF" time=300]
+[cn]
+オリヴィアの治癒魔法が、マルゲルの傷をみるみるとふさいでいった。[p]
+#マルゲル
+[voice ref="020556"]
+あなたに助けられるのは二度目ですね。[n]
+かたじけない。[p]
+#オリヴィア
+[voice ref="020557"]
+動かないでください！[n]
+まだ傷がふさがったばかりです。[p]
+[voice ref="020558"]
+それに、回復魔法は傷をふさぐだけで、[n]
+体力までは回復できませんから。[p]
+[voice ref="020559"]
+ひとまず休まないと……。[p]
+[voice ref="020560"]
+おかゆか何か作っておきますから、[n]
+起きたら食べてください……。[p]
+[voice ref="020561"]
+それから……。[p]
+#マルゲル
+[voice ref="020562"]
+……ふふ。[p]
+[changecg id=3 state=0]
+#オリヴィア
+[voice ref="020563"]
+あっ……その。えっ……？[p]
+#マルゲル
+[voice ref="020564"]
+いえ、すいません……。[p]
+[voice ref="020564a"]
+オリヴィア殿、[n]
+もっとおとなしい方だと思っていましたので。[p]
+[voice ref="020564b"]
+饒舌に話されるのが少し意外で……。[p]
+[move id=3 x=10 time=100]
+#オリヴィア
+[voice ref="020565"]
+あっ……す、すいません。つい……。[p]
+#マルゲル
+[voice ref="020566"]
+私のことを心配して下さったのでしょう？[n]
+それに、そちらの方が私もやりやすい。[p]
+#オリヴィア
+[voice ref="020567"]
+そっ、そうですか……。[p]
+[drawcg id=1 posx=25 layer="front" state=4 mode="slidein"]
+#ヘレン
+[voice ref="020568"]
+あらー、オリヴィアったら顔赤くしちゃって、[n]
+なにかあったのかなぁー？[p]
+[scale id=3 sx=-1 time=100]
+#オリヴィア
+[voice ref="020569"]
+へ、ヘレン！[p]
+#ヘレン
+[voice ref="020570"]
+ま、ま、続けて続けて。[p]
+[move id=3 y=5 time=50]
+[move id=3 y=-5 time=50]
+#オリヴィア
+[voice ref="020571"]
+もう！　からかわないでよ！[p]
+[drawcg id=0 posx=40 layer="front" mode="slidein"]
+[scale id=1 sx=-1 time=100]
+#トリアイナ
+[voice ref="020572"]
+そうよヘレン。[n]
+今はのんきに冗談を飛ばしている暇はないのですから[p]
+#マルゲル
+[voice ref="020573"]
+トリアイナ殿。[n]
+戦況はどのように。[p]
+#トリアイナ
+[voice ref="020574"]
+早めに撤退したのが幸いしたわ。[p]
+[voice ref="020575"]
+向こうはまだ、湖の周辺の掃討作戦に追われているでしょうね。[p]
+[voice ref="020575a"]
+こちらの軍を整える時間は十分にあるわ。[p]
+#マルゲル
+[voice ref="020576"]
+そうですか。[n]
+オリヴィア殿の軍備はいかに。[p]
+#トリアイナ
+[voice ref="020577"]
+今ここを守っているのは、[n]
+オリヴィア直近の3000の兵よ。[p]
+[voice ref="020577a"]
+私のと合わせて4500ね。[p]
+#マルゲル
+[voice ref="020578"]
+戦力には申し分ありませんが、[n]
+何しろここは守りにくい森の中です。[p]
+[voice ref="020579"]
+砦がない今、少しこちらの方が、分が悪いですね。[p]
+#トリアイナ
+[voice ref="020579a"]
+何か策でもあるのかしら。[p]
+#マルゲル
+[voice ref="020579b"]
+……ええ、一つ。[p]
+
+;クリア処理
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[clearcg id=3]
+[filter name="clear" time=500]
+
+;終了処理
+[stopbgm]
+[sys_memset index=218 value="1"]

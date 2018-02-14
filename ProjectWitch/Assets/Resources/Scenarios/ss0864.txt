@@ -1,0 +1,133 @@
+;ss0864
+;ライザ戦に備えての強化
+
+[setskin ref="skin1"]
+[bgm ref="002_alice1"]
+
+[loadfg id=0 ref="alice"]
+[loadfg id=1 ref="eri"]
+
+[show_message]
+[drawfg id=1]
+#エリ
+アリス。[n]
+ちょっといいかしら？[p]
+[drawfg id=0 state=0]
+#アリス
+あん？[p]
+[drawfg id=1]
+#エリ
+あなたの領地の帳簿をチシャから見せてもらったのだけど、[n]
+少し言いたいことがあるわ。[p]
+[drawfg id=0 state=2]
+#アリス
+なっ、なんだよ……。[p]
+[drawfg id=1]
+#エリ
+まず予算の1割を占めている私費ってのはなにかしら？[p]
+[drawfg id=0]
+#アリス
+そ、それは……まあ飲み代とか、[n]
+いたずらに使えそうなグッズ買ったりとか……。[p]
+[drawfg id=1]
+#エリ
+は？[p]
+ふざけてるのあなた。[p]
+全部軍備に回すわね。[p]
+[drawfg id=0]
+#アリス
+ええっ！　す、少しくらいいいだろ！？[p]
+ていうか、うちの領地の予算なんだから好きにさせろよ！[p]
+[drawfg id=1]
+#エリ
+そうもいかないわ。[p]
+ライザと戦ううえで、[n]
+今のままでは圧倒的に兵士の数が足りないのよ。[p]
+いい？[p]
+ライザの軍は、一つの隊で5000人規模のものがほとんどなのよ？[p]
+対して、こちらの軍備は半分程度。[p]
+まるで勝ち目がないのよ。[p]
+[drawfg id=0]
+#アリス
+ご、5000人……。[p]
+[drawfg id=1]
+#エリ
+チシャが強く言えないからってこれまで好き放題してきたようだけど、[p]
+私が来たからには、そうはさせないわ。[p]
+徹底的に倹約するわよ！！[p]
+それから、今は徴兵に仲介の奴隷商人を使っているけど、[p]
+これを各町の町長に頼んで公共事業としてやってもらうようにしましょう。[p]
+これで徴兵のコストも削減できるわ。[p]
+それから………。[p]
+[drawfg id=0 state=0]
+#アリス
+……あの、難しいことはわかんねえんだけど。[p]
+酒場にのみに行くくらいはいいだろ？[p]
+[drawfg id=1]
+#エリ
+……一回15マナ以内にしなさい。[p]
+[drawfg id=0 state=2]
+#アリス
+15マナぁ！？　学生の飯じゃねえんだぞ！[p]
+[drawfg id=1]
+#エリ
+アンタ魔女で言えば学生くらいの歳でしょうが。[p]
+[drawfg id=0]
+#アリス
+それを言ったらお前はどうなんだよ……。[p]
+[drawfg id=1]
+#エリ
+とにかく、ライザを倒すまでは少し我慢なさい。[p]
+[drawfg id=0]
+#アリス
+くそぉー！！　ライザぶっ殺す！！[p]
+[drawfg id=1]
+#エリ
+そうそう、その粋よ。[p]
+
+[clearfg]
+[cn]
+[se ref="032_itemget"]
+エリが財政の改革を行いました。[p]
+【毎ターンの領地の収入が大幅に増加しました】[p]
+【各拠点がより多くのマナを蓄えるようになりました】[p]
+【兵士増加に必要なコストが減りました】[p]
+【エリと一緒に逃げてきたヴェロニカ軍の残党が加入しました】[p]
+【エリが持っていた装備とカードを入手しました】[p]
+※ライザ軍と戦うために、[n]
+各隊兵士数5000を目指して増員していきましょう！[p]
+
+[hide_message]
+
+;アイテム入手
+[get_item category="card" id=7]
+[get_item category="card" id=7]
+[get_item category="card" id=8]
+[get_item category="card" id=8]
+[get_item category="card" id=32]
+[get_item category="card" id=32]
+[get_item category="card" id=32]
+[get_item category="card" id=32]
+[get_item category="card" id=44]
+[get_item category="card" id=44]
+[get_item category="card" id=44]
+[get_item category="card" id=44]
+[get_item category="equipment" id=37]
+[get_item category="equipment" id=37]
+[get_item category="equipment" id=25]
+[get_item category="equipment" id=25]
+[get_item category="equipment" id=4]
+[get_item category="equipment" id=4]
+[get_item category="equipment" id=10]
+[get_item category="equipment" id=10]
+[get_item category="equipment" id=11]
+
+;ユニット加入
+[unit_employ unit=166]
+[unit_employ unit=167]
+[unit_employ unit=176]
+[unit_employ unit=177]
+
+
+[sys_memset index=864 value=1]
+[sys_memset index=4016 value=1]

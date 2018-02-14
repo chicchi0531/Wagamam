@@ -1,0 +1,27 @@
+;s0710
+;場面10後　魔女の沼戦闘前
+
+[field_area_hilight id=76]
+[wait time=200]
+
+[filter name="fade" time=500]
+[drawbg ref="Event/704"]
+[bgm ref="013_lily"]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+[voice ref="070161"]
+よし、次は右腕だな。[p]
+お前ら！　気合い入れて行けよーー！！！[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[filter name="clear" time=500]
+
+;ユニットセット
+[battle_unit_in e0=10]
+[battle_bgm ref="013_lily"]
+
+[sys_memset index=709 value="1"]

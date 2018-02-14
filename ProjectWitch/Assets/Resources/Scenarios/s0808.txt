@@ -1,0 +1,26 @@
+﻿;script 808
+;directer:yuichi
+;script:nikai
+;timing:s0808後
+
+[field_area_hilight id=87]
+
+;自動戦闘
+;ライザ勝利
+;87ペトロパブロフスク街道西占領
+[unit_heal unit=25]
+[unit_heal unit=26]
+[unit_heal unit=30]
+[battle_unit_in p0=26 p1=25 e0=30]
+[battle_time time=3]
+[battle_area id=87]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2500] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=4000] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=2500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2100] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2200] ;シードル
+
+[sys_memset index=808 value="1"]

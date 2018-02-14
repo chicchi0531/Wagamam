@@ -1,0 +1,95 @@
+﻿;script 812
+;directer:yuichi
+;script:nikai
+;timing:s0811後
+
+[field_area_hilight id=90]
+[wait time=500]
+
+[loadcg id=0 ref="veronica"]
+[loadcg id=1 ref="nia"]
+
+[filter name="fade" time=500]
+[bgm ref="004_battle1"]
+[drawbg ref="1018m"]
+[drawcg id=1 posx=-100 dir="right"]
+[filter name="clear" time=500]
+
+[show_message]
+モスクの森南。[p]
+ここでの戦いでヴェロニカ軍がとったのはゲリラ戦の形だった。[p]
+#ヴェロニカ
+[voice ref="080085"]
+まだよ……、よく引き付けて。[p]
+[cn]
+ニア軍が進軍しているそばの茂みには、大量の伏兵が潜伏していた。[p]
+森の中にはトラップや伏兵などの障害が張り巡らされ[n]
+ニア軍は昼夜問わずヴェロニカ軍に襲われるのだ。[p]
+[move id=1 x=20 time=400]
+[wait time=200]
+[move id=1 x=20 time=400]
+[wait time=200]
+[move id=1 x=20 time=400]
+[wait time=200]
+[move id=1 x=20 time=400]
+[wait time=200]
+[move id=1 x=20 time=400]
+[wait time=200]
+[scale id=1 sx=-1 time=300]
+[wait time=100]
+[scale id=1 sx=-1 time=300]
+#ニア
+[voice ref="080086"]
+ぜえ……ぜえ……。[n]
+もう！！[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[voice ref="080087"]
+一体どんだけ歩かせるのよ！！[n]
+迷ってるんじゃないのォ？[p]
+[drawcg id=0 pos=5]
+#ヴェロニカ
+[voice ref="080088"]
+今よっ！！　突撃ッ！！[p]
+[se ref="159"]
+[se ref="047"]
+#ニア
+[move id=1 x=-5 y=5 time=50]
+[move id=1 y=-5 time=50]
+[voice ref="080089"]
+まっ、またあ！？[n]
+ちょっと！　早く反撃しなさいよ！！[p]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+[move id=1 y=5 time=50]
+[voice ref="080090"]
+もぉヤダぁーーー！！！！[p]
+
+[hide_message]
+[filter name="fade" time="500"]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+;自動戦闘
+;ニア敗北
+;モスクの森南　キープ
+[unit_heal unit=24]
+[unit_heal unit=32]
+[battle_unit_in p0=24 e0=32]
+[battle_time time=3]
+[battle_area id=90]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2300] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=3800] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=2500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2100] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2200] ;シードル
+
+[sys_memset index=812 value="1"]

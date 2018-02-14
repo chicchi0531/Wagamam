@@ -1,0 +1,43 @@
+;s0401A
+;グラマン戦勝利
+
+;ロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="gramman"]
+
+;フィールドスクロール
+[field_area_hilight id=37]
+[wait time=200]
+
+;場面転換
+[filter name="fade" time=500]
+[drawbg ref="1008m"]
+[bgm ref="010_vega"]
+[filter name="clear" time=500]
+
+[show_message]
+[drawcg id=0 pos=3 state=6]
+#アリス
+ぜえぜえ……、は、ハハハハハ！[n]
+か、勝ったぞ畜生……。[p]
+（くそ……、マジで強かったなコイツ。）[p]
+[changecg id=0 state=0]
+ん？　なんだこれ……？[p]
+[cn]
+アリスは、グラマンの死体の中に、一振りのつるぎを見つけた。[p]
+[changecg id=0 state=1]
+#アリス
+へえ、よく切れそうな剣だなあ。[n]
+戦利品としてもらっておくか。[p]
+[cn]
+アメノムラクモを手に入れた！[p]
+[hide_message]
+
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearbg]
+[filter name="clear" time=500]
+
+[get_item category="equipment" id="50"]
+[stopbgm]
+[sys_memset index=403 value=1]

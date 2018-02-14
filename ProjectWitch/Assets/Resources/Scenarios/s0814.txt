@@ -1,0 +1,56 @@
+﻿;script 814
+;directer:yuichi
+;script:nikai
+;timing:s0811後
+
+[field_area_hilight id=89]
+[wait time=500]
+
+[loadcg id=0 ref="veronica"]
+[loadcg id=1 ref="nia"]
+
+[filter name="fade" time=500]
+[bgm ref="004_battle1"]
+[drawbg ref="1018e"]
+[drawcg id=1 pos=2 dir="right"]
+[filter name="clear" time=500]
+
+[show_message]
+モスクの森北。[p]
+#ヴェロニカ
+[voice ref="080097"]
+今よッ！　突撃ー！！[p]
+[drawcg id=0 pos=4 mode="slidein"]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#ニア
+[voice ref="080098"]
+まっ、またあ！？[p]
+
+[hide_message]
+[filter name="fade" time="500"]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+;自動戦闘
+;ヴェロニカ勝利
+;モスクの森北　キープ
+[unit_heal unit=24]
+[unit_heal unit=32]
+[battle_unit_in p0=24 e0=32]
+[battle_time time=3]
+[battle_area id=89]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2200] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=2000] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=2500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2100] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2200] ;シードル
+
+[sys_memset index=814 value="1"]

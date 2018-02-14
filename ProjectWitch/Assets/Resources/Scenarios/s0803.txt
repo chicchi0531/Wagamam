@@ -1,0 +1,25 @@
+﻿;script 803
+;directer:yuichi
+;script:nikai
+;timing:0803の後　ターンはじめ
+
+[field_area_hilight id=93]
+
+;自動戦闘
+;ニア勝利
+;93マジノライン北占領
+[unit_heal unit=24]
+[unit_heal unit=32]
+[battle_unit_in p0=24 e0=32]
+[battle_time time=3]
+[battle_area id=93]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=2900] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=4400] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=3000] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=2600] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=2600] ;シードル
+
+[sys_memset index=803 value="1"]

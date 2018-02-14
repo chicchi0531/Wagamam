@@ -1,0 +1,57 @@
+﻿;script 807
+;directer:yuichi
+;script:nikai
+;timing:s0807のあと　内乱が終わっている　ターンはじめ
+
+[field_area_hilight id=1]
+[wait time=500]
+
+[loadcg id=0 ref="alice"]
+
+[filter name="fade" time=500]
+[bgm ref="016_event1"]
+[drawbg ref="white"]
+[filter name="clear" time=500]
+
+;背景真っ白
+#？？？
+[voice ref="080044"]
+……－い！　な……し…………ス！！[p]
+[voice ref="080045"]
+やー……！！なき……ア………！！[p]
+[voice ref="080046"]
+やーい！！泣き虫アリス！！[p]
+;背景アリスの部屋
+[stopbgm]
+[filter name="clear" time=500]
+
+[show_message]
+#アリス
+[voice ref="080047"]
+……れが……。[p]
+[drawcg id=0 pos=3 state=2]
+[drawbg ref="1002e"]
+[bgm ref="003"]
+[move id=0 y=5 time=50]
+[move id=0 y=-5 time=50]
+[voice ref="080048"]
+誰が泣き虫だッッ！！！！[p]
+[voice ref="080049"]
+……はあ、はあ。[n]
+…………。なんだ今の夢……。[p]
+[voice ref="080050"]
+この私を馬鹿にしやがって……。[p]
+[cn]
+その日のアリスの機嫌は最悪で、
+普段から散々怒られているチシャでさえ
+怖くてあまり近づけなかったほどだった。[p]
+[hide_message]
+[filter name="fade" time="500"]
+[clearbg]
+[clearcg id=0]
+[wait time=500]
+[filter name="clear" time="500"]
+[stopbgm]
+
+
+[sys_memset index=807 value="1"]

@@ -1,0 +1,6 @@
+;s0707A
+;
+
+;ユニットセット
+[battle_unit_in e0=18]
+[battle_bgm ref="013_lily"]

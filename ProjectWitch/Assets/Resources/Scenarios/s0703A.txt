@@ -1,0 +1,6 @@
+;s0703A
+;リリィ戦
+
+;ユニットセット
+[battle_unit_in e0=20]
+[battle_bgm ref="005_battle2"]

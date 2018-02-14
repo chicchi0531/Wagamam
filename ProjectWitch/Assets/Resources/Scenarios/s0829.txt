@@ -1,0 +1,25 @@
+﻿;script 829
+;directer:yuichi
+;script:nikai
+;timing:s0828後
+
+;ベルリ城城下
+;自動戦闘
+;ライザ軍勝利
+;ベルリ城城下占領
+[unit_heal unit=30]
+[battle_unit_in p0=26 p1=25 p2=24 e0=30 e1=194]
+[battle_time time=3]
+[battle_area id=83]
+[battle_auto][battle_nonpre]
+
+;各ユニットの兵数設定
+[unit_data_change id=24 member="SoldierNum" value=300] ;ヴェロニカ
+[unit_data_change id=32 member="SoldierNum" value=1800] ;ニア
+[unit_data_change id=30 member="SoldierNum" value=1500] ;ライザ
+[unit_data_change id=25 member="SoldierNum" value=150] ;エリ
+[unit_data_change id=26 member="SoldierNum" value=200] ;シードル
+
+[field_area_hilight id=83]
+[wait time=500]
+[sys_memset index=829 value="1"]

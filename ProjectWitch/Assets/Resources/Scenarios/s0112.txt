@@ -1,0 +1,85 @@
+﻿;s0112
+;script yuichi
+;direction yuichi
+;アリス領　ニルギリ砦
+;条件　ニルギリ砦に侵攻
+;タイミング　戦闘前
+;メモ　ワーウルフの首を見て、兵士の士気が低下している ワーウルフの首を見せつけられたメイジー軍の士気は、 すでに落ちるところまで落ちており、 逃亡する兵士まで現れる始末だった。
+
+[field_area_hilight id=10]
+[wait time=200]
+
+;リソースロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+[loadcg id=2 ref="meisie"]
+
+[filter name="fade" time=500]
+[drawbg ref="1048m"]
+[bgm ref="017_event2"]
+[filter name="clear" time=500]
+
+[drawcg id=2 pos="center"]
+[show_message]
+#メイジー
+[voice ref="010079"]
+ワーウルフ……。[p]
+#部下
+[voice ref="010080"]
+メイジー様。[n]
+アリス率いる軍勢が攻めてまいりました。 [p]
+[scale id=2 sx=-1 time=300]
+[move id=2 x=20 time=600]
+[move id=2 y=-5 time=200]
+#メイジー
+[voice ref="010081"]
+アリス……姉さん。 わたし……、私は……。[p]
+#部下
+[voice ref="010082"]
+……いかがなさいますか。[p]
+#メイジー
+[move id=2 y=5 time=300]
+…………。[p]
+[scale id=2 sx=-1 time=600]
+[voice ref="010083"]
+……門を開いて。 全員で打って出るわ。[p]
+#部下
+[voice ref="010084"]
+はっ。[n]
+開門！！　総員突撃用意！！[p]
+[cn]
+
+[filter name="fade" time=500]
+[clearcg id=2]
+……………。[p]
+;場面転換
+[drawbg ref="1047m"]
+[filter name="clear" time=500]
+
+[drawcg id=0 pos="right" dir="right"]
+[drawcg id=1 pos="left" dir="right" state=2]
+#クロ
+[voice ref="010085"]
+アリス様。[n]
+敵勢、一斉突撃を開始した模様。[p]
+#アリス
+[voice ref="010086"]
+メイジー……。[n]
+フン、まあそうするほかないだろう。[n]
+迎え撃つぞ、全員構えろッ！！[p]
+;戦闘　VS メイジー
+
+[hide_message]
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+;ユニットセット
+[battle_unit_in e0=2]
+[battle_card_in e0=13 e1=15 e2=16]
+[battle_bgm ref="005_battle2"]
+
+[stopbgm]
+[sys_memset index=112 value="1"]

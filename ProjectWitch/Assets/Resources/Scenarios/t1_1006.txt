@@ -1,0 +1,150 @@
+;町イベント
+;No.1006
+;site：酒場
+;time : いつでも
+;author：chicchi
+;title : アカリとかぼちゃ1
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="master"]
+[loadcg id=2 ref="akari"]
+
+[filter name="fade" time=500]
+[bgm ref="020_event5"]
+[drawbg ref="1051m"]
+[drawcg id=1 pos=5]
+[drawcg id=0 pos=3 dir="right" state=0]
+[drawcg id=2 posx=-70 dir="right"]
+[filter name="clear" time=500]
+
+
+[se ref="166"]
+[show_message]
+#マスター
+いらっしゃい。[p]
+[moveto id=2 x=10 time=600]
+[scale id=0 sx=-1 time=300]
+#アカリ
+……………。[p]
+[changecg id=0 state=1]
+#アリス
+あっ、おーい、アカリ！[n]
+こっち来いよ。[p]
+#アカリ
+……………。[p]
+[move id=2 x=10 time=400]
+[cn]
+すっかり出来上がっているアリスに呼ばれたアカリは
+アリスの２つ隣の席に腰掛けた。[p]
+#アカリ
+ケーキセットとマンゴープリン……。[p]
+#マスター
+はいよ。[n]
+セットの飲み物は何にします？[p]
+#アカリ
+エスプレッソ。[p]
+#アリス
+オマエ、なんだよ。[n]
+１個席をあけないで、隣に座れよなぁ。[p]
+[wait time=500]
+[move id=0 x=-10 time=600]
+[cn]
+そう言うとアリスはアカリの隣へ移動する。[p]
+[changecg id=0 state=0]
+#アリス
+ケーキとプリンって、昼間っから甘いなあ……。[n]
+そんなに食ったらブクブクふとるぞぉ？[p]
+;
+#アカリ
+……………。[p]
+[scale id=2 sx=-1 time=300]
+[cn]
+アリスの面倒なカラミをうっとうしく感じ、アカリは席を立つ。[p]
+[changecg id=0 state=6]
+#アリス
+あー！　待て待て、行くな！[p]
+この店のデザートは美味しいんだ、まじで！[p]
+[changecg id=0 state=1]
+おごってやるからさあ。[n]
+最後まで食ってけよ、な？[p]
+
+#アカリ
+……………。[p]
+[scale id=2 sx=-1 time=500]
+[cn]
+アリスに引き止められて、アカリはしぶしぶ席に着く。[p]
+#アリス
+オマエ、こういう店くるタイプじゃないだろ？[p]
+どうしたんだよ、突然。[p]
+#アカリ
+……雑誌で、この店が出てて、デザートが美味しいって。[p]
+#アリス
+へえ、やるじゃねえかマスター。[p]
+[move id=1 x=-30 time=800]
+[se ref="168"]
+[wait time=500]
+[scale id=1 sx=-1 time=300]
+[move id=1 x=30 time=800]
+[scale id=1 sx=-1 time=300]
+#マスター
+まあな、うちは女性客が少ないから、今はデザートにチカラを入れてるんだ。[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+そういう事情なら、こいつを貸してやるよ。[p]
+[move id=2 y=-2 time=20]
+[move id=2 y=2 time=20]
+#アカリ
+えっ………。[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+オマエお菓子作りが趣味とか言ってたじゃねえか。[p]
+このマスターは、女心のカケラもわからん、しょーもないヤツだから、[n]
+デザート開発に協力してやってくれよ。[p]
+#マスター
+その言い方は鼻につくが……、まあ困ってるのは本当だな。[p]
+たまたま雑誌のライターと知り合いで載せてもらえたが……。[p]
+[changecg id=0 state=2]
+[scale id=0 sx=-1 time=200]
+#アリス
+あっ！[n]
+オマエ、コネ使ってんじゃねえぞ！！[p]
+いっけないんだ！　出版社にクレームつけてやろ！[p]
+[move id=1 y=5 time=50]
+[move id=1 y=-5 time=50]
+#マスター
+わっ、バカやめろ！！[n]
+やめてください、まじで！[p]
+店が潰れちまう！！[p]
+[changecg id=0 state=1]
+#アリス
+クフフッ！[n]
+[scale id=0 sx=-1 time=300]
+…で、実際どうなんだよ、この店のデザートの味は[p]
+#アカリ
+……うん、まあ、フツウ？[p]
+[changecg id=0 state=6]
+#アリス
+うわ、一番おもしろくない評価だ。[p]
+#マスター
+ほっとけ！[p]
+[changecg id=0 state=1]
+#アリス
+アカリ、こいつに協力してやれよ。[n]
+なんだったら、オマエの好きなデザートを店で食えるようになるかもしれないぞ？[p]
+#アカリ
+……そんなにいうなら、やってみても……いい、けど。[p]
+[cn]
+こうして、お店の新メニュー開発が始まった。[p]
+……続く。[p]
+
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearcg id=2]
+[hide_message]
+[clearbg]
+[wait time=500]
+[filter name="clear" time=500]
+[stopbgm]
+
+[sys_memset index=1006 value=1]

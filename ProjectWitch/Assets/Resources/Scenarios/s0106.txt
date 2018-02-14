@@ -1,0 +1,87 @@
+﻿;s0106
+;script yuichi
+;direction yuichi
+;アリス領　アリスの館
+;条件　なし
+;タイミング　■場面6の続き
+
+[field_area_hilight id=1]
+[wait time=200]
+
+;データロード
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="chishire"]
+
+[filter name="fade" time=500]
+[drawbg ref="1002m"]
+[bgm ref="003_alice2"]
+[filter name="clear" time=500]
+
+[drawcg id=0 pos="right" state="2"]
+[drawcg id=1 pos="left" dir="right"]
+[show_message]
+#チシャ
+[voice ref="010031"]
+お疲れ様でございました。[n]
+今日は良い茶葉が入りましたよ、どうぞ。[p]
+#アリス
+[voice ref="010032"]
+あーーーー！！[n]
+今は紅茶なんてゆっくり飲んでいる気分じゃなーーい！！[p]
+[rotate id=0 angle=10 time=50]
+[rotate id=0 angle=-10 time=50]
+;水音
+[move id=1 x=-5 y=5 time=50]
+[move id=1 y=-5 time=50]
+#チシャ
+[voice ref="010033"]
+わっ！[n]
+アリス様、紅茶がこぼれて書類が、ああああ……。[p]
+[move id=1 x=10 time=200]
+[move id=1 x=0 y=-10 time=200]
+[move id=1 x=5 y=0 time=200]
+[wait time=200]
+[scale id=1 sx=-1 time=100]
+[move id=1 x=-5 y=0 time=200]
+[wait time=200]
+[scale id=1 sx=-1 time=100]
+[move id=1 x=5 y=0 time=200]
+[wait time=200]
+[scale id=1 sx=-1 time=100]
+[move id=1 x=-5 y=0 time=200]
+#アリス
+[voice ref="010034"]
+畜生、あの魔導砲さえ何とかできれば……。[p]
+#チシャ
+[scale id=1 sx=-1 time=300]
+[move id=1 x=0 y=10 time=200]
+[voice ref="010035"]
+魔導砲でございますか。[p]
+#アリス
+[voice ref="010036"]
+ババアも厄介なものを残してくれたもんだ。[n]
+作ろうにも、短期間で作れる代物じゃないし……。[p]
+#チシャ
+[voice ref="010037"]
+抜け道でもあったらいいのですが、[n]
+あ……いえ、[n]
+そんなものあったら砦の意味がないですが。[p]
+#アリス
+[changecg id=0 state=1]
+[voice ref="010038"]
+いや……抜け道か。[n]
+クフフフフフフ、 いけるかもしれんぞ？[p]
+#チシャ
+[voice ref="010039"]
+え？[n]
+アリス様……それは一体。[p]
+[hide_message]
+
+[filter name="fade" time=500]
+[clearbg]
+[clearcg id=0]
+[clearcg id=1]
+[filter name="clear" time=500]
+
+[stopbgm]
+[sys_memset index=106 value="1"]

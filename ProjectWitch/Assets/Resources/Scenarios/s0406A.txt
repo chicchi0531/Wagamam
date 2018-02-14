@@ -1,0 +1,6 @@
+;s0406A
+;ベガ戦
+
+;ユニットセット
+[battle_unit_in e0=9]
+[battle_bgm ref="005_battle2"]

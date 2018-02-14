@@ -1,0 +1,73 @@
+﻿;script 833
+;directer:yuichi
+;script:nikai
+;timing:s0832後
+[field_area_hilight id=1]
+[filter name="fade" time=500]
+
+[loadcg id=0 ref="alice"]
+[loadcg id=1 ref="kuro"]
+
+[bgm ref="003_alice2"]
+[drawbg ref="1002m"]
+
+[drawcg id=0 pos=2]
+
+[wait time=500]
+[filter name="clear" time=500]
+
+[show_message]
+アリスの館。[p]
+[se ref="160"]
+[se ref="046"]
+[drawcg id=1 pos=4]
+#クロ
+[voice ref="080358"]
+アリス様[n]
+領内で倒れているエリ様を私の部下が保護したとの知らせが。[p]
+[scale id=0 sx=-1 time=300]
+#アリス
+[voice ref="080359"]
+ん……？[n]
+エリ、って誰だよ。[p]
+#クロ
+[voice ref="080360"]
+ヴェロニカ様の部下の方でございます。[n]
+向こうでお会いになりませんでしたか。[p]
+#アリス
+[voice ref="080361"]
+エリ……[n]
+いや、あってないぞ。[p]
+#クロ
+[voice ref="080362"]
+そうでございましたか……。[p]
+[voice ref="080363"]
+ともかく客室の方で療養していただきますので、[n]
+後でお見舞いなされませ。[p]
+#アリス
+[voice ref="080364"]
+わかった。 覚えておく。[p]
+#クロ
+[voice ref="080365"]
+はっ！[n]
+それでは、失礼します。[p]
+[scale id=1 sx=-1 time=300]
+[move id=1 x=80 time=800]
+[cn]
+クロが出ていくと、アリスはため息をついて紅茶をすすった。[p]
+#アリス
+[voice ref="080366"]
+エリねえ……[n]
+まあ、「こっち側」を統一してやることもなくなったし行ってやるかなぁ……。[p]
+
+[hide_message]
+[filter name="fade" time=500]
+[clearcg id=0]
+[clearcg id=1]
+[clearbg]
+[stopbgm]
+[wait time=500]
+[filter name="clear" time="500"]
+
+
+[sys_memset index=833 value="1"]
