@@ -27,3 +27,8 @@ koromosoft@gmail.com
 もし、自分の担当言語のものがない場合は、お手数ですがお問い合わせください
 すぐに作成いたします
 eng: https://1drv.ms/u/s!AukCacgL6VaKhIkh78mqvptmuePngQ
+
+## テクスチャについて
+テクスチャの翻訳については、PSDの元データを提供するので、使用してください。
+編集不可のテキスト部分があるかもしれないので、どうしても修正が難しい場合はお問い合わせください
+https://1drv.ms/u/s!AukCacgL6VaKhIlRftqYPSkrLQ-Ntw
