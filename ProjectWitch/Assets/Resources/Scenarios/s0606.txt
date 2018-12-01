@@ -1,4 +1,4 @@
-﻿;s0606
+;s0606
 ;script: nikai
 ;direction: yuichi
 ;timing: s0605あと　パンプキング決戦前
@@ -25,24 +25,24 @@
 
 [move id=1 x=0 y=10 time=50]
 [move id=1 x=0 y=-10 time=50]
-#パンプキン部下（赤）
+#南瓜部下（红）
 [voice ref="060055"]
-パンプキング様！　魔女たちがもうすぐそこまで！[p]
+南瓜王大人！魔女的军队马上就要赶到了！[p]
 [move id=2 x=0 y=10 time=50]
 [move id=2 x=0 y=-10 time=50]
-#パンプキン部下（青）
+#南瓜部下（青）
 [voice ref="060056"]
-やばいよ！[p]
+糟糕了！[p]
 [move id=3 x=0 y=10 time=50]
 [move id=3 x=0 y=-10 time=50]
-#パンプキン部下（ピンク）
+#南瓜部下（粉）
 [voice ref="060057"]
-まけるよ！[p]
+要输了啊！[p]
 [move id=4 x=0 y=10 time=50]
 [move id=4 x=0 y=-10 time=50]
-#パンプキン部下（銀）
+#南瓜部下（银）
 [voice ref="060058"]
-どうしよーー！！[p]
+怎么办ーー！！[p]
 [move id=0 x=0 y=-30 time=400]
 [move id=0 x=0 y=2 time=10]
 [move id=0 x=0 y=-2 time=10]
@@ -50,22 +50,22 @@
 [move id=0 x=0 y=-2 time=10]
 #パンプキング
 [voice ref="060059"]
-ぐぬーーー！！[n]
-畜生、魔女のやつめええぇーー！！[p]
+唔ーーー！！[n]
+可恶，那个混蛋魔女ーー！！[p]
 [voice ref="060060"]
-せっかく領主になったってのに！！[p]
+我好不容易才能当上领主！！[p]
 [move id=1 x=0 y=10 time=50]
 [move id=1 x=0 y=-10 time=50]
-#パンプキング部下（赤）
+#南瓜王部下（红）
 [voice ref="060061"]
-ああっ！　ほら、もうすぐそこまで！！[p]
+啊啊！你们看，马上就要过来了！！[p]
 [move id=0 x=0 y=30 time=100]
-#パンプキング
+#南瓜王
 [voice ref="060062"]
-ああーー！！[n]
-こうなったらヤケだ！！[p]
+啊啊ーー！！[n]
+死马当活马医！！[p]
 [voice ref="060063"]
-全員一緒に突撃だーーー！！[p]
+全军突击ーーー！！[p]
 [scale id=1 sx=-1 time=100]
 [clearcg id=1 mode="slideout"]
 [scale id=2 sx=-1 time=100]

@@ -14,7 +14,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-モスクの森北。[p]
+莫斯库森林。[p]
 #ヴェロニカ
 [voice ref="080099"]
 総員退避っ！！[p]

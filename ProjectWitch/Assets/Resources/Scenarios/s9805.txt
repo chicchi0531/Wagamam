@@ -8,77 +8,77 @@
 [show_message]
 [drawfg id=0 state=2]
 #アリス
-はぁ、疲れたぞ……。[p]
+哈啊，累死了……。[p]
 [drawfg id=1]
 #チシャ
-お疲れ様でございますアリス様。[p]
+辛苦了，爱丽丝小姐。[p]
 [drawfg id=0]
 #アリス
-兵にもちょっと被害が出たな。[p]
+兵力也有点损伤啊。[p]
 [drawfg id=1]
 #チシャ
-アリス様、減ってしまった兵は補充をすることができます。[p]
+爱丽丝小姐，我们可以补充减少的兵力。[p]
 
 [create_gameobject id=0 ref="Tutorial/field_menubar_menu_hilight"]
 
-補充はメニューの「軍団編成」から行うことができます。[p]
+补充可以在「军团编成」界面进行。[p]
 [drawfg id=0 state=0]
 #アリス
-へえ、他にもメニューがあるみたいだけど。[p]
+哎，好像还有其他菜单啊。[p]
 [drawfg id=1]
 #チシャ
-はい！[p]
+是！[p]
 
 [create_gameobject id=1 ref="Tutorial/field_menubar_army_cursor"]
 
-「軍団編成」は、[n]
-主に兵の補充や最大兵数の増加[n]
-ユニットそのものを強化するレベルアップなどを行うことができます。[p]
+「军团编程」[n]
+可以补充士兵数量和增加最大兵力[n]
+也可以对单位进行升级强化。[p]
 
 [delete_gameobject id=1]
 [create_gameobject id=1 ref="Tutorial/field_menubar_item_cursor"]
 
-「アイテム」は、[n]
-現在所持している[n]
-「装備」「カード」を確認することができます。[p]
+「物品」菜单，[n]
+可以确认现在所持的[n]
+「装备」「卡片」。[p]
 
 [delete_gameobject id=1]
 [create_gameobject id=1 ref="Tutorial/field_menubar_tips_cursor"]
 
-「図書館」は、[n]
-ゲームの操作に関するヘルプや、[n]
-この世界に関する様々な書籍を読むことができます。[p]
+「图书馆」界面里，[n]
+会有游戏操作相关的帮助，[n]
+还有和这个世界相关的各种书籍。[p]
 
 [delete_gameobject id=1]
 [create_gameobject id=1 ref="Tutorial/field_menubar_system_cursor"]
 
-最後に「システム」ですが、[n]
-「セーブ」「ロード」「設定」[n]
-の３つを行うことができます。[p]
+最后的「系统」界面，[n]
+有「保存」「载入」「设定」[n]
+三个选项。[p]
 
 [delete_gameobject id=0]
 [delete_gameobject id=1]
 
 [drawfg id=0 state=2]
 #アリス
-うーん、いっぱいあって覚えきれないな……。[p]
+嗯，太多了记不住……。[p]
 [drawfg id=1]
 #チシャ
-アリス様、細かい操作は[n]
-「図書館」の書籍に書いてあります。[p]
-操作に行き詰ったときは、ここをのぞいてみてください。[p]
+爱丽丝小姐，具体的操作在[n]
+「图书馆」的书籍中可以查看。[p]
+操作不顺的时候，请看看这里。[p]
 [drawfg id=0 state=0]
 #アリス
-そうだな、とりあえずやってみて、わかんなかったらのぞいてみるわ。[p]
+是啊，总之下先试试，忘了的话再来看看。[p]
 [drawfg id=1]
 #チシャ
-はい！[p]
+是！[p]
 [clearfg]
 [cn]
-【これにてチュートリアルは終了です。】[p]
-【何か操作でわからない部分があれば[n]
-メニューの図書室をのぞいてみてください。】[p]
-【それでは、わがままアリスと百日戦争の世界をお楽しみください。】[p]
+【至此教程全部结束。】[p]
+【有不明白的操作的话[n]
+请查看菜单的图书馆。】[p]
+【接下来，请尽情享受爱丽丝和百日战争的世界。】[p]
 
 [hide_message]
 

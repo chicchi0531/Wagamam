@@ -1,4 +1,4 @@
-﻿;script 0602
+;script 0602
 ;script: nikai
 ;direction: yuichi
 ;timing: s0601あと　ターンはじめイベント
@@ -19,58 +19,58 @@
 [filter name="clear" time=500]
 
 [show_message]
-お菓子の家[p]
+点心之家[p]
 [drawcg id=0 pos=2 mode="slidein" dir="right" state=1]
 
 #かぼちゃの人形
 [voice ref="060014"]
-アカリサマ……、オチャヲオモチシマシタ。[p]
+灯里大人……我把茶拿来了。[p]
 #アカリ
 [voice ref="060015"]
-ご苦労様……。[p]
+辛苦了……。[p]
 [voice ref="060016"]
-……なに、これ。[n]
-ヘンな……味……。[p]
+……这是，是吗。[n]
+味道……好怪……。[p]
 [move id=1 x=0 y=-20 time=300]
 [cn]
-どさりとアカリの体が倒れた。[p]
+灯里的身体瞬间倒下。[p]
 #アカリ
 [voice ref="060017"]
-くう……。[p]
+呜……。[p]
 [clearcg id=1 mode="fadeout"]
 [clearcg id=0 mode="fadeout"]
 [drawcg id=0 pos=2 dir="right"]
 
 #かぼちゃの人形
 [voice ref="060018"]
-ゲヒヒヒヒヒヒ……、案外簡単に眠ったな。[n]
-魔女ってのも案外大したことねえや。[p]
+呜嘻嘻嘻……那么简单就睡着了。[n]
+所谓的魔女也没什么了不起的嘛。[p]
 [scale id=0 sx=-1 time=200]
 [move id=0 x=0 y=10 time=50]
 [move id=0 x=0 y=-10 time=50]
 [voice ref="060019"]
-オイ、野郎ども！！　[n]
-こいつを地下牢につないでおけ！[p]
+喂， 小的们！！[n]
+把这家伙带到地下牢！[p]
 [cn]
-かぼちゃの人形が指示すると[n]
-小さなかぼちゃたちがわらわらと部屋に入ってきた。[p]
+南瓜人偶发出指示后，[n]
+小的南瓜们便冲进了房间。[p]
 [scale id=0 sx=-1 time=200]
 [drawcg id=2 pos=2 mode="slidein" dir="right" layer="front"]
 #小さなかぼちゃ（赤）
 [voice ref="060020"]
-キャー！　魔女様が倒れてるー！[p]
+呀啊ー！魔女大人被打倒了ー！[p]
 [drawcg id=3 pos=2 mode="slidein" dir="right" layer="front"]
 #小さなかかぼちゃ（青）
 [voice ref="060021"]
-倒れてるー！！[p]
+打倒了ー！！[p]
 [drawcg id=4 pos=2 mode="slidein" dir="right" layer="front"]
 #小さなかぼちゃ（ピンク）
 [voice ref="060022"]
-そーれ、はこべー！！[p]
+嘿咻，用力搬ー！！[p]
 [drawcg id=5 pos=2 mode="slidein"dir="right"  layer="front"]
 #小さなかぼちゃ（銀）
 [voice ref="060023"]
-はこべー！！[p]
+用力搬ー！！[p]
 [move id=2 x=100 y=0 time=400]
 [move id=3 x=100 y=0 time=400]
 [move id=4 x=100 y=0 time=400]
@@ -81,27 +81,27 @@
 [clearcg id=5]
 
 [cn]
-小さなかぼちゃたちはアカリをあっという間に担ぎ、[n]
-どこかへ運んで行ってしまった。[p]
-かぼちゃたちはかぼちゃの人形がアカリの部下から適当に選んで、
-宝石の力を分け与えたかぼちゃの人形直属の部下だった。[p]
+小南瓜们没花多久就把灯里抬了起来，[n]
+似乎是要搬到哪里去。[p]
+小南瓜们是南瓜人偶随机选出的灯里的部下，
+南瓜人偶分了一部分宝石的力量给了他们。[p]
 [moveto id=0 x=50 y=50 time=300]
 #かぼちゃの人形
 [voice ref="060024"]
-ゲヒヒヒヒヒヒッ！！[n]
-これでこの領地は俺様、パンプキング様のものだ！！[p]
+嘿嘿嘿嘿！！[n]
+这下这个领地就是我南瓜王的啦！！[p]
 [voice ref="060025"]
-ゲヒヒ……、ゲヘヘヘヘヘヘヘッ！！！！[p]
+嘿嘿嘿……嘿嘿嘿！！！！[p]
 [move id=0 x=0 y=5 time=50]
 [move id=0 x=0 y=-5 time=50]
 [move id=0 x=0 y=5 time=50]
 [move id=0 x=0 y=-5 time=50]
 [voice ref="060026"]
-アーッヒャッヒャッヒャッヒャッヒャッ！！！！[p]
+啊哈哈哈哈哈哈哈！！！！[p]
 [cn]
-かぼちゃの人形、改めパンプキングの高笑いがあたりに響き渡った。[p]
-この時から領主アカリは地下深くに閉じ込められ、[n]
-アカリの領地はパンプキングが統治することとなった[p]
+南瓜人偶，南瓜王的笑声响彻了周围。[p]
+从这时开始，领主灯里被关在地下，[n]
+灯里的领地也变成了南瓜王的 [p]
 
 [hide_message]
 [filter name="fade" time="500"]

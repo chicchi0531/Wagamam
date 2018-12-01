@@ -1,4 +1,4 @@
-﻿;script 825
+;script 825
 ;directer:yuichi
 ;script:nikai
 ;timing:
@@ -15,22 +15,22 @@
 [filter name="clear" time=500]
 
 [show_message]
-ワルサワの町。[p]
+古泽镇。[p]
 [move id=0 x=-20 time=400]
 [wait time=200]
 [scale id=0 sx=-1 time=100]
 [move id=0 x=40 time=800]
 #ヴェロニカ
 [voice ref="080177"]
-建物の間に隠れて！[n]
-ホムンクルスが来たら相手にしないこと！[p]
+躲到建筑之间！[n]
+人偶来了，千万不要反抗！[p]
 [scale id=0 sx=-1 time=300]
 [voice ref="080178"]
-ライザ……[n]
-あなた、まさかホムンクルスに手を出すなんて……。[p]
+蕾塞……[n]
+没想到你竟会动用人偶……。[p]
 [filter name="fade" time="500"]
 [cn]
-市街地での戦いが始まった。[p]
+市区中的战斗开始了。[p]
 
 [hide_message]
 [clearbg]

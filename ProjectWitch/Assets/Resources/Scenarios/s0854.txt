@@ -1,4 +1,4 @@
-﻿;script 854
+;script 854
 ;directer:yuichi
 ;script:nikai
 ;timing:s0848後

@@ -1,4 +1,4 @@
-﻿;script 814
+;script 814
 ;directer:yuichi
 ;script:nikai
 ;timing:s0811後
@@ -16,16 +16,16 @@
 [filter name="clear" time=500]
 
 [show_message]
-モスクの森北。[p]
+莫斯库森林。[p]
 #ヴェロニカ
 [voice ref="080097"]
-今よッ！　突撃ー！！[p]
+就是现在！突击ー！！[p]
 [drawcg id=0 pos=4 mode="slidein"]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
 #ニア
 [voice ref="080098"]
-まっ、またあ！？[p]
+又，又来！？[p]
 
 [hide_message]
 [filter name="fade" time="500"]

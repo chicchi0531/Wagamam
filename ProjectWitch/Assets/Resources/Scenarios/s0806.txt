@@ -1,4 +1,4 @@
-﻿;script 806
+;script 806
 ;directer:yuichi
 ;script:nikai
 ;timing:s0805の後　ターンはじめ

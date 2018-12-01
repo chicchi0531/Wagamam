@@ -1,4 +1,4 @@
-﻿;script 827
+;script 827
 ;directer:yuichi
 ;script:nikai
 ;timing:s0826後
@@ -30,45 +30,45 @@
 ;ライザ
 #？？？
 [voice ref="080186"]
-やーい、泣き虫アリス！[p]
+喂ー，爱哭鬼爱丽丝！[p]
 ;ニア
 #？？？
 [voice ref="080187"]
-泣き虫アリス！[p]
+爱哭鬼爱丽丝！[p]
 [filter name="clear" time=500]
 #アリス
 [voice ref="080188"]
 …………。[p]
 #ライザ
 [voice ref="080189"]
-黙ってないでなんかいえよ！！[p]
+别不吭声，说话啊！！[p]
 #ニア
 [voice ref="080190"]
-なんかいえ！[p]
+说话！[p]
 [rotate id=1 angle=5 time=50]
 [rotate id=1 angle=-5 time=50]
 [move id=0 x=-5 time=50]
 ;[se ぽかっ！]
 #アリス
 [voice ref="080191"]
-ひっ！！[p]
+啊！！[p]
 [move id=0 y=-5 time=200]
 #ライザ
 [voice ref="080192"]
-ちぇっ！　つまんねーの！[n]
-ニアー、どっかいこうぜぇ。[p]
+切！真是无聊！[n]
+妮娅，我们去玩。[p]
 #ニア
 [voice ref="080193"]
-うんっ！[p]
+嗯！[p]
 #ライザ
 [voice ref="080194"]
-キヒヒッ！[n]
-じゃあなー！　泣き虫アリス！[p]
+嘻嘻嘻！[n]
+我们走了！爱哭鬼爱丽丝！[p]
 [scale id=1 sx=-1 time=100]
 [move id=1 x=70 time=500]
 #ニア
 [voice ref="080195"]
-じゃあなー！[p]
+再见ー！[p]
 [scale id=2 sx=-1 time=100]
 [move id=2 x=70 time=500]
 [scale id=0 sx=-1 time=300]
@@ -76,78 +76,78 @@
 [move id=0 y=-10 time=500]
 #アリス
 [voice ref="080196"]
-ひっく……
+呜……
 [move id=0 y=2 time=50]
 [move id=0 y=-2 time=50]
-えっ、
+唉，
 [move id=0 y=2 time=50]
 [move id=0 y=-2 time=50]
-うええ……。[n]
-うっ……
+呜哎哎……。[n]
+呜……
 [move id=0 y=2 time=50]
 [move id=0 y=-2 time=50]
-ぐす……。[p]
+呜……。[p]
 [cn]
-ライザとニアが去り、アリスはその場にしゃがみこんで泣き始めた。[p]
+蕾塞和妮娅离开后，爱丽丝在原地开始哭泣。[p]
 [drawcg id=3 posx=-100 dir="right"]
 [drawcg id=4 posx=-100 dir="right" layer="front"]
 #ヴェロニカ
 [voice ref="080197"]
-おいエリ！　急がないと始まっちまうぜ！！[p]
+喂艾莉！再不抓紧就要开始了！！[p]
 #エリ
 [voice ref="080198"]
-はい！　ヴェロニカ様！[p]
+是！维罗妮卡大人！[p]
 [moveto id=3 x=90 time=600]
 [moveto id=4 x=70 time=600]
 #ヴェロニカ
 [voice ref="080199"]
-おっ？[n]
+哦？[n]
 [scale id=3 sx=-1 time=100]
-おい、ちょっと待て。[p]
+喂，等下。[p]
 [voice ref="080200"]
-あのガキ、あんなところで何やってんだ？[p]
+那个小鬼，在那里干什么？[p]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
 #エリ
 [voice ref="080201"]
-ヴェ、ヴェロニカ様！[n]
-急ぐんじゃなかったんですか！？[p]
+维，维罗妮卡大人！[n]
+不是要赶快走吗！？[p]
 [move id=3 y=5 time=50]
 [move id=3 y=-5 time=50]
 #ヴェロニカ
 [voice ref="080202"]
-オイ、お前！[n]
-そんなところでなにめそめそ泣いてんだよ。[p]
+喂，小鬼！[n]
+你在哭什么啊。[p]
 #アリス
 [voice ref="080203"]
-うっ……
+呜……
 [move id=0 y=2 time=50]
 [move id=0 y=-2 time=50]
-うええ……。[p]
+呜哎哎……。[p]
 #ヴェロニカ
 [voice ref="080204"]
-おいったら！[p]
+喂！[p]
 [moveto id=3 x=40 time=500]
 [rotate id=3 angle=5 time=50]
 [rotate id=3 angle=-5 time=50]
 [scale id=0 sx=-1 time=100]
 [move id=0 y=10 time=100]
 [cn]
-ヴェロニカはアリスの両腕をつかんで、無理やり立ち上がらせた。[p]
+维罗妮卡抓住了爱丽丝的双腕，硬是让她站了起来。[p]
 [move id=0 x=-5 time=100]
 #アリス
 [voice ref="080205"]
 …………。[p]
 #ヴェロニカ
 [voice ref="080206"]
-お前、この町の子供だろ？[p]
+你是这个小镇的小孩吧？[p]
 #アリス
 [voice ref="080207"]
-…………うん。[p]
+…………嗯。[p]
 #ヴェロニカ
 [voice ref="080208"]
-何をそんなに泣いてたんだ。[n]
-転んだのか？[p]
+为什么哭成这样。[n]
+摔跤了吗？[p]
 [rotate id=0 angle=1 time=50]
 [rotate id=0 angle=-2 time=50]
 [rotate id=0 angle=2 time=50]
@@ -156,59 +156,59 @@
 [voice ref="080209"]
 …………。[p]
 [cn]
-ふるふる、とアリスは首を横に振った。[p]
+爱丽丝摇了摇头。[p]
 #ヴェロニカ
 [voice ref="080210"]
-まあいいや。[p]
+算了。[p]
 [filter name="fade" time=500]
 [clearcg id=0]
 [clearcg id=3]
 [clearcg id=4]
 [drawcg id=5 pos="event" state=1]
 [filter name="clear" time=500]
-私はヴェロニカ！　花の魔女ヴェロニカ様だ！！[n]
-お前、私についてこないか？[n]
-キヒヒッ！ 面白いもんを見せてやるよ。[p]
+我是维罗妮卡！花之魔女维罗妮卡！！[n]
+你要跟我一起吗？[n]
+嘻嘻嘻！让你看点有趣的东西。[p]
 [cn]
-ヴェロニカはアリスに向かって手を差し出した。[p]
+维罗妮卡向爱丽丝伸出了手。[p]
 #アリス
 [voice ref="080211"]
 …………。[p]
 [cn]
-アリスはヴェロニカを見た。[p]
-ヴェロニカは曇りのない笑顔でこちらを見ている。[p]
+爱丽丝看着维罗妮卡。[p]
+维罗妮卡用灿烂的笑容看着爱丽丝。[p]
 #アリス
 [voice ref="080212"]
 …………。[p]
 [cn]
-アリスはヴェロニカの手を取った。[p]
+爱丽丝握住了维罗妮卡的手。[p]
 #ヴェロニカ
 [voice ref="080213"]
-よし、決まりだな！[n]
-お前、名前はなんていうんだ？[p]
+好，就这么决定了！[n]
+你名字叫什么？[p]
 #アリス
 [voice ref="080214"]
-……リス。[p]
+……丽丝。[p]
 [changecg id=5 state=0]
 #ヴェロニカ
 [voice ref="080215"]
-あん？　よく聞こえねえよ……。[p]
+嗯？我听不清……。[p]
 #アリス
 [voice ref="080216"]
-アリス……。[p]
+爱丽丝……。[p]
 #ヴェロニカ
 [changecg id=5 state=1]
 [voice ref="080217"]
-アリス？[n]
-……へえ、かわいい名前じゃねえか。[p]
+爱丽丝？[n]
+……名字挺可爱的啊。[p]
 [voice ref="080218"]
-それじゃあ、アリス。 行くぞ、私についてこい！[p]
+那么，爱丽丝。走吧，跟上我！[p]
 #アリス
 [voice ref="080219"]
-……うん。[p]
+……嗯。[p]
 #エリ
 [voice ref="080220"]
-ヴェロニカ様はいっつもこれなんだから……もう。[p]
+维罗妮卡大人总是这样……真是的。[p]
 [hide_message]
 [filter name="fade" time=500]
 [clearcg id=5]

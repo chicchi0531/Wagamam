@@ -1,4 +1,4 @@
-﻿;script 803
+;script 803
 ;directer:yuichi
 ;script:nikai
 ;timing:0803の後　ターンはじめ
