@@ -23,29 +23,29 @@
 [show_message]
 ;77世界樹侵攻
 世界樹。[p]
-#アリス
+#爱丽丝
 [voice ref="080502"]
 哦哦……比我想象的要大百倍……。[p]
-#エリ
+#艾莉
 [voice ref="080503"]
 那么？你准备要烧掉这个吗？[p]
 [changecg id=0 state=2]
-#アリス
+#爱丽丝
 [voice ref="080504"]
 不……对了。[n]
 就试试吧……？[p]
-#エリ
+#艾莉
 [voice ref="080505"]
 真是的……[n]
 算了。我就陪陪你。[p]
 [scale id=0 sx=-1 time=300]
 [changecg id=0 state=0]
-#アリス
+#爱丽丝
 [voice ref="080506"]
 总之，让魔法队全动员用攻击魔法攻击世界树。[p]
 [voice ref="080507"]
 剩下的人点火。[p]
-#エリ
+#艾莉
 [voice ref="080508"]
 知道了。[p]
 [scale id=1 sx=-1 time=200]

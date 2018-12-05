@@ -10,7 +10,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="070161"]
 好，接下来是右腕。[p]
 小的们！给我鼓起气来ーー！！！[p]

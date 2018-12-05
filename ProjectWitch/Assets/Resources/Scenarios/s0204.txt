@@ -22,18 +22,18 @@
 [show_message]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
-#アリス
+#爱丽丝
 [voice ref="020269"]
 なにっ！！[n]
 森之魔女被打败了！？[p]
 [drawcg id=1 pos=1 dir="right"]
-#クロ
+#小黑
 [voice ref="020270"]
 山之魔女的部队已经攻到了国境。[p]
 [voice ref="020270a"]
 没想到一夜之间就占领了。[n]
 到底是用了什么手段……。[p]
-#アリス
+#爱丽丝
 [voice ref="020271"]
 这，这不就等于被前后夹击了吗……。[p]
 [voice ref="020271a"]

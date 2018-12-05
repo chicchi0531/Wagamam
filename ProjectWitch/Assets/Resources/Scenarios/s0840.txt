@@ -19,7 +19,7 @@
 维罗妮卡宫殿[p]
 [se ref="046"]
 [drawcg id=1 pos=2 dir="right" mode="slidein" layer="front"]
-#ニア
+#妮娅
 [voice ref="080532"]
 蕾塞！[n]
 [scale id=0 sx=-1 time=200]
@@ -31,7 +31,7 @@
 [move id=1 y=-2 time=50]
 [move id=1 y=2 time=50]
 古泽镇南边的森林没有被山脉截断，可以通往南方！[p]
-#ライザ
+#蕾塞
 [voice ref="080534"]
 是吗！好，把军队集中到古泽镇！[p]
 [voice ref="080535"]
@@ -45,16 +45,16 @@
 [move id=1 y=-5 time=50]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080538"]
 啊，只有蕾塞也太赖皮了！我也要做大魔女！！[p]
-#ライザ
+#蕾塞
 [voice ref="080539"]
 啊？大魔女能有两个人吗……？[p]
 [voice ref="080540"]
 算了！！[n]
 走吧ー！！[p]
-#ニア
+#妮娅
 [voice ref="080541"]
 哦哦ーー！！[p]
 [hide_message]

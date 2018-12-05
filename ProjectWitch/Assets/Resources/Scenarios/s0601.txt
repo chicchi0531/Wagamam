@@ -16,12 +16,12 @@
 [drawcg id=1 pos=3 mode="slidein"]
 [show_message]
 点心之家。[p]
-#チュイリッシュ
+#丘黎绪
 [voice ref="060005"]
 有包裹。请签名。[p]
 
 [drawcg id=0 pos=1 dir="right" state=1 layer="front"]
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060006"]
 收到了，谢谢配合。[p]
 [move id=0 x=30 y=0 time=200]
@@ -31,7 +31,7 @@
 [clearcg id=1]
 [move id=0 x=0 y=-30 time=50]
 [se ref="157"]
-#チュイリッシュ
+#丘黎绪
 [voice ref="060008"]
 呀啊ーーーーーーー！！！！[p]
 [cn]
@@ -42,7 +42,7 @@
 被完全压碎了。[p]
 [rotate id=0 angle=40 time=100]
 [move id=0 x=0 y=30 time=100]
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060009"]
 啊，糟糕了……。[p]
 [cn]
@@ -60,7 +60,7 @@
 [move id=0 x=10 y=0 time=50]
 [move id=0 x=-5 y=0 time=50]
 
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060010"]
 要是被灯里大人发现了，就糟了。[n]
 [move id=0 x=10 y=0 time=50]
@@ -77,7 +77,7 @@
 刚刚拿到了邮件掉到了水中。[p]
 [rotate id=0 angle=-50 time=200]
 [move id=0 x=0 y=10 time=100]
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060012"]
 啊啊……糟糕了。[n]
 糟糕了，要快点，把东西拿出来……。[p]
@@ -86,7 +86,7 @@
 于是就赶快拿出了里面的红宝石。[p]
 就在这时！[p]
 [filter name="flush" color="FF1111" time=50]
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060013"]
 咕，嘎，呀啊啊啊ーーーーーー！！！！！[p]
 [filter name="color" color="FF1111" time=500]

@@ -21,7 +21,7 @@
 这个要塞就是在那时建成的。[p]
 蕾塞阵营。[p]
 [drawcg id=0 pos=3]
-#ライザ
+#蕾塞
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
 [voice ref="080000"]
@@ -39,11 +39,11 @@
 [filter name="clear" time=500]
 维罗妮卡阵营。[p]
 [moveto id=2 x=50 time=400]
-#エリ
+#艾莉
 [voice ref="080001"]
 逆贼蕾塞，觉悟吧！[p]
 [moveto id=1 x=10 time=300]
-#シードル
+#希德尔
 [voice ref="080002"]
 艾莉大人！危险！[n]
 请后退！！[p]
@@ -51,13 +51,13 @@
 在魔法的攻击中，维罗妮卡的部下，[n]
 艾莉和艾莉的部下希德尔在不断地前进。[p]
 [scale id=2 sx=-1 time=100]
-#エリ
+#艾莉
 [voice ref="080003"]
 不要后退！进这样冲过去。[n]
 希德尔！可要好好保护我！！[p]
 [scale id=2 sx=-1 time=100]
 [move id=2 x=100 time=500]
-#シードル
+#希德尔
 [voice ref="080004"]
 当，当然！[n]
 所以能不能慢一点啊ーー！！[p]

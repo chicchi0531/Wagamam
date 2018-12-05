@@ -19,27 +19,27 @@
 
 [show_message]
 [drawcg id=1 pos=4 dir="right"]
-#エミル
+#埃米尔
 [voice ref="050410"]
 好……反应不错。[p]
 [se ref="155"]
 [drawcg id=0 mode="slidein" dir="right" pos=2]
-#アリス
+#爱丽丝
 [voice ref="050411"]
 喂，药做出来没。[p]
 [scale id=1 sx=-1 time=300]
-#エミル
+#埃米尔
 [voice ref="050412"]
 啊，爱丽丝大人！[n]
 那个……现在正好有不错的反应。[p]
-#アリス
+#爱丽丝
 [voice ref="050413"]
 技术上的事情跟我说了我也不懂。[n]
 就告诉我还要多少时间。[p]
-#エミル
+#埃米尔
 [voice ref="050414"]
 这个……恐怕还要一周左右。[p]
-#アリス
+#爱丽丝
 [voice ref="050415"]
 我说过只有三天。现在还剩两天。[n]
 我不会多等。[p]
@@ -54,7 +54,7 @@
 [cn]
 说完，爱丽丝便离开了房间。[p]
 [scale id=1 sx=-1 time=300]
-#エミル
+#埃米尔
 [voice ref="050417"]
 …………是啊，可不能太得意。[n]
 一定药努力。[p]
@@ -80,31 +80,31 @@
 [show_message]
 [drawcg id=2 pos=4 dir="right" state=1]
 ロレーヌ城[p]
-#シャルロッテ
+#夏洛特
 [voice ref="050418"]
 不可能……。[p]
 
 [se ref="155"]
 [drawcg id=3 pos=2 mode="slidein" dir="right"]
 
-#カスミ
+#霞
 [voice ref="050419"]
 洛特！到吃饭的时间了。[n]
 埃米尔那家伙还没回来啊……。[p]
 
 [scale id=2 sx=-1 time=300]
 
-#シャルロッテ
+#夏洛特
 [voice ref="050421"]
 还没有回来吗？[n]
 这次怎么这么晚……。[p]
-#カスミ
+#霞
 [voice ref="050422"]
 毕竟是小孩嘛，可能是玩得忘了时间。[n]
 我去找找。[p]
 [voice ref="050423"]
 你先吃饭吧。[p]
-#シャルロッテ
+#夏洛特
 [voice ref="050424"]
 好。[p]
 [cn]

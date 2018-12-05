@@ -17,13 +17,13 @@
 
 [show_message]
 莫斯库森林。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080097"]
 就是现在！突击ー！！[p]
 [drawcg id=0 pos=4 mode="slidein"]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080098"]
 又，又来！？[p]
 

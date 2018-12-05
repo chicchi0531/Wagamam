@@ -5,34 +5,34 @@
 [loadfg id=1 ref="chishire"]
 
 [drawfg id=1]
-#チシャ
+#恰夏
 爱丽丝小姐。请选择战斗用出击的单位。[p]
 [drawfg id=0 state="0"]
-#アリス
+#爱丽丝
 就算你这么说……。[p]
 不是派出所有兵力吗？[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 不，不行啊！必须要留下兵力防卫领地…。[p]
 也要考虑战场的大小，一次最多能派出三个单位。[p]
 [drawfg id=0 state="0"]
-#アリス
+#爱丽丝
 切……一定要选吗。[p]
 ;出撃ユニットハイライト
 这个，前卫，中卫，后卫有什么意义？[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 前卫容易受到伤害，后卫不容易受到伤害。[p]
 另外，如果是物理攻击的单位，越靠近前卫，攻击的威力就会越高。[p]
 物理单位基本上兵数和防御力都会比魔法单位高很多……[p]
 [drawfg id=0 state="1"]
-#アリス
+#爱丽丝
 就是说要优先把物理单位放在前面，把魔法单位放在后面是吗？[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 是！就是这样。[p]
 [drawfg id=0 state="0"]
-#アリス
+#爱丽丝
 那，要怎么配置？[p]
 
 [create_gameobject id=0 ref="Tutorial/prebattle_unitlist_hilight"]
@@ -40,7 +40,7 @@
 [hide_message]
 [show_message pos="top"]
 [drawfg id=1]
-#チシャ
+#恰夏
 嗯，单位的配置，需要从这个单位的列表中，选择任意的单位。[p]
 请注意被选择的单位会按前卫，中卫，后卫的顺序被配置。[p]
 
@@ -74,7 +74,7 @@
 [hide_cursor]
 [show_accentcursor x=75 y=80]
 [drawfg id=1]
-#チシャ
+#恰夏
 在出击单位列表里，选择要去除的单位[p]
 [se ref = "041_cancel"]
 [prebattle_removeunit index=1]
@@ -93,24 +93,24 @@
 [wait time=200]
 
 [drawfg id=0 state="0"]
-#アリス
+#爱丽丝
 旁边的这个卡是？[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 是。这是能支援战斗的功能。[p]
 比如「黑桃1」这张卡片，会对敌人放出火球术，造成伤害。[p]
 [drawfg id=0 state="1"]
-#アリス
+#爱丽丝
 哎！这么便利的东西，一定要疯狂用啊！[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 当然是用越多越好，但是可惜，卡片是有使用次数限制的。[p]
 只要在战斗中用过的卡片，战斗结束后就会消失。[p]
 [drawfg id=0 state="2"]
-#アリス
+#爱丽丝
 什么！感觉好麻烦……[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 ええ、ですから使いどころを考えてくださいね。[p]
 卡片的设定方法和单位一样。[p]
 
@@ -124,10 +124,10 @@
 [show_message pos="bottom"]
 
 [drawfg id=0 state="1"]
-#アリス
+#爱丽丝
 到，总算能战斗了。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 是！那么，我们出击吧。[p]
 [hide_message]
 

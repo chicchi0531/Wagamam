@@ -24,17 +24,17 @@
 维罗妮卡阵营。[p]
 [moveto id=0 x=40 time=500]
 [drawcg id=1 pos=1 dir="right" mode="slidein" layer="back"]
-#エリ
+#艾莉
 [voice ref="080103"]
 啊啊，维罗妮卡大人！[n]
 您没事就好。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080104"]
 嗯，辛苦了，艾莉。[n]
 希德尔也是。[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#シードル
+#希德尔
 [voice ref="080105"]
 是，是！不敢。[p]
 [scale id=0 sx=-1 time=100]
@@ -44,23 +44,23 @@
 [move id=0 x=5 time=50]
 [cn]
 啊！[p]
-#シードル
+#希德尔
 [voice ref="080106"]
 好疼！！[n]
 你，你干什么啊艾莉大人！！[p]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
-#エリ
+#艾莉
 [voice ref="080107"]
 你脸红什么啊！！[n]
 该不会用奇怪的眼神看维罗妮卡大人吧！！[p]
 [voice ref="080108"]
 明明是我的奴隶，嚣张什么！！[p]
 [move id=1 y=-10 time=300]
-#シードル
+#希德尔
 [voice ref="080109"]
 怎，怎么这样……。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080110"]
 别在意，艾莉。[p]
 [scale id=0 sx=-1 time=100]
@@ -70,12 +70,12 @@
 现在开始才是关键。[p]
 [voice ref="080112"]
 要在这里削弱对方兵力，进入决战[p]
-#エリ
+#艾莉
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
 [voice ref="080113"]
 是！[p]
-#シードル
+#希德尔
 [voice ref="080114"]
 遵命！[p]
 [filter name="fade" time=500]
@@ -91,7 +91,7 @@
 [cn]
 另一边，蕾塞阵营。[p]
 [drawcg id=3 pos=2 dir="right" mode="slidein"]
-#ライザ
+#蕾塞
 [voice ref="080115"]
 这，这是什么！！[p]
 [move id=3 y=5 time=50]
@@ -103,11 +103,11 @@
 这么疲惫的兵根本不能用！！[p]
 [scale id=4 sx=-1 time=400]
 [move id=4 x=-10 time=400]
-#ニア
+#妮娅
 [voice ref="080117"]
 对，对不起～！[n]
 因为维罗妮卡那家伙太卑鄙了……。[p]
-#ライザ
+#蕾塞
 [voice ref="080118"]
 什么卑不卑鄙，输了就是输了！！[p]
 [voice ref="080119"]

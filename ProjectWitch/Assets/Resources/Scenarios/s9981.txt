@@ -24,23 +24,23 @@
 
 [show_message]
 ;子ども時代の回想から始まる
-#ライザ
+#蕾塞
 [voice ref="080767"]
 开始ー！[n]
 [scale id=1 sx=-1 time=200]
 1ー2ー3……。[p]
 [scale id=2 sx=-1 time=100]
 [move id=2 x=-20 time=400]
-#ニア
+#妮娅
 [voice ref="080768"]
 呀啊ー！快逃ー！！[p]
 [move id=0 x=-2 time=20]
-#アリス
+#爱丽丝
 [voice ref="080769"]
 哎，啊……
 [move id=0 x=-2 time=20]
 那个。[p]
-#ニア
+#妮娅
 [voice ref="080770"]
 嗯？[n]
 [move id=2 y=5 time=50]
@@ -51,7 +51,7 @@
 [voice ref="080771"]
 来[n]
 我教你，我们一起玩！[p]
-#アリス
+#爱丽丝
 [voice ref="080772"]
 嗯，嗯！！[p]
 [move id=2 x=-50 time=250]
@@ -69,12 +69,12 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ニア
+#妮娅
 [voice ref="080773"]
 好ー了ー吗ーー！[p]
 [drawcg id=1 pos=5]
 [moveto id=1 x=30 time=1000]
-#ライザ
+#蕾塞
 [voice ref="080774"]
 还ー没有ー哦！[n]
 [move id=0 y=-2 time=20]
@@ -83,18 +83,18 @@
 [move id=1 x=5 time=50]
 唔，唔哇！[p]
 [scale id=0 sx=-1 time=200]
-#アリス
+#爱丽丝
 [voice ref="080775"]
 啊……。[p]
-#ライザ
+#蕾塞
 [voice ref="080776"]
 什么啊，爱丽丝。你已经占了这里了……。[n]
 切！这可是我专用的地方。[p]
 [move id=0 y=10 time=300]
-#アリス
+#爱丽丝
 [voice ref="080777"]
 啊……对不起。[p]
-#ライザ
+#蕾塞
 [voice ref="080778"]
 不要！[n]
 所谓先发制人！[p]
@@ -111,7 +111,7 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080780"]
 我是今天开始教你们魔法的维罗妮卡大人！[p]
 [voice ref="080781"]
@@ -121,20 +121,20 @@
 [move id=1 y=2 time=40]
 [move id=1 y=-2 time=40]
 [move id=1 y=2 time=40]
-#ライザ
+#蕾塞
 [voice ref="080782"]
 喂，喂……为什么我们要遭到这种待遇？[p]
 [move id=2 y=-2 time=40]
 [move id=2 y=2 time=40]
 [move id=2 y=-2 time=40]
 [move id=2 y=2 time=40]
-#ニア
+#妮娅
 [voice ref="080783"]
 好像，是要我们学会魔法正确的用法[n]
 ……老师是这么说的。[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ライザ
+#蕾塞
 [voice ref="080784"]
 什，什么意思啊～！[p]
 [changecg id=3 state=1]
@@ -157,7 +157,7 @@
 [filter name="clear" time=500]
 [move id=3 x=-5 y=-5 time=50]
 [move id=3 x=5 y=5 time=50]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080785"]
 艾莉！！[p]
 [voice ref="080786"]
@@ -167,29 +167,29 @@
 振作起来！！[p]
 [move id=3 x=-5 y=-5 time=50]
 [move id=3 x=5 y=5 time=50]
-#エリ
+#艾莉
 [voice ref="080787"]
 哎嘿嘿……维罗妮卡大人。[n]
 你来看我了啊。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080788"]
 笨蛋，别说话！你要静养。[p]
-#医者
+#医生
 [voice ref="080789"]
 艾莉大人得了不治之症。[n]
 最多也只能……再活数天。[p]
 [scale id=3 sx=-1 time=100]
 [move id=3 x=5 time=50]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080790"]
 什么！喂，你不是医生吗！！[n]
 给我想点办法！！[p]
-#医者
+#医生
 [voice ref="080791"]
 医生也有很多病是治不了的。[n]
 我表示遗憾……。[p]
 [moveto  id=3 x=90 time=400]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080792"]
 可恶！那就让我想些办法。[p]
 [scale id=3 sx=-1 time=100]
@@ -208,7 +208,7 @@
 [filter name="clear" time=500]
 [se ref="155"]
 [drawcg id=3 pos=5 mode="slidein" state=0]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080794"]
 艾莉！我带了这个！！[n]
 [move id=3 x=-30 time=200]
@@ -217,7 +217,7 @@
 [cn]
 维罗妮卡看到的，是被白布盖起来的艾莉。[p]
 [moveto id=3 x=30 time=400]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080795"]
 艾莉……喂，艾莉！！
 [move id=3 x=-5 y=-5 time=50]
@@ -244,7 +244,7 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ライザ
+#蕾塞
 [voice ref="080797"]
 啊ー维罗妮卡大人。[n]
 你在做什么药啊ー？[p]
@@ -252,23 +252,23 @@
 [move id=2 y=-5 time=50]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080798"]
 什么药啊ー？[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080799"]
 让人起死回生的药，别妨碍我。[p]
 [move id=1 y=5 time=50]
 [move id=2 y=5 time=50]
 [move id=1 y=-5 time=50]
 [move id=2 y=-5 time=50]
-#ライザ
+#蕾塞
 [voice ref="080800"]
 哎，让人起死回生的药！？[p]
-#ニア
+#妮娅
 [voice ref="080801"]
 起死回生的药！？[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080802"]
 只要用这个制造魔法生命体的技术，[n]
 将灵魂放在别的器皿里面，[n]
@@ -277,26 +277,26 @@
 [move id=1 y=-5 time=50]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ライザ
+#蕾塞
 [voice ref="080803"]
 好厉害ー！[p]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080804"]
 厉害ー！[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080805"]
 切！[n]
 [scale id=3 sx=-1 time=100]
 小孩都给我出去玩！！[p]
-#ライザ
+#蕾塞
 [voice ref="080806"]
 切ー！[n]
 给我们看看又不会怎样，小气ー！[p]
-#ニア
+#妮娅
 [voice ref="080807"]
 小气ー！[p]
 ;再開するヴェロニカに声をかけるが反応がないので外へ遊びに行く
@@ -325,25 +325,25 @@
 ……………………。[p]
 [filter name="clear" time=500]
 [drawcg id=6 pos=1 dir="right" layer="front"]
-#エリ
+#艾莉
 [voice ref="080808"]
 ……这里是？[p]
 [changecg id=3 state=0]
 [move id=3 x=-10 time=100]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080809"]
 艾莉！！太好了！！[p]
-#エリ
+#艾莉
 [voice ref="080810"]
 维罗妮卡大人……？为什么，我……。[n]
-#ライザ
+#蕾塞
 [voice ref="080811"]
 好厉害，真的复活了。[p]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080812"]
 复活了ー！[p]
 
@@ -357,12 +357,12 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ホーリーベル
+#圣铃
 [voice ref="080813"]
 维罗妮卡！！[n]
 你知道自己做了什么吗！？[p]
 [move id=3 x=-5 time=50]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080814"]
 让人复活难道是什么坏事吗！！[p]
 [move id=3 x=-5 time=50]
@@ -372,7 +372,7 @@
 [move id=3 x=-5 time=50]
 [voice ref="080816"]
 她只是普通的人类！！[p]
-#ホーリーベル
+#圣铃
 [voice ref="080817"]
 闭嘴！！[p]
 [voice ref="080818"]
@@ -380,16 +380,16 @@
 但太没有常识了……。[p]
 [voice ref="080819"]
 给我出去。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080820"]
 啊？[p]
-#ホーリーベル
+#圣铃
 [voice ref="080821"]
 给我出去。[n]
 不要再来这里了……。[p]
 [move id=3 y=-2 time=20]
 [move id=3 y=2 time=20]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080822"]
 什么……！！[p]
 [voice ref="080823"]
@@ -401,7 +401,7 @@
 [cn]
 维罗妮卡听完了圣铃的话，[n]
 冲出了房间。[p]
-#ホーリーベル
+#圣铃
 [voice ref="080824"]
 ……哎。怎么会这样。[p]
 
@@ -415,37 +415,37 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ライザ
+#蕾塞
 [voice ref="080825"]
 呐ー我们现在要去哪里？[p]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080826"]
 去哪里ー？[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080827"]
 没有人的地方。
 北方，那广阔的大地就是我们的住处。[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ライザ
+#蕾塞
 [voice ref="080828"]
 广阔！那是什么，听起来很好玩！！[p]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
 [move id=2 y=5 time=50]
 [move id=2 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080829"]
 很好玩！[p]
 [scale id=6 sx=-1 time=300]
-#エリ
+#艾莉
 [voice ref="080830"]
 维罗妮卡大人……我。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080831"]
 我没有做错。[n]
 ……没有。[p]
@@ -462,59 +462,59 @@
 [cn]
 ……………………。[p]
 [filter name="clear" time=500]
-#ライザ
+#蕾塞
 [voice ref="080832"]
 …………。[p]
-#アリス
+#爱丽丝
 [voice ref="080833"]
 哼，你还活着吗。[p]
 [cn]
 蕾塞和妮娅倒在床上。[n]
 爱丽丝和维罗妮卡俯视着她们。[p]
 [scale id=4 sx=-1 time=300]
-#アリス
+#爱丽丝
 [voice ref="080834"]
 这个好像是死了。[p]
 [cn]
 说着，爱丽丝指向了妮娅。[p]
-#ライザ
+#蕾塞
 [voice ref="080835"]
 ……喂，爱丽丝。[p]
 [scale id=4 sx=-1 time=300]
-#アリス
+#爱丽丝
 [voice ref="080836"]
 啊？[p]
-#ライザ
+#蕾塞
 [voice ref="080837"]
 我到底……哪里，做错了……。[p]
 [cn]
 蕾塞的皮肤渐渐开始崩溃。[n]
 蕾塞的余命已经没多久了。[p]
-#アリス
+#爱丽丝
 [voice ref="080838"]
 …………我怎么可能会知道。[p]
-#ライザ
+#蕾塞
 [voice ref="080839"]
 也是……呐，维罗妮卡。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080840"]
 ……蕾塞。[p]
-#ライザ
+#蕾塞
 [voice ref="080841"]
 我到底，应该怎么做……。[p]
 [cn]
 蕾塞的脸颊划过一行泪。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080842"]
 ……你以你的方法尽力活了下去[n]
 这样不就够了吗。[p]
-#ライザ
+#蕾塞
 [voice ref="080843"]
 我果然，还是喜欢现在的你。[n]
 嘿嘿……。[p]
 [cn]
 发出了最后的笑声，蕾塞的肉体便在风中消散了。[p]
-#アリス
+#爱丽丝
 [voice ref="080844"]
 ……蕾塞。[p]
 [cn]
@@ -529,7 +529,7 @@
 [if_alive unit=2]
 [drawbg ref="Event/713A"]
 [bgm ref="003_alice2"]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080845"]
 爱丽丝！我说，爱丽丝！！[p]
 [filter name="clear" time=500]
@@ -538,25 +538,25 @@
 太没教养了……。[p]
 [voice ref="080847"]
 自从你当上了大魔女……。[p]
-#アリス
+#爱丽丝
 [voice ref="080848"]
 切！又要开始了……。[p]
 [voice ref="080849"]
 喂，梅吉！[n]
 剩下的工作交给你了！[p]
-#メイジー
+#梅吉
 [voice ref="080850"]
 哎！等等，姐姐！！[n]
 我会计的工作还没有结束！[p]
-#アリス
+#爱丽丝
 [voice ref="080851"]
 你全部做完不就行了吗！[n]
 我要去镇上，再见了！[p]
 [se ref="155"]
-#メイジー
+#梅吉
 [voice ref="080852"]
 啊，姐姐！！[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080853"]
 爱丽丝！！……真是的。[p]
 
@@ -566,7 +566,7 @@
 [else]
 [drawbg ref="Event/713B"]
 [bgm ref="003_alice2"]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080854"]
 爱丽丝！我说，爱丽丝！！[p]
 [filter name="clear" time=500]
@@ -575,12 +575,12 @@
 太没教养了……。[p]
 [voice ref="080856"]
 自从你当上了大魔女……。[p]
-#アリス
+#爱丽丝
 [voice ref="080857"]
 切！又要开始了……。[n]
 赶快溜……。[p]
 [se ref="155"]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080858"]
 啊，等下爱丽丝！[n]
 你要去哪里！？[p]

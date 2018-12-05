@@ -18,7 +18,7 @@
 
 [show_message]
 [drawcg id=0 pos=4]
-#トリアイナ
+#托莉爱娜
 [voice ref="020504"]
 全军撤退！！[n]
 尽量带上的受伤的人！！[p]
@@ -27,18 +27,18 @@
 [clearcg id=0]
 [drawcg id=1 pos=2 dir="right"]
 [drawcg id=2 pos=1 dir="right"]
-#アリス
+#爱丽丝
 [voice ref="020505"]
 切，没种。[n]
 不过交锋了两三次就逃了。[p]
-#クロ
+#小黑
 [voice ref="020506"]
 不，恐怕是冰之魔女对战场的预测够快，[n]
 准备温存兵力。[p]
 [voice ref="020507"]
 在这里的主要目的，[n]
 可能是救出城内的残党。[p]
-#アリス
+#爱丽丝
 [voice ref="020508"]
 要决战，还太早了是吗。[n]
 [changecg id=1 state=1]

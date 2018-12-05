@@ -20,16 +20,16 @@
 [show_message]
 [drawcg id=0 pos=3 dir="right" state=2]
 [drawcg id=1 pos=2 dir="right"]
-#クロ
+#小黑
 [voice ref="050265"]
 挖洞队，给我上！[p]
-#アリス
+#爱丽丝
 [voice ref="050266"]
 尽快挖出来！[n]
 要在她发现之前挖好！[p]
 [cn]
 根据爱丽丝的命令，士兵在艾尔菲斯外挖出了艾玛正好能掉进去但不出来大小的洞。[p]
-#アリス
+#爱丽丝
 [voice ref="050267"]
 好，诱导队给我上！跟着我！！[p]
 [cn]
@@ -46,7 +46,7 @@
 [show_message]
 爱丽丝冲进了要塞。[p]
 艾玛仍旧等在原地。[p]
-#エマ
+#艾玛
 [voice ref="050268"]
 呜呜呜呜……[n]
 [filter name="color" color="FF0000" time=300]
@@ -54,7 +54,7 @@
 呜啊啊啊啊啊啊！！[p]
 [filter name="clear" time=300]
 
-#アリス
+#爱丽丝
 [voice ref="050269"]
 要，给我上！抓紧时间！！[p]
 

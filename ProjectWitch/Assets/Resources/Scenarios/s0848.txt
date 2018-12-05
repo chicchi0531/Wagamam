@@ -25,7 +25,7 @@
 
 [show_message]
 马奇诺防线中央。[p]
-#アリス
+#爱丽丝
 [voice ref="080666"]
 听好了！只要夺取这里，这场战争就是我们的胜利！！[p]
 [voice ref="080667"]
@@ -35,7 +35,7 @@
 [move id=1 y=-5 time=50]
 [move id=6 y=5 time=50]
 [move id=6 y=-5 time=50]
-#アリス軍兵士
+#爱丽丝軍兵士
 [voice ref="080668"]
 哦哦哦哦ーーーーー！！！！[p]
 [cn]
@@ -44,7 +44,7 @@
 蕾塞军的驻点不断地被占领。[n]
 完全就是一边倒的局面。[p]
 [changecg id=0 state=1]
-#アリス
+#爱丽丝
 [voice ref="080669"]
 呜呼呼！！不错不错！[n]
 就这样冲上去ーーー！！！[p]
@@ -59,7 +59,7 @@
 [filter name="clear" time=500]
 [drawcg id=5 posx=-20 dir="right"]
 [drawcg id=4 pos=2 dir="right"]
-#ライザ
+#蕾塞
 [voice ref="080670"]
 切！已经开始了。[p]
 [scale id=4 sx=-1 time=100]
@@ -72,7 +72,7 @@
 蕾塞和部下们在要塞中间最高的建筑上出现，[n]
 旁边设置了一个断头台。[p]
 [scale id=4 sx=-1 time=200]
-#ライザ
+#蕾塞
 [voice ref="080682"]
 爱ーーーー丽ーーーー丝ーーーー！！！！[p]
 [filter name="fade" time=500]
@@ -83,7 +83,7 @@
 [drawcg id=2 pos=5]
 [drawcg id=6 posx=-10]
 [filter name="clear" time=500]
-#アリス
+#爱丽丝
 [voice ref="080683"]
 破坏光……嗯！？[n]
 [changecg id=0 state=0]
@@ -93,10 +93,10 @@
 是，是谁！！[p]
 [cn]
 蕾塞使用魔法扩声器，向爱丽丝军大声喊去。[p]
-#ライザ
+#蕾塞
 [voice ref="080684"]
 爱丽丝！！看这边！！[p]
-#アリス
+#爱丽丝
 [voice ref="080685"]
 什么……。[p]
 [changecg id=0 state=0]
@@ -111,7 +111,7 @@
 维罗妮卡！！！！[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#エリ
+#艾莉
 [voice ref="080687"]
 维罗妮卡大人！！？[p]
 [cn]
@@ -120,13 +120,13 @@
 [move id=0 y=-5 time=50]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
-#アリス
+#爱丽丝
 [voice ref="080688"]
 维罗妮卡！！喂，是我！！！[n]
 爱丽丝！！！！[p]
 [voice ref="080689"]
 维罗妮卡ーーーー！！[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080690"]
 ……爱丽……丝？[p]
 [move id=1 y=5 time=50]
@@ -134,21 +134,21 @@
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
 
-#アリス
+#爱丽丝
 [voice ref="080691"]
 维罗妮卡！？[p]
 [voice ref="080692"]
 等，等着我！[n]
 我马上就来救你！！[p]
-#ライザ
+#蕾塞
 [voice ref="080693"]
 快点！！[n]
 要在她过来之前解决！！[p]
-#アリス
+#爱丽丝
 [voice ref="080694"]
 ……来不及。[n]
 小黑！！给我开条道！！[p]
-#クロ
+#小黑
 [voice ref="080695"]
 是！！[n]
 [move id=2 x=-70 time=200]
@@ -157,12 +157,12 @@
 精英部队的小黑军队一瞬之间就压制了蕾塞军，[n]
 在战场中央空出了一条道。[p]
 [scale id=2 sx=-1 time=100]
-#クロ
+#小黑
 [voice ref="080696"]
 爱丽丝小姐！！[p]
 [se ref="156"]
 [se ref="159"]
-#アリス
+#爱丽丝
 [voice ref="080697"]
 很好！！[n]
 维罗妮卡！！[p]
@@ -177,31 +177,31 @@
 [drawcg id=5 posx=-20 dir="right"]
 [drawcg id=4 pos=2 dir="right"]
 [filter name="clear" time=500]
-#ライザ
+#蕾塞
 [voice ref="080698"]
 什……！！[n]
 混蛋，快点！！[p]
 [cn]
 维罗妮卡正被推向断头台。[p]
 [se ref="156"]
-#アリス
+#爱丽丝
 [voice ref="080699"]
 太慢了！！[n]
 破坏光线ーーーーー！！！！[p]
 [se ref="100"]
-#ライザの部下
+#蕾塞の部下
 [voice ref="080700"]
 呀啊啊啊！！！[p]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
-#ライザ
+#蕾塞
 [voice ref="080701"]
 切！！给我上！[p]
 先去制止她！！[p]
-#ライザの部下
+#蕾塞の部下
 [voice ref="080702"]
 是！！[p]
-#アリス
+#爱丽丝
 [voice ref="080703"]
 滚开ーーーーー！！！[p]
 [hide_message]

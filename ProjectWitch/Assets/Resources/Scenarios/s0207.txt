@@ -19,15 +19,15 @@
 [drawcg id=1 pos=2 state=5 dir="right"]
 [drawcg id=0 pos=3 dir="right"]
 [show_message]
-#トリアイナ
+#托莉爱娜
 [voice ref="020356"]
 总算来了，华之魔女爱丽丝。[n]
 ……海伦，你冷静下来了吗？[p]
-#ヘレン
+#海伦
 [voice ref="020357"]
 我还没有原谅……。[n]
 你竟然和奥利维娅的仇人结盟。[p]
-#トリアイナ
+#托莉爱娜
 [voice ref="020358"]
 ……要来了。[p]
 

@@ -22,10 +22,10 @@
 点心之家[p]
 [drawcg id=0 pos=2 mode="slidein" dir="right" state=1]
 
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060014"]
 灯里大人……我把茶拿来了。[p]
-#アカリ
+#灯里
 [voice ref="060015"]
 辛苦了……。[p]
 [voice ref="060016"]
@@ -34,14 +34,14 @@
 [move id=1 x=0 y=-20 time=300]
 [cn]
 灯里的身体瞬间倒下。[p]
-#アカリ
+#灯里
 [voice ref="060017"]
 呜……。[p]
 [clearcg id=1 mode="fadeout"]
 [clearcg id=0 mode="fadeout"]
 [drawcg id=0 pos=2 dir="right"]
 
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060018"]
 呜嘻嘻嘻……那么简单就睡着了。[n]
 所谓的魔女也没什么了不起的嘛。[p]
@@ -56,19 +56,19 @@
 小的南瓜们便冲进了房间。[p]
 [scale id=0 sx=-1 time=200]
 [drawcg id=2 pos=2 mode="slidein" dir="right" layer="front"]
-#小さなかぼちゃ（赤）
+#小南瓜（红）
 [voice ref="060020"]
 呀啊ー！魔女大人被打倒了ー！[p]
 [drawcg id=3 pos=2 mode="slidein" dir="right" layer="front"]
-#小さなかかぼちゃ（青）
+#小南瓜（青）
 [voice ref="060021"]
 打倒了ー！！[p]
 [drawcg id=4 pos=2 mode="slidein" dir="right" layer="front"]
-#小さなかぼちゃ（ピンク）
+#小南瓜（粉）
 [voice ref="060022"]
 嘿咻，用力搬ー！！[p]
 [drawcg id=5 pos=2 mode="slidein"dir="right"  layer="front"]
-#小さなかぼちゃ（銀）
+#小南瓜（银）
 [voice ref="060023"]
 用力搬ー！！[p]
 [move id=2 x=100 y=0 time=400]
@@ -86,7 +86,7 @@
 小南瓜们是南瓜人偶随机选出的灯里的部下，
 南瓜人偶分了一部分宝石的力量给了他们。[p]
 [moveto id=0 x=50 y=50 time=300]
-#かぼちゃの人形
+#南瓜人偶
 [voice ref="060024"]
 嘿嘿嘿嘿！！[n]
 这下这个领地就是我南瓜王的啦！！[p]

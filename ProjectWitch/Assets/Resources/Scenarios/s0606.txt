@@ -25,22 +25,18 @@
 
 [move id=1 x=0 y=10 time=50]
 [move id=1 x=0 y=-10 time=50]
-#南瓜部下（红）
 [voice ref="060055"]
 南瓜王大人！魔女的军队马上就要赶到了！[p]
 [move id=2 x=0 y=10 time=50]
 [move id=2 x=0 y=-10 time=50]
-#南瓜部下（青）
 [voice ref="060056"]
 糟糕了！[p]
 [move id=3 x=0 y=10 time=50]
 [move id=3 x=0 y=-10 time=50]
-#南瓜部下（粉）
 [voice ref="060057"]
 要输了啊！[p]
 [move id=4 x=0 y=10 time=50]
 [move id=4 x=0 y=-10 time=50]
-#南瓜部下（银）
 [voice ref="060058"]
 怎么办ーー！！[p]
 [move id=0 x=0 y=-30 time=400]
@@ -48,7 +44,7 @@
 [move id=0 x=0 y=-2 time=10]
 [move id=0 x=0 y=2 time=10]
 [move id=0 x=0 y=-2 time=10]
-#パンプキング
+#南瓜王
 [voice ref="060059"]
 唔ーーー！！[n]
 可恶，那个混蛋魔女ーー！！[p]
@@ -56,11 +52,9 @@
 我好不容易才能当上领主！！[p]
 [move id=1 x=0 y=10 time=50]
 [move id=1 x=0 y=-10 time=50]
-#南瓜王部下（红）
 [voice ref="060061"]
 啊啊！你们看，马上就要过来了！！[p]
 [move id=0 x=0 y=30 time=100]
-#南瓜王
 [voice ref="060062"]
 啊啊ーー！！[n]
 死马当活马医！！[p]

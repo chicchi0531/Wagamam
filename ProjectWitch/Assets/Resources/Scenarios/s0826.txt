@@ -19,7 +19,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#ライザ
+#蕾塞
 [voice ref="080179"]
 嘻嘻嘻！！很好很好，把他们都杀了！！[n]
 嘻嘻嘻嘻！！[p]
@@ -33,7 +33,7 @@
 [drawcg id=1 pos=4]
 [wait time=500]
 [filter name="clear" time=500]
-#エリ
+#艾莉
 [voice ref="080180"]
 你，你这个ーーー！！[n]
 流星冲击ーーー！！[p]
@@ -41,17 +41,17 @@
 艾莉施放出的流星群击中了人偶军团。[p]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
-#エリ
+#艾莉
 [voice ref="080181"]
 怎么样！稍微有点效果吧！[p]
-#ホムンクルス
+#人偶
 [voice ref="080182"]
 咕……叽，叽，叽……。[p]
 [cn]
 人偶军团几乎毫发无伤。[p]
 即便是艾莉级别的魔法也不能对人偶军团造成伤害。[p]
 [move id=0 x=5 time=50]
-#エリ
+#艾莉
 [voice ref="080183"]
 怎么会……！！[p]
 [move id=2 x=2 time=20]
@@ -63,7 +63,7 @@
 你赶快想点办法！！[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#シードル
+#希德尔
 [voice ref="080185"]
 就算你这么说！[n]
 我们的攻击完全无效啊！！[p]

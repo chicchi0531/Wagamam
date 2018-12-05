@@ -10,7 +10,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="070160"]
 好，左腕被切断了！[n]
 前军后撤！！[p]

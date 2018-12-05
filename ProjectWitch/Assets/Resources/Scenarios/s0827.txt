@@ -36,37 +36,37 @@
 [voice ref="080187"]
 爱哭鬼爱丽丝！[p]
 [filter name="clear" time=500]
-#アリス
+#爱丽丝
 [voice ref="080188"]
 …………。[p]
-#ライザ
+#蕾塞
 [voice ref="080189"]
 别不吭声，说话啊！！[p]
-#ニア
+#妮娅
 [voice ref="080190"]
 说话！[p]
 [rotate id=1 angle=5 time=50]
 [rotate id=1 angle=-5 time=50]
 [move id=0 x=-5 time=50]
 ;[se ぽかっ！]
-#アリス
+#爱丽丝
 [voice ref="080191"]
 啊！！[p]
 [move id=0 y=-5 time=200]
-#ライザ
+#蕾塞
 [voice ref="080192"]
 切！真是无聊！[n]
 妮娅，我们去玩。[p]
-#ニア
+#妮娅
 [voice ref="080193"]
 嗯！[p]
-#ライザ
+#蕾塞
 [voice ref="080194"]
 嘻嘻嘻！[n]
 我们走了！爱哭鬼爱丽丝！[p]
 [scale id=1 sx=-1 time=100]
 [move id=1 x=70 time=500]
-#ニア
+#妮娅
 [voice ref="080195"]
 再见ー！[p]
 [scale id=2 sx=-1 time=100]
@@ -74,7 +74,7 @@
 [scale id=0 sx=-1 time=300]
 [move id=0 x=-10 time=500]
 [move id=0 y=-10 time=500]
-#アリス
+#爱丽丝
 [voice ref="080196"]
 呜……
 [move id=0 y=2 time=50]
@@ -91,15 +91,15 @@
 蕾塞和妮娅离开后，爱丽丝在原地开始哭泣。[p]
 [drawcg id=3 posx=-100 dir="right"]
 [drawcg id=4 posx=-100 dir="right" layer="front"]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080197"]
 喂艾莉！再不抓紧就要开始了！！[p]
-#エリ
+#艾莉
 [voice ref="080198"]
 是！维罗妮卡大人！[p]
 [moveto id=3 x=90 time=600]
 [moveto id=4 x=70 time=600]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080199"]
 哦？[n]
 [scale id=3 sx=-1 time=100]
@@ -108,23 +108,23 @@
 那个小鬼，在那里干什么？[p]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
-#エリ
+#艾莉
 [voice ref="080201"]
 维，维罗妮卡大人！[n]
 不是要赶快走吗！？[p]
 [move id=3 y=5 time=50]
 [move id=3 y=-5 time=50]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080202"]
 喂，小鬼！[n]
 你在哭什么啊。[p]
-#アリス
+#爱丽丝
 [voice ref="080203"]
 呜……
 [move id=0 y=2 time=50]
 [move id=0 y=-2 time=50]
 呜哎哎……。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080204"]
 喂！[p]
 [moveto id=3 x=40 time=500]
@@ -135,16 +135,16 @@
 [cn]
 维罗妮卡抓住了爱丽丝的双腕，硬是让她站了起来。[p]
 [move id=0 x=-5 time=100]
-#アリス
+#爱丽丝
 [voice ref="080205"]
 …………。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080206"]
 你是这个小镇的小孩吧？[p]
-#アリス
+#爱丽丝
 [voice ref="080207"]
 …………嗯。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080208"]
 为什么哭成这样。[n]
 摔跤了吗？[p]
@@ -152,12 +152,12 @@
 [rotate id=0 angle=-2 time=50]
 [rotate id=0 angle=2 time=50]
 [rotate id=0 angle=-1 time=50]
-#アリス
+#爱丽丝
 [voice ref="080209"]
 …………。[p]
 [cn]
 爱丽丝摇了摇头。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080210"]
 算了。[p]
 [filter name="fade" time=500]
@@ -171,42 +171,42 @@
 嘻嘻嘻！让你看点有趣的东西。[p]
 [cn]
 维罗妮卡向爱丽丝伸出了手。[p]
-#アリス
+#爱丽丝
 [voice ref="080211"]
 …………。[p]
 [cn]
 爱丽丝看着维罗妮卡。[p]
 维罗妮卡用灿烂的笑容看着爱丽丝。[p]
-#アリス
+#爱丽丝
 [voice ref="080212"]
 …………。[p]
 [cn]
 爱丽丝握住了维罗妮卡的手。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080213"]
 好，就这么决定了！[n]
 你名字叫什么？[p]
-#アリス
+#爱丽丝
 [voice ref="080214"]
 ……丽丝。[p]
 [changecg id=5 state=0]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080215"]
 嗯？我听不清……。[p]
-#アリス
+#爱丽丝
 [voice ref="080216"]
 爱丽丝……。[p]
-#ヴェロニカ
+#维罗妮卡
 [changecg id=5 state=1]
 [voice ref="080217"]
 爱丽丝？[n]
 ……名字挺可爱的啊。[p]
 [voice ref="080218"]
 那么，爱丽丝。走吧，跟上我！[p]
-#アリス
+#爱丽丝
 [voice ref="080219"]
 ……嗯。[p]
-#エリ
+#艾莉
 [voice ref="080220"]
 维罗妮卡大人总是这样……真是的。[p]
 [hide_message]

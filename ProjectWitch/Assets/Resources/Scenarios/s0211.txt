@@ -24,46 +24,46 @@
 [drawcg id=1 pos=3]
 [drawcg id=2 pos=1 dir="right" mode="slidein"]
 [filter name="clear" time=500]
-#チュイリッシュ
+#丘黎绪
 [voice ref="020426"]
 アリスサマ、ソクタツカキトメデース！[p]
-#クロ
+#小黑
 [voice ref="020427"]
 爱丽丝大人。冰之魔女大人发来了魔法信件。[p]
-#アリス
+#爱丽丝
 [voice ref="020428"]
 冰之魔女？[n]念出来。[p]
-#チュイリッシュ
+#丘黎绪
 [voice ref="020429"]
 MA FAN NIN QIAN MIN。[p]
 [scale id=1 sx=-1 time=300]
-#クロ
+#小黑
 [voice ref="020430"]
 是。[n]
 哎ー……。[p]
-#チュイリッシュ
+#丘黎绪
 [voice ref="020431"]
 MA FAN NIN QIAN MIN。[p]
-#アリス
+#爱丽丝
 [voice ref="020432"]
 忘了。[n]
 火球术。[p]
 [filter name="color" color="FFFFFF" time=150]
 [changecg id=2 state=1]
 [filter name="clear" time=150]
-#チュイリッシュ
+#丘黎绪
 [voice ref="020433"]
 呜啊啊啊啊ーーーーー！！！？[p]
 [move id=2 y=-110 time=300]
-#クロ
+#小黑
 [voice ref="020434"]
 爱丽丝大人。您再不停手，[n]
 邮局可就要来找麻烦了？[p]
-#アリス
+#爱丽丝
 [voice ref="020435"]
 签名签名的，吵死了。[n]
 继续念下去。[p]
-#クロ
+#小黑
 [voice ref="020436"]
 嗯，那么……。[p]
 [voice ref="020436a"]
@@ -71,11 +71,11 @@ MA FAN NIN QIAN MIN。[p]
 [voice ref="020436b"]
 「今日您可谓战勋累累，作为敌人的我们，也不得不佩服……。[p]
 [changecg id=0 state=2]
-#アリス
+#爱丽丝
 [voice ref="020437"]
 啊，等下等下。[p]
 这种话都跳过，说重点。[p]
-#クロ
+#小黑
 [voice ref="020438"]
 是……那重新来。[p]
 [voice ref="020438a"]
@@ -84,35 +84,35 @@ MA FAN NIN QIAN MIN。[p]
 以上。[p]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
-#アリス
+#爱丽丝
 [voice ref="020439"]
 你省太多了吧！[n]
 [changecg id=0 state=0]
 ……总之，就是要和我结盟是吧？[p]
-#クロ
+#小黑
 [voice ref="020440"]
 正是。[p]
-#アリス
+#爱丽丝
 [voice ref="020441"]
 我拒绝。[p]
-#クロ
+#小黑
 [voice ref="020442"]
 爱丽丝大人，还是深思一下为好。[p]
 [changecg id=0 state=2]
-#アリス
+#爱丽丝
 [voice ref="020443"]
 我们可能做好攻占对方地盘的觉悟[n]
 打过去的啊？[p]
 [voice ref="020444"]
 劝降姑且不说[n]
 结盟也太便宜他们了。[p]
-#クロ
+#小黑
 [voice ref="020445"]
 那么附加一些条件如何呢。[p]
-#アリス
+#爱丽丝
 [voice ref="020446"]
 条件？[p]
-#クロ
+#小黑
 [voice ref="020447"]
 兵力的指挥权全部都交给我们。[n]
 但我们会保障冰之魔女大人领地的安全。[p]
@@ -120,10 +120,10 @@ MA FAN NIN QIAN MIN。[p]
 这么说的话，虽然形式上是结盟，但和占领没有实质差别。[n]
 只要我们握着军队的指挥权，对方就不能干涉我们的所为。[p]
 [changecg id=0 state=1]
-#アリス
+#爱丽丝
 [voice ref="020449"]
 原来如此……好，就这么回信。[p]
-#クロ
+#小黑
 是……。[p]
 [cn]
 
@@ -142,16 +142,16 @@ MA FAN NIN QIAN MIN。[p]
 [drawcg id=3 pos=2 dir="right"]
 [filter name="clear" time=500]
 
-#アリス
+#爱丽丝
 [voice ref="020452"]
 哼，你就是冰之魔女托莉爱娜。[p]
 [voice ref="020453"]
 这个条件，真的没问题吗？[p]
-#トリアイナ
+#托莉爱娜
 [voice ref="020355"]
 是，当然。
 [changecg id=0 state=1]
-#アリス
+#爱丽丝
 [voice ref="020455"]
 哼，虽不知道你打的什么算盘，[n]
 反正对我来说是再好不过。[p]

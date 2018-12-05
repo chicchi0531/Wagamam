@@ -7,26 +7,26 @@
 
 [show_message]
 [drawfg id=0 state=2]
-#アリス
+#爱丽丝
 哈啊，累死了……。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 辛苦了，爱丽丝小姐。[p]
 [drawfg id=0]
-#アリス
+#爱丽丝
 兵力也有点损伤啊。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 爱丽丝小姐，我们可以补充减少的兵力。[p]
 
 [create_gameobject id=0 ref="Tutorial/field_menubar_menu_hilight"]
 
 补充可以在「军团编成」界面进行。[p]
 [drawfg id=0 state=0]
-#アリス
+#爱丽丝
 哎，好像还有其他菜单啊。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 是！[p]
 
 [create_gameobject id=1 ref="Tutorial/field_menubar_army_cursor"]
@@ -60,18 +60,18 @@
 [delete_gameobject id=1]
 
 [drawfg id=0 state=2]
-#アリス
+#爱丽丝
 嗯，太多了记不住……。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 爱丽丝小姐，具体的操作在[n]
 「图书馆」的书籍中可以查看。[p]
 操作不顺的时候，请看看这里。[p]
 [drawfg id=0 state=0]
-#アリス
+#爱丽丝
 是啊，总之下先试试，忘了的话再来看看。[p]
 [drawfg id=1]
-#チシャ
+#恰夏
 是！[p]
 [clearfg]
 [cn]

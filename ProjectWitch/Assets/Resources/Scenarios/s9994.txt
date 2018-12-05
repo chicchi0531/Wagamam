@@ -7,7 +7,7 @@
 [filter name="clear" time=500][voice ref="090000"]
 
 [show_message]
-#チシャ
+#恰夏
 啊，爱丽丝小姐竟然会死……。[n]
 怎么可能……呜。[p]
 [voice ref="090001"]

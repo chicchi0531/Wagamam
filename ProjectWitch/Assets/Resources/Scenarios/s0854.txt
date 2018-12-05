@@ -23,7 +23,7 @@
 
 
 [show_message]
-#ライザ
+#蕾塞
 [voice ref="080860"]
 キヒヒッ！！[n]
 びっくりさせやがって。 たいした事ねえじゃんか。[p]
@@ -33,7 +33,7 @@
 [clearcg id=2]
 [drawcg id=0 pos=4 state=2]
 [filter name="clear" time=100]
-#アリス
+#爱丽丝
 [voice ref="080862"]
 畜……生……。[p]
 
@@ -42,7 +42,7 @@
 [drawcg id=2 posx=-20 dir="right"]
 [drawcg id=1 pos=2 dir="right"]
 [filter name="clear" time=100]
-#ライザ
+#蕾塞
 [voice ref="080863"]
 オイ！　やっちまえ。[p]
 
@@ -51,7 +51,7 @@
 [clearcg id=2]
 [drawcg id=0 pos=4]
 [filter name="clear" time=100]
-#アリス
+#爱丽丝
 [voice ref="080864"]
 や……めろ……。[p]
 
@@ -60,7 +60,7 @@
 [drawcg id=2 posx=-20 dir="right"]
 [drawcg id=1 pos=2 dir="right"]
 [filter name="clear" time=100]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080865"]
 …………。[p]
 
@@ -69,7 +69,7 @@
 [clearcg id=2]
 [drawcg id=0 pos=4]
 [filter name="clear" time=100]
-#アリス
+#爱丽丝
 [voice ref="080866"]
 やめろっ……。[p]
 
@@ -78,10 +78,10 @@
 [drawcg id=2 posx=-20 dir="right"]
 [drawcg id=1 pos=2 dir="right"]
 [filter name="clear" time=100]
-#ライザ
+#蕾塞
 [voice ref="080867"]
 キヒヒッ！！[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080868"]
 アリス……ごめんなさい。[p]
 
@@ -90,7 +90,7 @@
 [clearcg id=2]
 [drawcg id=0 pos=4 state=2]
 [filter name="clear" time=100]
-#アリス
+#爱丽丝
 [voice ref="080869"]
 やめろおおおおおおおーーーーー！！！！[p]
 [filter name="color" color="FF0000" time=100]
@@ -100,7 +100,7 @@
 ギロチンの刃が落とされた。[n]
 アリスの叫びもむなしく、[n]
 ヴェロニカの首が胴から切り離された……。[p]
-#アリス
+#爱丽丝
 [voice ref="080870"]
 あ……あ……。[n]
 ……………。[p]
@@ -112,14 +112,14 @@
 [drawcg id=4 posx=0]
 [drawcg id=5 pos=5]
 [filter name="clear" time=500]
-#エリ
+#艾莉
 [voice ref="080872"]
 ヴェ、ヴェロニカ様……そんな。[p]
 [move id=3 y=-20 time=400]
-#シードル
+#希德尔
 [voice ref="080873"]
 間に合わなかった……。[p]
-#クロ
+#小黑
 [voice ref="080874"]
 ヴェロニカ様……。[p]
 [filter name="fade" time=500]
@@ -129,7 +129,7 @@
 [drawcg id=2 posx=10]
 [drawcg id=1 pos=3]
 [filter name="clear" time=500]
-#ライザ
+#蕾塞
 [voice ref="080875"]
 キッ、キヒヒッ！！[n]
 キヒヒヒヒヒッ！！！！！！[p]

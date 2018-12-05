@@ -14,13 +14,13 @@
 [wait time=500]
 [filter name="clear" time=500]
 
-#ライザの部下
+#蕾塞の部下
 [voice ref="080475"]
 那边！给我追ーー！！[p]
 [cn]
 维罗妮卡军的残党仍在和蕾塞军的交战中败逃。[p]
 [move id=0 x=30 time=900]
-#シードル
+#希德尔
 [voice ref="080476"]
 艾莉大人……、
 [wait time=500]

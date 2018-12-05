@@ -10,7 +10,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="070163"]
 终于到最后一步……。[n]
 做好觉悟吧怪物！！[p]

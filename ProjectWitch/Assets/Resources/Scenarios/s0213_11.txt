@@ -31,7 +31,7 @@
 #部下
 [voice ref="020484"]
 报告！！[p]
-#トリアイナ
+#托莉爱娜
 [voice ref="020485"]
 怎么了，那么吵。[p]
 [cn]
@@ -48,13 +48,13 @@
 [move id=2 y=5 time=50]
 [move id=1 y=-5 time=50]
 [move id=2 y=-5 time=50]
-#トリアイナ
+#托莉爱娜
 [voice ref="020487"]
 什么！[p]
 #部下
 [voice ref="020488"]
 如何处置。[p]
-#トリアイナ
+#托莉爱娜
 [voice ref="020489"]
 ……去皮诺镇，艾斯镇征兵[p]
 [voice ref="020489a"]
@@ -67,23 +67,23 @@
 ;部下退出
 [scale id=2 sx=-1 time=200]
 [scale id=1 sx=-1 time=200]
-#トリアイナ
+#托莉爱娜
 [voice ref="020491"]
 被摆了一道……。[n]
 没想到会突然攻过来。[p]
 [voice ref="020492"]
 奥利维娅也回自己的领地做下军备。[n]
 敌人不知什么时候会攻打你们。[p]
-#オリヴィア
+#奥莉维娅
 [voice ref="020493"]
 嗯，嗯……我知道了。[p]
-#トリアイナ
+#托莉爱娜
 [voice ref="020494"]
 海伦。[n]
 送好奥利维娅，就马上回来。[p]
 [voice ref="020494a"]
 要忙起来了。[p]
-#ヘレン
+#海伦
 [voice ref="020495"]
 是，我知道了！[p]
 [cn]
@@ -117,14 +117,14 @@
 [show_message]
 [drawcg id=3 pos=2 dir="right" state=1]
 [drawcg id=4 pos=1 dir="right"]
-#アリス
+#爱丽丝
 [voice ref="020496"]
 进攻！给我上ーーーー！！！[n]
 啊哈哈哈哈ーーー！！[p]
 [voice ref="020497"]
 不错不错！！[n]
 奇袭很成功啊，小黑！[p]
-#クロ
+#小黑
 [voice ref="020498"]
 是！[n]
 就这样一鼓作气攻进去吧。[p]
@@ -151,7 +151,7 @@
 [show_message]
 
 [drawcg id=0 pos=4]
-#トリアイナ
+#托莉爱娜
 [voice ref="020499"]
 各位，感谢你们撑住！[n]
 从现在开始反击！！[p]
@@ -169,15 +169,15 @@
 
 [drawcg id=3 pos=2 dir="right"]
 [drawcg id=4 pos=1 dir="right"]
-#アリス
+#爱丽丝
 [voice ref="020500"]
 ……对面传来的欢声啊。[n]
 莫非是来援军了？[p]
-#クロ
+#小黑
 [voice ref="020501"]
 要去探探吗？[p]
 [changecg id=3 state=1]
-#アリス
+#爱丽丝
 [voice ref="020502"]
 不，不用。就算是援军来了，也太晚了。[n]
 来，开门！！[p]

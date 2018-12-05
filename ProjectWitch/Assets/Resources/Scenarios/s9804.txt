@@ -5,11 +5,11 @@
 [loadfg id=1 ref="kuro"]
 
 [drawfg id=0]
-#アリス
+#爱丽丝
 哦，战斗结束了啊。[n]
 呼……下指令也挺开心的。[p]
 [drawfg id=1]
-#クロ
+#小黑
 战斗胜利的条件， 根据攻城的「侵攻战」和，
 防御敌人进攻的「防卫战」会有所不同。[p]
 [create_gameobject id=0 ref="Tutorial/battle_domination_win_conditional"]
@@ -24,16 +24,16 @@
 将成为胜利条件。[p]
 [delete_gameobject id=0]
 [drawfg id=0]
-#アリス
+#爱丽丝
 防卫战会比较好赢吗。[p]
 [drawfg id=1]
-#クロ
+#小黑
 是的。所以，[n]
 侵攻战可能需要不顾牺牲重视攻击，[p]
 而防卫战则需要重视防御，[p]
 这就是战斗的基本。[p]
 [drawfg id=0 state=1]
-#アリス
+#爱丽丝
 呜呼呼！知道了知道了。我会记住的。[p]
 
 [hide_message]

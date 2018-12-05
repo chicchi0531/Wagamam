@@ -21,25 +21,25 @@
 [wait time=500]
 [filter name="clear" time=500]
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="080599q"]
 呜呼呼！[n]
 看，一瞬间就占领了！[p]
 [cn]
 爱丽丝赢得了胜利。[p]
-#エリ
+#艾莉
 [voice ref="080599r"]
 这么乱来的手段，亏你能想到……。[p]
-#クロ
+#小黑
 [voice ref="080599s"]
 雾气也帮了我们很多。[p]
 [voice ref="080599t"]
 要是没有雾的话，架桥可能还会困难一些。[p]
-#アリス
+#爱丽丝
 [voice ref="080599u"]
 连老天都要帮我。[n]
 总之，我们就以这里为据点开始进攻蕾塞军吧。[p]
-#エリ
+#艾莉
 [voice ref="080599v"]
 嗯，是啊。[n]
 不抓紧的话，维罗妮卡大人就危险了。[p]
@@ -72,47 +72,47 @@
 [filter name="clear" time=500]
 [drawcg id=3 pos=4]
 [drawcg id=4 posx=10 layer="front"]
-#ライザ
+#蕾塞
 [voice ref="080599w"]
 哟，维罗妮卡。最近怎么样？[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080599x"]
 ……嗯，还不错。[p]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080599y"]
 今天有维罗妮卡的好消息？[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080599z"]
 什么……！[p]
-#ライザ
+#蕾塞
 [voice ref="080600"]
 你最喜欢的爱丽丝把朗宁拉德城攻下来了哦。[n]
 嘻嘻嘻！这就算是正式向我们宣战了。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080600a"]
 爱丽丝……！[n]
 看来艾莉成功了！[p]
-#ライザ
+#蕾塞
 [voice ref="080600b"]
 那么，你能高兴到什么时候呢……[p]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
 [move id=4 y=5 time=50]
 [move id=4 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080600c"]
 为了打败爱丽丝军，我们已经派遣了人偶军团了哦。[p]
 [move id=5 y=-2 time=20]
 [move id=5 y=2 time=20]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080600d"]
 呜……你们根本不知道。[n]
 在战争中用那个会发生什么……。[p]
-#ライザ
+#蕾塞
 [voice ref="080600e"]
 切！怎么可能知道。[p]
 [voice ref="080600ea"]
@@ -127,7 +127,7 @@
 [move id=4 x=60 time=1000]
 [cn]
 这么说着，蕾塞离开了监狱[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080600f"]
 爱丽丝……你一定要小心。[p]
 ;防衛戦でホムンクルスが出てくる

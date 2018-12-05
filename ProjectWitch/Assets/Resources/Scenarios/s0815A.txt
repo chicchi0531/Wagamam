@@ -15,12 +15,12 @@
 
 [show_message]
 莫斯库森林。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080099"]
 総員退避っ！！[p]
 [scale id=0 sx=-1 time=200]
 [move id=0 x=50 time=400]
-#ニア
+#妮娅
 [voice ref="080100"]
 ……もうヤダ。もうヤダーーー！！[p]
 [move id=1 y=10 time=100]

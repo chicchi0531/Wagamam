@@ -20,7 +20,7 @@
 [wait time=200]
 [scale id=0 sx=-1 time=100]
 [move id=0 x=40 time=800]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080177"]
 躲到建筑之间！[n]
 人偶来了，千万不要反抗！[p]

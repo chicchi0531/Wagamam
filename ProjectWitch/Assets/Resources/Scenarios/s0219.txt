@@ -22,35 +22,35 @@
 [show_message]
 [drawcg id=0 posx=10 dir="right" state=1]
 [drawcg id=1 posx=-10 dir="right"]
-#アリス
+#爱丽丝
 [voice ref="020580"]
 好，总算轮到森之魔女了……。[n]
 呜呼呼呼！手开始痒了。[p]
-#クロ
+#小黑
 [voice ref="020581"]
 爱丽丝大人！看那边！[p]
 [cn]
 爱丽丝眼前的，[n]
 是摆好阵列的托莉爱娜。[p]
 [drawcg id=2 posx=40 mode="slidein"]
-#トリアイナ
+#托莉爱娜
 [voice ref="020582"]
 等你很久了，华之魔女爱丽丝。[n]
 你就老老实实成为我们的饵食吧！[p]
-#アリス
+#爱丽丝
 [voice ref="020583"]
 哼！谁会输给你！！[p]
 [drawcg id=3 posx=-30 mode="slidein" dir="right"]
 [drawcg id=4 posx=-40 layer="front" mode="slidein" dir="right"]
 [scale id=1 sx=-1 time=0]
 [move id=1 x=10 time=300]
-#マルゲル
+#玛尔盖尔
 [voice ref="020584"]
 是，如果我们只是孤身一人，可能会输。[p]
-#オリヴィア
+#奥莉维娅
 [voice ref="020585"]
 但是，大家一起齐心协力的话！……就能赢。[p]
-#クロ
+#小黑
 [voice ref="020586"]
 被三方向包围了！？[n]
 糟了，是伏兵。[p]
@@ -59,7 +59,7 @@
 托莉爱娜引爱丽丝的部队向前，[n]
 奥利维娅和玛尔盖尔的部队从背后偷袭。[p]
 [changecg id=0 state=2]
-#アリス
+#爱丽丝
 [voice ref="020587"]
 哼！就算耍点小招数，垃圾还是垃圾！[n]
 老老实实去死吧！！！！[p]

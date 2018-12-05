@@ -21,12 +21,12 @@
 [show_message]
 [drawcg id=0 pos=5 state=1]
 [drawcg id=1 pos=3]
-#シャルロッテ
+#夏洛特
 [voice ref="050048"]
 怎么可能……。[n]
 吃了那么多的魔法，还不撤退……。[p]
 [scale id=1 sx=-1 time=100]
-#カスミ
+#霞
 [voice ref="050049"]
 洛特！[n]
 现在可没空懊悔！[p]
@@ -34,7 +34,7 @@
 不早点撤退的话！！[p]
 [move id=0 y=2 time=20]
 [move id=0 y=-2 time=20]
-#シャルロッテ
+#夏洛特
 [voice ref="050051"]
 ……ッ！[n]
 我知道了。[p]

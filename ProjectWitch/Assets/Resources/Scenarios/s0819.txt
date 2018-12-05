@@ -18,7 +18,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#エリ
+#艾莉
 [voice ref="080124"]
 好，给我放ーーー！！！[p]
 [move id=0 y=2 time=20]
@@ -29,16 +29,16 @@
 呼呼呼！！很好很好，敌人不断地被打败！！[n]
 [scale id=0 sx=-1 time=200]
 呐，希德尔！！[p]
-#シードル
+#希德尔
 [voice ref="080126"]
 是，这场战斗，我方完全掌握了主导权。[p]
 [voice ref="080127"]
 就这样一口气攻上去吧。[p]
-#エリ
+#艾莉
 [voice ref="080128"]
 嗯，希德尔！给我上！！[p]
 [scale id=0 sx=-1 time=100]
-#シードル
+#希德尔
 [voice ref="080129"]
 是！[p]
 [move id=1 x=-100 time=500]

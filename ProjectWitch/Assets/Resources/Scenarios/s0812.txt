@@ -18,7 +18,7 @@
 [show_message]
 莫斯库的森林南面。[p]
 在这里，维罗妮卡采用的游击的战术。[p]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080085"]
 还不行……继续引诱他们。[p]
 [cn]
@@ -38,7 +38,7 @@
 [scale id=1 sx=-1 time=300]
 [wait time=100]
 [scale id=1 sx=-1 time=300]
-#ニア
+#妮娅
 [voice ref="080086"]
 ぜえ……ぜえ……。[n]
 真是的！！[p]
@@ -48,12 +48,12 @@
 要走多久啊！！[n]
 是不是迷路了？[p]
 [drawcg id=0 pos=5]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080088"]
 就是现在！！突击！！[p]
 [se ref="159"]
 [se ref="047"]
-#ニア
+#妮娅
 [move id=1 x=-5 y=5 time=50]
 [move id=1 y=-5 time=50]
 [voice ref="080089"]

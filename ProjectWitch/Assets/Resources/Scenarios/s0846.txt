@@ -19,10 +19,10 @@
 [filter name="clear" time=500]
 [show_message]
 马奇诺防线。[p]
-#アリス
+#爱丽丝
 [voice ref="080600g"]
 骗人的吧……这是什么。[p]
-#エリ
+#艾莉
 [voice ref="080600h"]
 这里是马奇诺防线。[n]
 这是北方大地最难攻的要塞[p]
@@ -30,42 +30,42 @@
 墙壁高且厚。[n]
 之前的计策应该用不了了……。[p]
 [drawcg id=2 pos=5]
-#クロ
+#小黑
 [voice ref="080600j"]
 爱丽丝小姐。我回来了。[p]
 [move id=0 y=5 time=50]
 [move id=0 y=-5 time=50]
 [changecg id=0 state=2]
 [scale id=0 sx=-1 time=100]
-#アリス
+#爱丽丝
 [voice ref="080600k"]
 小黑！敌人的情况如何。[p]
 [scale id=1 sx=-1 time=300]
-#クロ
+#小黑
 [voice ref="080600l"]
 はっ[n]
 敌人数量有数万，城墙上都是魔法兵，魔动炮和弓兵，没有一点缝隙。[p]
-#アリス
+#爱丽丝
 [voice ref="080600m"]
 ……切，果然是这样。[p]
 [voice ref="080600n"]
 她们就算没有人偶也足够强大，[n]
 事到如今已经没什么好惊讶的了。[p]
-#エリ
+#艾莉
 [voice ref="080601"]
 怎么办？[n]
 用蛮劲冲进去恐怕没有胜算。[p]
 [move id=0 x=5 time=300]
-#アリス
+#爱丽丝
 [voice ref="080602"]
 别吵，我正在想计策。[n]
 ……可恶，要怎么办。[p]
 [move id=1 y=-100 time=300]
 [clearcg id=1]
-#エリ
+#艾莉
 [voice ref="080603"]
 哎，什，什么……呀啊！[p]
-#アリス
+#爱丽丝
 [voice ref="080604"]
 怎么了？[n]
 喂……艾莉。[p]
@@ -80,31 +80,31 @@
 [scale id=0 sx=-1 time=200]
 [scale id=0 sx=-1 time=200]
 
-#アリス
+#爱丽丝
 [voice ref="080605"]
 喂，艾莉！[n]
 怎么回事，到哪去了。[p]
-#エリ
+#艾莉
 [voice ref="080606"]
 我说！！你这个笨蛋，要干嘛啊！！[p]
 [move id=0 y=-2 time=20]
 [move id=0 y=2 time=20]
 [scale id=0 sx=-1 time=100]
-#アリス
+#爱丽丝
 [voice ref="080607"]
 啊！在下面！？[p]
 [cn]
 从地下传来了声音。[p]
 [move id=2 x=-30 time=500]
 [move id=2 y=-10 time=500]
-#クロ
+#小黑
 [voice ref="080608"]
 爱丽丝小姐。这里有隐藏地道的入口。[p]
-#アリス
+#爱丽丝
 [voice ref="080609"]
 原来如此……[n]
 可能是敌人，要小心。[p]
-#クロ
+#小黑
 [voice ref="080610"]
 是！[p]
 [clearcg id=2 mode="fadeout"]
@@ -122,7 +122,7 @@
 [drawcg id=3 pos=1 dir="right"]
 [drawbg ref="1008m"]
 [filter name="clear" time=500]
-#エリ
+#艾莉
 [voice ref="080611"]
 你这个！[n]
 [move id=1 x=-6 time=50]
@@ -141,7 +141,7 @@
 [move id=1 x=-6 time=50]
 [move id=3 x=-1 time=20]
 [move id=1 x=5 time=50]
-#シードル
+#希德尔
 [voice ref="080613"]
 对，对不起！[n]
 我还以为你被敌人抓住，正在被遣送……。[p]
@@ -159,7 +159,7 @@
 [move id=3 x=-1 time=20]
 [move id=1 x=5 time=50]
 [move id=0 x=5 time=300]
-#アリス
+#爱丽丝
 [voice ref="080616"]
 喂，喂艾莉……。[n]
 那个穿着奇怪的男人是谁？[p]
@@ -167,11 +167,11 @@
 [move id=1 y=-5 time=50]
 [scale id=1 sx=-1 time=100]
 [move id=3 x=30 time=500]
-#シードル
+#希德尔
 [voice ref="080617"]
 啊，失敬了……。[n]
 我是艾莉大人的部下，我叫希德尔。[p]
-#エリ
+#艾莉
 [voice ref="080618"]
 这时我的「奴隶」希德尔。[p]
 [voice ref="080619"]
@@ -179,7 +179,7 @@
 这个外装不是衣服，是身体[p]
 [move id=0 x=-30 time=800]
 [move id=2 x=20 time=600]
-#アリス
+#爱丽丝
 [voice ref="080620"]
 哦……好像挺硬的。[p]
 [cn]
@@ -192,59 +192,59 @@
 [move id=3 y=-2 time=20]
 [move id=0 x=10 y=5 time=50]
 [move id=0 y=-5 time=50]
-#シードル
+#希德尔
 [voice ref="080621"]
 啊啊！[p]
 [changecg id=0 state=2]
-#アリス
+#爱丽丝
 [voice ref="080622"]
 靠！这家伙叫什么啊！！[p]
-#シードル
+#希德尔
 [voice ref="080623"]
 不，不是……非常抱歉。[n]
 您打的位置正到好处……不经意就。[p]
-#アリス
+#爱丽丝
 [voice ref="080624"]
 脸这么红，完全没说服力啊……。[n]
 真是个恶心的家伙。[p]
 [changecg id=0 state=0]
-#エリ
+#艾莉
 [voice ref="080625"]
 呵呵呵……[n]
 希德尔，你好像被讨厌了哦？[p]
 [move id=3 y=-5 time=300]
-#シードル
+#希德尔
 [voice ref="080626"]
 对不起……。[p]
-#アリス
+#爱丽丝
 [voice ref="080627"]
 那么，种子变态。[n]
 你在这种地方干什么。[p]
 [move id=3 y=7 time=100]
 [move id=3 y=2 time=50]
-#シードル
+#希德尔
 [voice ref="080628"]
 种，种子变态！？[p]
 [voice ref="080629"]
 你好像是自己人？到底是什么人。[p]
 [move id=1 y=-2 time=20]
 [move id=1 y=2 time=20]
-#アリス
+#爱丽丝
 [voice ref="080630"]
 我是爱丽丝。[n]
 华之魔女爱丽丝。[p]
 [scale id=1 sx=-1 time=300]
-#シードル
+#希德尔
 [voice ref="080631"]
 那么，你就是那位爱丽丝小姐。[n]
 ……和我听说的完全不一样呢。[p]
 [move id=1 x=-10 time=400]
-#エリ
+#艾莉
 [voice ref="080632"]
 希德尔，这个地道延伸至马奇诺防线的方向，[n]
 莫非……。[p]
 [scale id=3 sx=-1 time=300]
-#シードル
+#希德尔
 [voice ref="080633"]
 没错，其实我偷偷地让留下的部下挖掘地下通路。[p]
 [voice ref="080634"]
@@ -252,26 +252,26 @@
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
 [scale id=1 sx=-1 time=200]
-#エリ
+#艾莉
 [voice ref="080635"]
 希德尔，你偶尔也挺厉害的嘛！！[p]
-#シードル
+#希德尔
 [voice ref="080636"]
 是，啊，谢谢！[p]
 [voice ref="080637"]
 （被，被夸奖了……。呜呜……。）[p]
-#アリス
+#爱丽丝
 [voice ref="080638"]
 然后呢，有没有什么情报？[p]
 [scale id=3 sx=-1 time=300]
-#シードル
+#希德尔
 [voice ref="080639"]
 是，维罗妮卡大人应该是被囚禁在了马奇诺防线中央部分的监狱。[p]
 [voice ref="080640"]
 这条通路可以通道马奇诺防线的边角[n]
 从那里要到中央就只能靠实力了……。[p]
 [changecg id=0 state=1]
-#アリス
+#爱丽丝
 [voice ref="080641"]
 好！只要知道维罗妮卡的位置我们就有胜算！[p]
 [voice ref="080642"]
@@ -288,19 +288,19 @@
 [bgm ref="018_event3"]
 [filter name="clear" time=500]
 [cn]
-#ライザ軍兵士A
+#蕾塞軍兵士A
 [voice ref="080644"]
 ふああ……。[p]
-#ライザ軍兵士B
+#蕾塞軍兵士B
 [voice ref="080645"]
 喂，到时候换班了。[p]
 [se ref="128_bomb" volume=10]
-#ライザ軍兵士A
+#蕾塞軍兵士A
 [voice ref="080646"]
 哦哦……辛苦了。[n]
 那么就拜托你了。[p]
 [se ref="128_bomb" volume=20]
-#ライザ軍兵士B
+#蕾塞軍兵士B
 [voice ref="080647"]
 嗯……。[p]
 [se ref="128_bomb" volume=20]
@@ -308,7 +308,7 @@
 ……嗯？[n]
 喂，这是什么声音。[p]
 [se ref="128_bomb" volume=20]
-#ライザ軍兵士A
+#蕾塞軍兵士A
 [voice ref="080649"]
 怎……？[n]
 怎么会有声……音……。[p]
@@ -317,18 +317,18 @@
 [drawcg id=2 pos=5]
 [drawcg id=1 pos=2]
 [drawcg id=3 pos=3]
-#アリス
+#爱丽丝
 [voice ref="080650"]
 小的们！！给我一起上ーーー！！！！[p]
-#ライザ軍兵士B
+#蕾塞軍兵士B
 [voice ref="080651"]
 呜哇哇，怎么回事！！！？[p]
-#ライザ軍兵士A
+#蕾塞軍兵士A
 [voice ref="080652"]
 敌，敌袭ーーーー！！[p]
 [cn]
 爱丽丝的军队如同怒涛一般袭向蕾塞军[p]
-#アリス
+#爱丽丝
 [voice ref="080653"]
 呜呼呼！[n]
 第一次奇袭算是成功了。[p]
@@ -338,7 +338,7 @@
 [move id=1 y=-5 time=50]
 [move id=3 y=5 time=50]
 [move id=3 y=-5 time=50]
-#アリス軍兵士
+#爱丽丝軍兵士
 [voice ref="080655"]
 好好好ーーーー！！！[p]
 

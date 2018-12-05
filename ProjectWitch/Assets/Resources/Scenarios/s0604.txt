@@ -28,7 +28,7 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="060049"]
 啊哈哈哈哈ーー！！！[p]
 [voice ref="060050"]
@@ -45,7 +45,7 @@
 [move id=6 x=0 y=10 time=50]
 [move id=6 x=0 y=-10 time=50]
 [move id=0 x=10 y=0 time=100]
-#パンプキング
+#南瓜王
 [voice ref="060052"]
 糟糕！！[n]
 喂，你们!撤了！[p]
