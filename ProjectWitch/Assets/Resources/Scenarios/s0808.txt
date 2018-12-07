@@ -1,4 +1,4 @@
-﻿;script 808
+;script 808
 ;directer:yuichi
 ;script:nikai
 ;timing:s0808後

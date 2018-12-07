@@ -1,4 +1,4 @@
-﻿;script 824
+;script 824
 ;directer:yuichi
 ;script:nikai
 ;timing:s0823後

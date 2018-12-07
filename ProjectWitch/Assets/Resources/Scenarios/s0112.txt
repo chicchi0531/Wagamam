@@ -1,4 +1,4 @@
-﻿;s0112
+;s0112
 ;script yuichi
 ;direction yuichi
 ;アリス領　ニルギリ砦
@@ -21,32 +21,32 @@
 
 [drawcg id=2 pos="center"]
 [show_message]
-#メイジー
+#梅吉
 [voice ref="010079"]
-ワーウルフ……。[p]
+狼男……。[p]
 #部下
 [voice ref="010080"]
-メイジー様。[n]
-アリス率いる軍勢が攻めてまいりました。 [p]
+梅吉大人。[n]
+爱丽丝率领的军队攻了过来。[p]
 [scale id=2 sx=-1 time=300]
 [move id=2 x=20 time=600]
 [move id=2 y=-5 time=200]
-#メイジー
+#梅吉
 [voice ref="010081"]
-アリス……姉さん。 わたし……、私は……。[p]
+爱丽丝……姐姐。我……我……。[p]
 #部下
 [voice ref="010082"]
-……いかがなさいますか。[p]
-#メイジー
+……请问如何处置。[p]
+#梅吉
 [move id=2 y=5 time=300]
 …………。[p]
 [scale id=2 sx=-1 time=600]
 [voice ref="010083"]
-……門を開いて。 全員で打って出るわ。[p]
+……打开城门。全军出击。[p]
 #部下
 [voice ref="010084"]
-はっ。[n]
-開門！！　総員突撃用意！！[p]
+是。[n]
+开城门！！全军准备突击！！[p]
 [cn]
 
 [filter name="fade" time=500]
@@ -58,15 +58,15 @@
 
 [drawcg id=0 pos="right" dir="right"]
 [drawcg id=1 pos="left" dir="right" state=2]
-#クロ
+#小黑
 [voice ref="010085"]
-アリス様。[n]
-敵勢、一斉突撃を開始した模様。[p]
-#アリス
+爱丽丝小姐。[n]
+敌军开始一齐进攻了。[p]
+#爱丽丝
 [voice ref="010086"]
-メイジー……。[n]
-フン、まあそうするほかないだろう。[n]
-迎え撃つぞ、全員構えろッ！！[p]
+梅吉……。[n]
+哼，她也只能这样了。[n]
+准备迎击，全军待机！！[p]
 ;戦闘　VS メイジー
 
 [hide_message]

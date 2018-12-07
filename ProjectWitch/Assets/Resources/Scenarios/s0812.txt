@@ -1,4 +1,4 @@
-﻿;script 812
+;script 812
 ;directer:yuichi
 ;script:nikai
 ;timing:s0811後
@@ -16,15 +16,15 @@
 [filter name="clear" time=500]
 
 [show_message]
-モスクの森南。[p]
-ここでの戦いでヴェロニカ軍がとったのはゲリラ戦の形だった。[p]
-#ヴェロニカ
+莫斯库的森林南面。[p]
+在这里，维罗妮卡采用的游击的战术。[p]
+#维罗妮卡
 [voice ref="080085"]
-まだよ……、よく引き付けて。[p]
+还不行……继续引诱他们。[p]
 [cn]
-ニア軍が進軍しているそばの茂みには、大量の伏兵が潜伏していた。[p]
-森の中にはトラップや伏兵などの障害が張り巡らされ[n]
-ニア軍は昼夜問わずヴェロニカ軍に襲われるのだ。[p]
+妮娅军进入的丛林，有大量的伏兵。[p]
+森林中布满了伏兵和障碍，[n]
+妮娅军不论昼夜，不停地被维罗妮卡军袭击。[p]
 [move id=1 x=20 time=400]
 [wait time=200]
 [move id=1 x=20 time=400]
@@ -38,33 +38,33 @@
 [scale id=1 sx=-1 time=300]
 [wait time=100]
 [scale id=1 sx=-1 time=300]
-#ニア
+#妮娅
 [voice ref="080086"]
 ぜえ……ぜえ……。[n]
-もう！！[p]
+真是的！！[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
 [voice ref="080087"]
-一体どんだけ歩かせるのよ！！[n]
-迷ってるんじゃないのォ？[p]
+要走多久啊！！[n]
+是不是迷路了？[p]
 [drawcg id=0 pos=5]
-#ヴェロニカ
+#维罗妮卡
 [voice ref="080088"]
-今よっ！！　突撃ッ！！[p]
+就是现在！！突击！！[p]
 [se ref="159"]
 [se ref="047"]
-#ニア
+#妮娅
 [move id=1 x=-5 y=5 time=50]
 [move id=1 y=-5 time=50]
 [voice ref="080089"]
-まっ、またあ！？[n]
-ちょっと！　早く反撃しなさいよ！！[p]
+还，还有！？[n]
+你们！早点反击啊！！[p]
 [move id=1 y=-5 time=50]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
 [move id=1 y=5 time=50]
 [voice ref="080090"]
-もぉヤダぁーーー！！！！[p]
+太讨厌了ーーー！！！！[p]
 
 [hide_message]
 [filter name="fade" time="500"]

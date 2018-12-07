@@ -20,18 +20,18 @@
 [show_message]
 [drawcg id=0 pos=3 dir="right" state=2]
 [drawcg id=1 pos=2 dir="right"]
-#クロ
+#小黑
 [voice ref="050265"]
-穴掘り隊、かかれッ！[p]
-#アリス
+挖洞队，给我上！[p]
+#爱丽丝
 [voice ref="050266"]
-できるだけ急げよ！　[n]
-あいつに悟られる前に掘りきるんだ！[p]
+尽快挖出来！[n]
+要在她发现之前挖好！[p]
 [cn]
-アリスの命でエルメェス砦の外にはエマがすっぽり入って出られないほどの落とし穴が作られた。[p]
-#アリス
+根据爱丽丝的命令，士兵在艾尔菲斯外挖出了艾玛正好能掉进去但不出来大小的洞。[p]
+#爱丽丝
 [voice ref="050267"]
-よし、誘導隊行くぞ！　私に続け！！[p]
+好，诱导队给我上！跟着我！！[p]
 [cn]
 
 [hide_message]
@@ -44,19 +44,19 @@
 [drawcg id=2 pos=5 state=1]
 [drawcg id=0 pos=2 mode="slidein" dir="right" state=2]
 [show_message]
-アリスは砦に突入した。[p]
-そこにはエマが変わらず待ち構えていた。[p]
-#エマ
+爱丽丝冲进了要塞。[p]
+艾玛仍旧等在原地。[p]
+#艾玛
 [voice ref="050268"]
-ウゥウウウゥウ……[n]
+呜呜呜呜……[n]
 [filter name="color" color="FF0000" time=300]
 [se ref="109_fx_grummanA"]
-ウアアァッァッッ！！[p]
+呜啊啊啊啊啊啊！！[p]
 [filter name="clear" time=300]
 
-#アリス
+#爱丽丝
 [voice ref="050269"]
-よしっ、行くぞお前たち！　時間を稼ぐんだ！！[p]
+要，给我上！抓紧时间！！[p]
 
 [hide_message]
 [filter name="fade" time=500]

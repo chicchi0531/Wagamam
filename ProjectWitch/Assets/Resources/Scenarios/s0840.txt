@@ -1,4 +1,4 @@
-﻿;script 840
+;script 840
 ;directer:yuichi
 ;script:nikai
 ;timing:s0839後 3回世界樹と戦う
@@ -16,47 +16,47 @@
 [filter name="clear" time=500]
 
 [show_message]
-ヴェロニカ宮[p]
+维罗妮卡宫殿[p]
 [se ref="046"]
 [drawcg id=1 pos=2 dir="right" mode="slidein" layer="front"]
-#ニア
+#妮娅
 [voice ref="080532"]
-ライザー！　[n]
+蕾塞！[n]
 [scale id=0 sx=-1 time=200]
-あのマルゲルってのから連絡があったよ！[p]
+那个玛尔盖尔来联系了！[p]
 [voice ref="080533"]
-えっとね……[n]
+那个……[n]
 [move id=1 y=-2 time=50]
 [move id=1 y=2 time=50]
 [move id=1 y=-2 time=50]
 [move id=1 y=2 time=50]
-ワルサワの町の南にある森が、山にさえぎられていなくて抜けられそうだって！[p]
-#ライザ
+古泽镇南边的森林没有被山脉截断，可以通往南方！[p]
+#蕾塞
 [voice ref="080534"]
-そうか！　よし、ワルサワの町に軍を集めるぞ！[p]
+是吗！好，把军队集中到古泽镇！[p]
 [voice ref="080535"]
-キヒヒヒッ！[n]
-しっかり軍備を固めて、南の大地も占領だ！！[p]
+嘻嘻嘻！[n]
+做好军备，准备占领南方大地！！[p]
 [voice ref="080536"]
-あの大魔女ホーリーベルさえできなかった、世界統一を成し遂げるんだ。[p]
+我要完成连那个大魔女圣铃都没有做到的，世界统一。[p]
 [voice ref="080537"]
-そうすりゃ俺様は、名実ともに大魔女さ！！[p]
+这样我就成为名副其实的大魔女了！！[p]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
 [move id=1 y=5 time=50]
 [move id=1 y=-5 time=50]
-#ニア
+#妮娅
 [voice ref="080538"]
-あっ、ライザだけずるいよ！　私も大魔女！！[p]
-#ライザ
+啊，只有蕾塞也太赖皮了！我也要做大魔女！！[p]
+#蕾塞
 [voice ref="080539"]
-あん？　大魔女って二人でなれるのか……？[p]
+啊？大魔女能有两个人吗……？[p]
 [voice ref="080540"]
-まあいいか！！[n]
-さあいくぞー！！[p]
-#ニア
+算了！！[n]
+走吧ー！！[p]
+#妮娅
 [voice ref="080541"]
-おおーー！！[p]
+哦哦ーー！！[p]
 [hide_message]
 [filter name="fade" time=500]
 [clearcg id=0]

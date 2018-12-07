@@ -10,10 +10,10 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="070161"]
-よし、次は右腕だな。[p]
-お前ら！　気合い入れて行けよーー！！！[p]
+好，接下来是右腕。[p]
+小的们！给我鼓起气来ーー！！！[p]
 
 [hide_message]
 [filter name="fade" time=500]

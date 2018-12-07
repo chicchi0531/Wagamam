@@ -1,4 +1,4 @@
-﻿;script 842
+;script 842
 ;directer:yuichi
 ;script:nikai
 ;timing:s0841後
@@ -9,10 +9,10 @@
 [drawbg ref="Event/707"]
 [filter name="clear" time=500]
 [show_message]
-世界樹。[p]
-開通は突然だった……。[p]
-おそらくあと半分くらいだろうとアリスが踏んでいた地点で、向こう側とつながったのだ。[p]
-そして、向こう側から10体のホムンクルスが飛び出してきた……。[p]
+世界树。[p]
+被开通就在一瞬之间……。[p]
+爱丽丝只通过了一半左右，就已经和对面连通。[p]
+然后，对面冲出了10个人偶……。[p]
 
 [hide_message]
 [filter name="fade" time=500]

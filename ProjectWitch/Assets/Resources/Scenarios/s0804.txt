@@ -1,4 +1,4 @@
-﻿;script 804
+;script 804
 ;directer:yuichi
 ;script:nikai
 ;timing:s805のあと　ターンはじめ

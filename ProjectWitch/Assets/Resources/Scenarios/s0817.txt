@@ -1,4 +1,4 @@
-﻿;script 817
+;script 817
 ;directer:yuichi
 ;script:nikai
 ;timing:s0816後
@@ -17,17 +17,17 @@
 [filter name="clear" time=500]
 
 [show_message]
-レーニングラッド要塞[p]
-#ライザ
+朗宁拉德要塞[p]
+#蕾塞
 [voice ref="080121"]
-サンダーボルトッ！！[p]
-#ヴェロニカ軍兵士
+闪电球！！[p]
+#维罗妮卡軍兵士
 [voice ref="080122"]
-ぎゃああああーーー！！[p]
-#ライザ
+啊啊啊啊啊ーーー！！[p]
+#蕾塞
 [voice ref="080123"]
-おらーーー！！！[n]
-死にてえ奴はかかってきやがれェーーー！！！！[p]
+看招ーーー！！！[n]
+想死的都给我上来ーーー！！！！[p]
 
 [hide_message]
 [filter name="fade" time="500"]

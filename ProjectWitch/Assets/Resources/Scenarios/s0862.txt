@@ -1,4 +1,4 @@
-﻿;script 862
+;script 862
 ;directer:yuichi
 ;script:nikai
 ;timing:s0862後 戦闘勝利時

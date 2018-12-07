@@ -1,4 +1,4 @@
-﻿;s0604
+;s0604
 ;script: nikai
 ;direction: yuichi
 ;timing:s0603あと　戦闘勝利
@@ -28,14 +28,14 @@
 [filter name="clear" time=500]
 
 [show_message]
-#アリス
+#爱丽丝
 [voice ref="060049"]
-アッハッハッハッハーー！！！[p]
+啊哈哈哈哈ーー！！！[p]
 [voice ref="060050"]
-みたか！　そんなちんけな爆発じゃ[n]
-この私はたおせーーーん！！！[p]
+看到没！这点小爆炸[n]
+根ーーー本打败不了我！！！[p]
 [voice ref="060051"]
-それっ、追撃だーーーー！！[p]
+给我上，追击ーーーー！！[p]
 [move id=3 x=0 y=10 time=50]
 [move id=3 x=0 y=-10 time=50]
 [move id=4 x=0 y=10 time=50]
@@ -45,10 +45,10 @@
 [move id=6 x=0 y=10 time=50]
 [move id=6 x=0 y=-10 time=50]
 [move id=0 x=10 y=0 time=100]
-#パンプキング
+#南瓜王
 [voice ref="060052"]
-ヤベエッ！！[n]
-おら、てめえら! ずらかるぞォ！[p]
+糟糕！！[n]
+喂，你们!撤了！[p]
 [scale id=0 sx=-1 time=100]
 [clearcg id=0 mode="slideout"]
 [scale id=6 sx=-1 time=100]
@@ -63,8 +63,8 @@
 [move id=3 x=0 y=-20 time=100]
 
 [cn]
-パンプキングの猛攻をアリスはあっさりとはねのけ、[n]
-パンプキング軍にさらなる打撃を与えたのだった。[p]
+爱丽丝轻松躲过了南瓜王的猛攻，[n]
+给与了南瓜王军队更大的打击。[p]
 [hide_message]
 [filter name="fade" time="500"]
 [clearbg]

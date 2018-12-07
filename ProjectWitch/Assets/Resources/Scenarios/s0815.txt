@@ -1,4 +1,4 @@
-﻿;script 815
+;script 815
 ;directer:yuichi
 ;script:nikai
 ;timing:s0814後
